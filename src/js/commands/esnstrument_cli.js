@@ -26,6 +26,8 @@ if (typeof J$ === 'undefined') {
 
 
 (function (sandbox) {
+    babel = require("@babel/core");
+    babel.transform(''); 
     acorn = require("acorn");
     esotope = require("esotope");
     require('../headers').headerSources.forEach(function (header) {
