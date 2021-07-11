@@ -24,10 +24,7 @@ if (typeof J$ === 'undefined') {
 
 
 (function (sandbox) {
-    try {
-        babel = require('@babel/core');
-        babel.transform('', { presets: ["@babel/preset-env"] });
-    } catch (e) {}
+
     acorn = require("acorn");
     esotope = require("esotope");
     require('../headers').headerSources.forEach(function (header) {
