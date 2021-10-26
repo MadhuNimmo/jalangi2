@@ -1,0 +1,16 @@
+[
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:13",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_gtrstr2.js@5:12:5:28",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_gtrstr2.js@1:1:10:5",
+    "ret": null
+  }
+]

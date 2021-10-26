@@ -1,0 +1,12 @@
+Dynamic fuction calls for example.js are as follows: 
+Calling foo at 1 from example.js at 11
+Calling bar at 5 from example.js at 14
+Calling foo at 1 from example.js at 11
+Calling bar at 5 from example.js at 14
+Calling foo at 1 from example.js at 11
+Calling bar at 5 from example.js at 14
+Calling foo at 1 from example.js at 11
+Calling bar at 5 from example.js at 14
+Calling foo at 1 from example.js at 11
+Calling bar at 5 from example.js at 14
+Number of functions calls: 10

@@ -1,0 +1,30 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp4.js@2:19-59)"
+  },
+  {
+    "typ": "Get",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp4.js@7:90-103)",
+    "from": "Obj5:foo"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp4.js@1:0-114)",
+    "from": "Frm7:x",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp4.js@8:105-108)",
+    "ret": null
+  }
+]

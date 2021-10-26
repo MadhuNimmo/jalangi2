@@ -1,0 +1,10 @@
+[
+  {
+    "source": "apply (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_multnat.js@6:144-172]",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_multnat.js@3:53-77",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_multnat.js@3:53-77) and Prop(foo)",
+      "Dynamic Property Access between: Prop(foo) and ReflectiveCallee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_multnat.js@6:144-172)"
+    ]
+  }
+]

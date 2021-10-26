@@ -1,0 +1,55 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_try.js@1:2:9:2"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_try.js@1:1:9:5"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_try.js@4:15:4:39"
+  },
+  {
+    "typ": "Write",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_try.js@4:15:4:39",
+    "to": "Frm7:x"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_try.js@1:2:9:2",
+    "from": "Frm7:x",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_try.js@8:9:8:12"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_try.js@8:9:8:12",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_try.js@1:1:9:5",
+    "ret": null
+  }
+]

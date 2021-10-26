@@ -1,0 +1,177 @@
+const puppeteer = require('puppeteer');
+const fs = require('fs');
+var jalangi = require('../src/js/utils/api');
+const waitForAnySelector =  require('./helpers.js');
+var express = require('express');
+var app = express();
+var path = require('path');
+var root = "/tmp"
+var inputDir =[]
+inputDir.push(process.argv[2])
+var options = {
+        instrumentInline: true,
+        inlineIID: true,
+        inlineSource: true,
+        inlineJalangi: true,
+        analysis: ['src/js/sample_analyses/ChainedAnalyses.js', 'src/js/sample_analyses/dlint/Utils.js', 'experiments/metrics/DynNative.js'],
+        outputDir: '/tmp',
+        inputFiles: inputDir
+};
+//root += (process.argv[2]).split("/")[0]==""?(process.argv[2]).split("/")[0]:(process.argv[2]).split("/")[1]
+var arr =((process.argv[2]).split(path.sep)).filter(el=> el!=="");
+var last = arr[arr.length-1] || arr[arr.length-2];
+root=path.join(root,last)
+var isMain = (element,index) => arr[index].includes("todomvc") && arr[index+1]=="examples"
+var mainInd = arr.findIndex(isMain);
+var main = path.sep + path.join(...arr.slice(0,mainInd+1))+path.sep//arr.slice(0,mainInd+1).join("/")+"/"
+var siteassets = path.sep+ path.join(main,"site-assets")+path.sep;
+app.use(express.static(root));
+app.use(express.static(main));
+app.use(express.static(siteassets));
+/*app.use(express.static("/Users/madhurimachakraborty/Documents/todomvc-master/"));
+app.use(express.static("/Users/madhurimachakraborty/Documents/todomvc-master/site-assets/"))*/
+// viewed at http://localhost:8080
+app.get('/', function(req, res) {
+    res.sendFile(root + '/index.html');
+});
+var server = app.listen(8080);
+module.exports = (async () => {
+    if (process.argv.length < 3) {
+        console.log("Please provide arguments in the following sequence : 1:Input directory 2:Output file path")
+        return;
+      }
+      //inpath = process.argv[3]
+      var outpath = process.argv[3]
+      await new Promise((resolve, reject) => {
+        try {
+          resolve(jalangi.instrumentDir(options));
+        } catch (err) {
+          reject(err.toString());
+        }
+      });
+const browser = await puppeteer.launch({headless: false, 
+  args: [
+    '--no-sandbox',
+    '--disable-setuid-sandbox',
+    '--disable-dev-shm-usage',
+    '--shm-size=3gb',
+    '--single-process'
+  ]});
+const page = await browser.newPage();
+//page.setDefaultNavigationTimeout( 9000 ); //new
+ await Promise.all([
+    page.coverage.startJSCoverage()
+    ]);
+    await page.waitFor(5000)
+      //await page.goto('http://localhost:8080', { waitUntil: 'domcontentloaded' });
+      await Promise.race([
+        page.goto('http://localhost:8080', {"waitUntil":["load", "networkidle2"]}),
+        page.waitFor('body')
+      ])//new
+    //await page.waitFor(5000)
+    //await page.reload()
+    //await page.reload({ waitUntil: ["networkidle2", "domcontentloaded"] });
+    await page.waitFor(5000)
+const selector = await waitForAnySelector(page, [
+        '#new-todo', 
+        '.new-todo'
+      ])
+for (var i = 0; i < 3; i++) {
+        await page.waitFor(500)
+        await page.type(selector, 'Something to do ' + i).then(async () => { await page.keyboard.press('Enter') })
+        await page.waitFor(500)
+}
+
+//newest
+const changeText = await waitForAnySelector(page, [
+  ".view label",
+  ".td-item"])
+//await page.click('.view label',{ visible: true ,clickCount: 2 })
+//await page.type('.view label'," changed") 
+await page.click(changeText,{ visible: true ,clickCount: 2 })
+await page.type(changeText," changed") 
+
+await page.keyboard.press('Enter')
+await page.waitFor(5000)
+
+    const toggleAll = await waitForAnySelector(page, [
+        "label[for='toggle-all']",
+        "input[class='toggle-all']"])
+      await page.click(toggleAll);
+
+        await page.$$eval('.toggle', checks => {
+
+                //for (var i = 0; i < checks.length; i += 2)
+
+                        checks[1].click();
+        })
+        await page.$$eval('.destroy', destroys => {
+                //console.log("destroy "+destroys.length)
+                //for (var i = 0; i < destroys.length; i+=4)
+                        destroys[2].click();
+        })
+        const aElementsCompleted = await page.$x("//a[contains(., 'Completed')]");
+        //await aElementsCompleted[0].click();
+        if(aElementsCompleted != undefined && aElementsCompleted.length != 0){
+          await aElementsCompleted[0].click();
+        }
+        const aElementsActive= await page.$x("//a[contains(., 'Active')]");
+        //await aElementsActive[0].click();
+        if(aElementsActive != undefined && aElementsActive.length !== 0){
+          await aElementsActive[0].click();
+        }
+        const clearCompleted = await waitForAnySelector(page, [
+                '#clear-completed',
+                '.clear-completed'
+              ])
+        
+        await page.click(clearCompleted);
+const getAll = await waitForAnySelector(page, [
+        'a[href="#/"]',
+        'a[href="#!"]', 
+        'a[href="#/all"]',
+        'a[class="selected"]'
+      ])
+        //await page.click(getAll);
+        if(getAll != undefined && getAll.length != 0){
+          await page.click(getAll);
+        }
+await page.keyboard.down('Shift');
+await page.keyboard.down('Alt');
+await page.keyboard.press('KeyT');
+await page.keyboard.up('Shift'); 
+const jsCoverage = await Promise.all([
+        page.coverage.stopJSCoverage(),
+      ]);
+      const js_coverage = [...jsCoverage];
+      //Parse collected JS Coverage
+      let cov = {};
+      cnt = 0
+      for (const entry of js_coverage[0]) {
+        if (!(entry.url in cov)) {
+          cov[entry.url] = {
+            'js_total_bytes': 0,
+            'js_used_bytes': 0
+          }
+        }
+        cov[entry.url]['js_total_bytes'] = cov[entry.url]['js_total_bytes'] + entry.text.length;
+    
+        for (const range of entry.ranges) {
+          cov[entry.url]['js_used_bytes'] = cov[entry.url]['js_used_bytes'] + range.end - range.start;
+    
+        }
+    
+      }
+      for (entry in cov) {
+        console.log(`Utilization percetages ${entry}: ${cov[entry]['js_used_bytes'] / cov[entry]['js_total_bytes'] * 100}%`);
+      }
+const data= (await page.evaluate('J$.callList'));
+fs.writeFile(outpath, JSON.stringify(data,null,"    "), function (err) {
+        if (err) throw err;
+        console.log('complete');
+      });
+    await browser.close();
+    server.close()
+  })();
+//module.exports = {pupServ};
+//node experiments/pupServ.js /Users/madhurimachakraborty/Documents/todomvc-master/examples/vanillajs /Users/madhurimachakraborty/Documents/todomvc-study/DCG.json

@@ -1,0 +1,77 @@
+<h3>1- JSON string from server</h3>
+<p data-bind="text: JSONdataFromServer"></p>
+
+<h3>2- Converted to an object with ko.parseJson</h3>
+<p data-bind="text: ko.toJSON(dataFromServer)"></p>
+
+<h3>3- Mapped to use observables and add a dependentObservable</h3>
+<p data-bind="text: ko.toJSON(mappedData)"></p>
+
+<hr />
+<h3>4- Display in an editor</h3>
+
+<table id="mytable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>w/Tax</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody data-bind="template: { name: 'itemsTmpl', foreach: filteredItems }"></tbody>
+    <script id="itemsTmpl" type="text/html">
+        <tr data-bind="css: { matched: $data === $root.firstMatch() }">
+            <td>
+                <input data-bind="value: name" />
+            </td>
+            <td>
+                <select data-bind="options: $root.categories, value: category"></select>
+            </td>
+            <td>
+                <input class="n" data-bind="value: price" />
+            </td>
+            <td class="n" data-bind="text: priceWithTax">
+            </td>
+            <td>
+                <a href="#" data-bind="click: $root.removeItem.bind($root)">Delete</a>
+            </td>
+        </tr>
+    </script>
+    <tr>
+        <td>
+            <a href="#" data-bind="click: addItem">Add Item</a>
+        </td>
+        <td></td>
+        <td class="n">Total: </td>
+        <td class="n" data-bind="text: total"></td>
+        <td></td>
+    </tr>
+</table>
+
+<h3>5- Filter display by name</h3>
+<p>Filter: <input data-bind="value: filter, valueUpdate: 'afterkeydown'" /></p>
+
+<h3>6- Find first match by name</h3>
+<p>Search: <input data-bind="value: search, valueUpdate: 'afterkeydown'" /></p>
+<hr />
+
+<h3>7- Use ko.utils.arrayMap to build an array with just categories used</h3>
+<p data-bind="text: ko.toJSON(justCategories)"></p>
+
+<h3>8- Use ko.utils.arrayGetDistinctValues to get just the unique categories used</h3>
+<p data-bind="text: ko.toJSON(uniqueCategories)"></p>
+
+<h3>9- Use ko.utils.compareArrays to find available categories that haven't been used</h3>
+<p data-bind="text: ko.toJSON(missingCategories)"></p>
+
+<h3>10- Convert items to JSON</h3>
+<p data-bind="text: ko.toJSON(items)"></p>
+
+<h3>11- Map items to send back to server and convert to JSON</h3>
+<p data-bind="text: ko.toJSON(mappedItems)"></p>
+
+
+<script src="../../fgexko.js" type="text/javascript"></script>
+

@@ -1,0 +1,36 @@
+[
+  {
+    "src": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76",
+    "dest": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "addStuff",
+        "identity": "FunNon:9",
+        "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76"
+      },
+      {
+        "typ": "Declare",
+        "funName": "addStuff",
+        "identity": "FunNon:9",
+        "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76",
+        "to": "Frm7:addStuff"
+      },
+      {
+        "typ": "LocRead",
+        "funName": "addStuff",
+        "identity": "FunNon:9",
+        "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76",
+        "from": "Frm7:addStuff",
+        "curr": "Frm7",
+        "eloc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "addStuff",
+        "identity": "FunNon:9",
+        "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76"
+      }
+    ]
+  }
+]

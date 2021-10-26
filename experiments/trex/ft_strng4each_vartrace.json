@@ -1,0 +1,27 @@
+[
+  [
+    "Literal",
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@8:25:8:34",
+    "MyPhone"
+  ],
+  [
+    "Get Value",
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@5:29:5:38",
+    "MyPhone"
+  ],
+  [
+    "Function Argument",
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@8:36:10:10",
+    "MyPhone"
+  ],
+  [
+    "Put Key",
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@9:15:9:52",
+    "MyPhone"
+  ],
+  [
+    "Get Key",
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@11:9:11:20",
+    "MyPhone"
+  ]
+]

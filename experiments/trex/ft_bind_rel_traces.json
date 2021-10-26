@@ -1,0 +1,83 @@
+[
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@13:227-237",
+    "dest": "bound func (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@13:227-237]",
+    "trace": [
+      "Calls to unmodelled native functions"
+    ]
+  },
+  {
+    "src": "bound func (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@13:227-237]",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@9:125-172",
+    "trace": [
+      "Calls to bounded functions"
+    ]
+  },
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@14:241-254",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@4:67-115",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@4:67-115"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@2:28-120",
+        "to": "fullName"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@10:154-167",
+        "from": "fullName"
+      },
+      {
+        "typ": "Return",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@10:154-167"
+      },
+      {
+        "typ": "InvokeReturn",
+        "funName": "bound func",
+        "identity": "FunNat:15",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@13:227-237",
+        "ret": [
+          {
+            "retId": "FunNon:11",
+            "retName": "anon",
+            "retLoc": "None"
+          }
+        ]
+      },
+      {
+        "typ": "Write",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@13:227-237",
+        "to": "Frm7:newFullName"
+      },
+      {
+        "typ": "LocRead",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@1:1-257",
+        "from": "Frm7:newFullName",
+        "curr": "Frm7",
+        "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@1:1-257"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@14:241-254"
+      }
+    ]
+  }
+]

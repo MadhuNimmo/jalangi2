@@ -1,0 +1,26 @@
+{
+  "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@1:0-410": [
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@1:1-407"
+  ],
+  "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@12:256-271": [
+    "bind (Native)"
+  ],
+  "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309": [
+    "bound func (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309]"
+  ],
+  "bound func (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309]": [
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@9:173-232"
+  ],
+  "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@14:319-332": [
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@4:85-145"
+  ],
+  "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@15:361-380": [
+    "call (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@15:361-380]"
+  ],
+  "call (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@15:361-380]": [
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@9:173-232"
+  ],
+  "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@16:390-404": [
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@4:85-145"
+  ]
+}

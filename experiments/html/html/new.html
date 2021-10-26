@@ -1,0 +1,53 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head> 
+		<title> 
+			Array of functions in JavaScript 
+		</title> 
+	</head> 
+	
+	<body style = "text-align:center;"> 
+		
+		<h1 style = "color:green;" > 
+			GeeksForGeeks 
+		</h1> 
+		
+		<p id = "GFG_UP" style = 
+			"font-size: 19px; font-weight: bold;"> 
+		</p> 
+		
+		<button onClick = "GFG_Fun()"> 
+			click here 
+		</button> 
+		
+		<p id = "GFG_DOWN" style = 
+			"color: green; font-size: 24px; font-weight: bold;"> 
+		</p> 
+		
+		<script> 
+			var up = document.getElementById('GFG_UP'); 
+			var down = document.getElementById('GFG_DOWN'); 
+			
+			// Declare an array of functions 
+			var arrayOfFunction = [ 
+				function() { 
+					down.innerHTML = "Inside First function"; 
+				}, 
+				
+				function() { 
+					down.innerHTML = "Inside Second function"; 
+				}, 
+				
+				function() { 
+					down.innerHTML = "Inside Third function"; 
+				}	 
+			] 
+			
+			up.innerHTML = "Calling function from the array of functions"; 
+			
+			function GFG_Fun() { 
+				arrayOfFunction[2](); 
+			} 
+		</script> 
+	</body> 
+</html>					 

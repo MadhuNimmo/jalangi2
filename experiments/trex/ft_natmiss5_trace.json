@@ -1,0 +1,47 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_natmiss5.js@1:2:6:2"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_natmiss5.js@1:1:6:71"
+  },
+  {
+    "typ": "Get",
+    "funName": "filter",
+    "identity": "FunNat:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_natmiss5.js@3:14:3:32",
+    "from": "filter"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_natmiss5.js@3:33:5:2"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "filter",
+    "identity": "FunNat:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_natmiss5.js@3:14:5:8"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "filter",
+    "identity": "FunNat:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_natmiss5.js@3:14:5:8",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_natmiss5.js@1:1:6:71",
+    "ret": null
+  }
+]

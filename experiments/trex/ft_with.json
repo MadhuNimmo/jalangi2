@@ -1,0 +1,113 @@
+[
+  {
+    "typ": "Create",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_with.js@7:1:9:2)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_with.js@1:1:12:1)",
+    "to": "foo"
+  },
+  {
+    "typ": "Read",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_with.js@10:9:10:12)",
+    "from": "foo"
+  },
+  {
+    "typ": "Read",
+    "funName": "Function",
+    "identity": "FunNat:5",
+    "loc": "(ft_with.js@8:20:8:28)",
+    "from": "Function"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:7",
+    "loc": "(ft_with.js@8:16:8:102)"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "Function",
+    "identity": "FunNat:5",
+    "loc": "(ft_with.js@8:16:8:102)",
+    "ret": [
+      {
+        "retId": "FunNon:7",
+        "retName": "anon"
+      }
+    ]
+  },
+  {
+    "typ": "Return",
+    "funName": "anon",
+    "identity": "FunNon:7",
+    "loc": "(ft_with.js@8:16:8:102)"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_with.js@10:9:10:14)",
+    "ret": [
+      {
+        "retId": "FunNon:7",
+        "retName": "anon"
+      }
+    ]
+  },
+  {
+    "typ": "Write",
+    "funName": "anon",
+    "identity": "FunNon:7",
+    "loc": "(ft_with.js@10:9:10:14)",
+    "to": "x"
+  },
+  {
+    "typ": "Read",
+    "funName": "anon",
+    "identity": "FunNon:7",
+    "loc": "(ft_with.js@11:1:11:2)",
+    "from": "x"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "(ft_with.js@8:16:8:102)"
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "(ft_with.js@8:16:8:102)",
+    "to": "getlog"
+  },
+  {
+    "typ": "Read",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "(ft_with.js@8:16:8:102)",
+    "from": "getlog"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "(ft_with.js@8:16:8:102)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:7",
+    "loc": "(ft_with.js@11:1:11:4)",
+    "ret": null
+  }
+]

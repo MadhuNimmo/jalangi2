@@ -1,0 +1,17 @@
+digraph G{
+        "main"->"MyName";
+        "main"->"MyPhone" [label = "missing edge" color="red"]
+}
+
+{
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_exp.js@13:1:13:7": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_exp.js@1:1:12:2"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_exp.js@10:1:10:19": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_exp.js@3:16:5:10"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_exp.js@11:1:11:17": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_exp.js@6:17:8:10"
+    ]
+}
+

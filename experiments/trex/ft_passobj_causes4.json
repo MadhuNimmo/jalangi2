@@ -1,0 +1,14 @@
+[
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@14:330-337",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@4:74-97",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@4:74-97) and Prop(f1)",
+      "Dynamic Property Access between: Prop(f1) and LexVar(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@1, cur)",
+      "Path found between: LexVar(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@1, cur) and LexVar(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@1, fn)",
+      "Path found between: LexVar(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@1, fn) and Prop(fn)",
+      "Path found between: Prop(fn) and Ret(Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@8:189-321))",
+      "Path found between: Ret(Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@8:189-321)) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@14:330-337)"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@14:400-419",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@6:156-222",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@6:156-222"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@2:30-332",
+        "to": "MyPhone"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@14:400-417",
+        "from": "MyPhone"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@14:400-419"
+      }
+    ]
+  },
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@14:383-420",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@3:55-130",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@3:55-130"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@2:30-332",
+        "to": "MyName"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@14:383-399",
+        "from": "MyName"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng8.js@14:383-420"
+      }
+    ]
+  }
+]

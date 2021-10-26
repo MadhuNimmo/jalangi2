@@ -1,0 +1,94 @@
+[
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@5:123-150",
+    "dest": "Function (Native)",
+    "trace": [
+      "Calls to unmodelled native functions"
+    ]
+  },
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@6:160-163",
+    "dest": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@5:123-150",
+    "trace": [
+      {
+        "typ": "InvokeReturn",
+        "funName": "Function",
+        "identity": "FunNat:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@5:123-150",
+        "ret": [
+          {
+            "retId": "FunNon:17",
+            "retName": "anon",
+            "retLoc": "None"
+          }
+        ]
+      },
+      {
+        "typ": "Write",
+        "funName": "anon",
+        "identity": "FunNon:17",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@5:123-150",
+        "to": "Frm7:x"
+      },
+      {
+        "typ": "LocRead",
+        "funName": "anon",
+        "identity": "FunNon:17",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@1:1-167",
+        "from": "Frm7:x",
+        "curr": "Frm7",
+        "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@1:1-167"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:17",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@6:160-163"
+      }
+    ]
+  },
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@6:160-165",
+    "dest": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@5:123-150",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:21",
+        "loc": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@5:123-150"
+      },
+      {
+        "typ": "Return",
+        "funName": "anon",
+        "identity": "FunNon:21",
+        "loc": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@5:123-150"
+      },
+      {
+        "typ": "InvokeReturn",
+        "funName": "anon",
+        "identity": "FunNon:17",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@6:160-163",
+        "ret": [
+          {
+            "retId": "FunNon:21",
+            "retName": "anon",
+            "retLoc": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@5:123-150"
+          }
+        ]
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:21",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@6:160-165"
+      }
+    ]
+  },
+  {
+    "src": "anon (Native)",
+    "dest": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest2.js@5:123-150",
+    "trace": [
+      "Calls from unmodelled native functions"
+    ]
+  }
+]

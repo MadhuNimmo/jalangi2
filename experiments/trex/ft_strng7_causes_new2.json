@@ -1,0 +1,29 @@
+[
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@14:412-430",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@3:55-147",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@3:55-147) and Prop(MyName)",
+      "Dynamic Property Access between: Prop(MyName) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@14:412-430)"
+    ]
+  },
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@15:439-442",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@6:173-251",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@6:173-251) and Prop(MyPhone)",
+      "Path found between: Prop(MyPhone) and Ret(Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@3:55-147))",
+      "Path missing for interdependent call between: Ret(Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@3:55-147)) and Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@1:1-447, [x])",
+      "Path found between: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@1:1-447, [x]) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@15:439-442)"
+    ]
+  },
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@15:439-444",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@9:279-351",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@9:279-351) and Prop(MyAddress)",
+      "Path found between: Prop(MyAddress) and Ret(Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@6:173-251))",
+      "Path missing for interdependent call between: Ret(Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@6:173-251)) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@15:439-444)"
+    ]
+  }
+]

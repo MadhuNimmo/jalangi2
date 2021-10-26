@@ -1,0 +1,56 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@1:2:6:2"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@1:1:6:5"
+  },
+  {
+    "typ": "Create",
+    "funName": "addStuff",
+    "identity": "FunNon:9",
+    "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:6:5:13"
+  },
+  {
+    "typ": "Declare",
+    "funName": "addStuff",
+    "identity": "FunNon:9",
+    "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:6:5:13",
+    "to": "Frm7:addStuff"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "addStuff",
+    "identity": "FunNon:9",
+    "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:6:5:13",
+    "from": "Frm7:addStuff",
+    "curr": "Frm7",
+    "eloc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:6:5:13"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "addStuff",
+    "identity": "FunNon:9",
+    "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:6:5:13"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "addStuff",
+    "identity": "FunNon:9",
+    "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:6:5:13",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@1:1:6:5",
+    "ret": null
+  }
+]

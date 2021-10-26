@@ -1,0 +1,15 @@
+[
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun.js@2:21-47",
+    "destination": "Function (Native)",
+    "reasons": "Calls to unmodelled native functions"
+  },
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun.js@3:49-52",
+    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun.js@2:21-47",
+    "reasons": [
+      "Function Constructor Involved: Ret(Func(Function (Native))) and Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun.js@1:1-55, [x])",
+      "Path found between: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun.js@1:1-55, [x]) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun.js@3:49-52)"
+    ]
+  }
+]

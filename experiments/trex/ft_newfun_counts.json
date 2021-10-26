@@ -1,0 +1,12 @@
+{
+  "Setter Count": 0,
+  "Getter Count": 0,
+  "Bound Function": 0,
+  "Dynamic Property Access": 0,
+  "Eval Involved": 0,
+  "Eval via New Function": 1,
+  "Function Constructor Involved": 1,
+  "Native Function": 0,
+  "With Involved": 0,
+  "Parameter passed via Apply": 0
+}

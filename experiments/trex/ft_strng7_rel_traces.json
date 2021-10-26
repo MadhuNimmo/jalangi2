@@ -1,0 +1,151 @@
+[
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@14:412-430",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@3:55-147",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@3:55-147"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@2:30-361",
+        "to": "MyName"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@14:412-428",
+        "from": "MyName"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@14:412-430"
+      }
+    ]
+  },
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@15:439-442",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@6:173-251",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@6:173-251"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@2:30-361",
+        "to": "MyPhone"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@4:102-116",
+        "from": "MyPhone"
+      },
+      {
+        "typ": "Return",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@4:102-116"
+      },
+      {
+        "typ": "InvokeReturn",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@14:412-430",
+        "ret": [
+          {
+            "retId": "FunNon:11",
+            "retName": "anon",
+            "retLoc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@3:55-147"
+          }
+        ]
+      },
+      {
+        "typ": "Write",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@14:412-430",
+        "to": "Frm7:x"
+      },
+      {
+        "typ": "LocRead",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@1:1-447",
+        "from": "Frm7:x",
+        "curr": "Frm7"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@15:439-442"
+      }
+    ]
+  },
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@15:439-444",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@9:279-351",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@9:279-351"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@2:30-361",
+        "to": "MyAddress"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@7:216-232",
+        "from": "MyAddress"
+      },
+      {
+        "typ": "Return",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@7:216-232"
+      },
+      {
+        "typ": "InvokeReturn",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@15:439-442",
+        "ret": [
+          {
+            "retId": "FunNon:13",
+            "retName": "anon",
+            "retLoc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@6:173-251"
+          }
+        ]
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng7.js@15:439-444"
+      }
+    ]
+  }
+]

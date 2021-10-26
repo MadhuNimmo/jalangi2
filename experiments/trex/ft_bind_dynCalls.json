@@ -1,0 +1,17 @@
+{
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@1:1:15:5": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@1:2:15:2"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@12:18:12:33": [
+        "bind (Native)"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@13:21:13:31": [
+        "bound func (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@13:21:13:31]"
+    ],
+    "bound func (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@13:21:13:31]": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@9:3:11:4"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@14:3:14:16": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_bind.js@4:15:6:6"
+    ]
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@14:330-337",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@4:74-97",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@4:74-97"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@3:52-152",
+        "to": "f1"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@7:168-180",
+        "from": "f1"
+      },
+      {
+        "typ": "Write",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@7:168-180",
+        "to": "Frm7:cur"
+      },
+      {
+        "typ": "LexRead",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@1",
+        "from": "Frm7:cur",
+        "curr": "Frm15",
+        "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@8:189-321"
+      },
+      {
+        "typ": "Write",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@9:226-229",
+        "to": "Frm7:fn"
+      },
+      {
+        "typ": "LexRead",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@1",
+        "from": "Frm7:fn",
+        "curr": "Frm15",
+        "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@8:189-321"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@11:270-281",
+        "to": "fn"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@12:305-311",
+        "from": "fn"
+      },
+      {
+        "typ": "Return",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@12:305-311"
+      },
+      {
+        "typ": "InvokeReturn",
+        "funName": "foo",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@14:330-335",
+        "ret": [
+          {
+            "retId": "FunNon:11",
+            "retName": "anon",
+            "retLoc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@8:189-321"
+          }
+        ]
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_passobj.js@14:330-337"
+      }
+    ]
+  }
+]

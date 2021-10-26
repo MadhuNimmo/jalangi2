@@ -1,0 +1,16 @@
+[
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_natmiss5.js@3:50-120",
+    "dest": "filter (Native)",
+    "trace": [
+      "Calls to unmodelled native functions"
+    ]
+  },
+  {
+    "src": "filter (Native)",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_natmiss5.js@3:69-114",
+    "trace": [
+      "Calls from unmodelled native functions"
+    ]
+  }
+]

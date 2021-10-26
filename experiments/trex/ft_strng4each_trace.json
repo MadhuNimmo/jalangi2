@@ -1,0 +1,164 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@1:2:12:2"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@1:1:12:5"
+  },
+  {
+    "typ": "Create",
+    "funName": "each",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@3:9:7:10"
+  },
+  {
+    "typ": "Declare",
+    "funName": "each",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@1:2:12:2",
+    "to": "Frm7:each"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "each",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@1:2:12:2",
+    "from": "Frm7:each",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@8:36:10:10"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "each",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@8:9:10:11"
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@3:9:7:10",
+    "to": "Obj15:1"
+  },
+  {
+    "typ": "Declare",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@3:9:7:10",
+    "to": "Frm13:fun"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@3:9:7:10",
+    "from": "Frm13:fun",
+    "curr": "Frm13"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@5:25:5:39"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:19",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@9:33:9:57"
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:19",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@9:15:9:57",
+    "to": "Obj21:isMyHobby"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@5:25:5:39",
+    "ret": null
+  },
+  {
+    "typ": "LocRead",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@3:9:7:10",
+    "from": "Frm13:fun",
+    "curr": "Frm13"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@5:25:5:39"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:25",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@9:33:9:57"
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:25",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@9:15:9:57",
+    "to": "Obj21:isMyPhone"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@5:25:5:39",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "each",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@8:9:10:11",
+    "ret": null
+  },
+  {
+    "typ": "Get",
+    "funName": "anon",
+    "identity": "FunNon:25",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@11:9:11:25",
+    "from": "Obj21:isMyPhone",
+    "op": "String Manipulation2"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:25",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@11:9:11:27"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:25",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@11:9:11:27",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_strng4each.js@1:1:12:5",
+    "ret": null
+  }
+]

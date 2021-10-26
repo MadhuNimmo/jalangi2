@@ -1,0 +1,10 @@
+[
+  {
+    "source": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76",
+    "destination": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76",
+    "reasons": [
+      "Eval Involved: Func(eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76) and Var(eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76,addStuff",
+      "Eval Involved: Var(eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76,addStuff and Callee(eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest6.js@2:18-76)"
+    ]
+  }
+]

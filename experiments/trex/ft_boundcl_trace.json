@@ -1,0 +1,16 @@
+[
+  {
+    "typ": "Get",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@10:18:10:31",
+    "from": "fullName"
+  },
+  {
+    "typ": "Get",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@10:18:10:31",
+    "from": "fullName"
+  }
+]

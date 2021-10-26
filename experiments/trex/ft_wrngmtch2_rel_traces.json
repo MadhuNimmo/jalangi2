@@ -1,0 +1,64 @@
+[
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@4:94-97",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@6:147-214",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@6:147-214"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@2:31-313",
+        "to": "bar"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@15:402-412",
+        "from": "bar"
+      },
+      {
+        "typ": "Write",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@15:402-412",
+        "to": "Frm7:y"
+      },
+      {
+        "typ": "LocRead",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@1:1-446",
+        "from": "Frm7:y",
+        "curr": "Frm7"
+      },
+      {
+        "typ": "Declare",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@3:54-124",
+        "to": "Frm17:p"
+      },
+      {
+        "typ": "LocRead",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@3:54-124",
+        "from": "Frm17:p",
+        "curr": "Frm17"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@4:94-97"
+      }
+    ]
+  }
+]

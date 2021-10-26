@@ -1,0 +1,26 @@
+{
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@9:1:24:5": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@9:2:24:2"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@21:9:21:22": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@11:9:13:16"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@12:26:12:71": [
+        "setTimeout (Native)"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@22:9:22:22": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@14:9:20:10"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@16:24:19:25": [
+        "setInterval (Native)"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@23:9:23:29": [
+        "clearTimeout (Native)"
+    ],
+    "system (Native)": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@16:36:19:20"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newreg.js@18:21:18:44": [
+        "clearInterval (Native)"
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@4:94-97",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@6:147-214",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@6:147-214) and Prop(bar)",
+      "Path found between: Prop(bar) and Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@1:1-446, [y])",
+      "Path missing between: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@1:1-446, [y]) and Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@3:54-124, [p])",
+      "Path found between: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@3:54-124, [p]) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch2.js@4:94-97)"
+    ]
+  }
+]

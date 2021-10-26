@@ -1,0 +1,36 @@
+[
+  {
+    "src": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest3.js@3:66-71",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest3.js@2:29-52",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest3.js@2:29-52"
+      },
+      {
+        "typ": "Write",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest3.js@2:29-52",
+        "to": "Frm7:x"
+      },
+      {
+        "typ": "LocRead",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest3.js@3:66-71",
+        "from": "Frm7:x",
+        "curr": "Frm7",
+        "eloc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest3.js@3:66-71"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:9",
+        "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest3.js@3:66-71"
+      }
+    ]
+  }
+]

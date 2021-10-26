@@ -1,0 +1,39 @@
+[
+  {
+    "typ": "Create",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "trex/ft_vardef.js@2:23-49"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "trex/ft_vardef.js@1:1-104",
+    "from": "Frm7:bar",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "trex/ft_vardef.js@1:1-104",
+    "from": "Frm7:x",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "trex/ft_vardef.js@1:1-104",
+    "from": "Frm7:y",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "trex/ft_vardef.js@5:98-101",
+    "ret": null
+  }
+]

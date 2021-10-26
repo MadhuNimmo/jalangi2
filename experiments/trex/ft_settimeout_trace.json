@@ -1,0 +1,87 @@
+[
+  {
+    "typ": "Create",
+    "funName": "myFunction1",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@1:1:4:8"
+  },
+  {
+    "typ": "Declare",
+    "funName": "myFunction1",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@1:1:6:1",
+    "to": "Frm3:myFunction1"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "myFunction1",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@1:1:6:1",
+    "from": "Frm3:myFunction1",
+    "curr": "Global",
+    "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@1:1:6:1"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "myFunction1",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@5:1:5:14"
+  },
+  {
+    "typ": "LexRead",
+    "funName": "Number",
+    "identity": "FunNat:9",
+    "loc": "None",
+    "from": "Frm11:Number",
+    "curr": "Frm7",
+    "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@1:1:4:8"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "Number",
+    "identity": "FunNat:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@2:21:2:34"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "Number",
+    "identity": "FunNat:9",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@2:21:2:34",
+    "ret": null
+  },
+  {
+    "typ": "LexRead",
+    "funName": "setTimeout",
+    "identity": "FunNat:13",
+    "loc": "None",
+    "from": "Frm11:setTimeout",
+    "curr": "Frm7",
+    "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@1:1:4:8"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:15",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@3:33:3:63"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "setTimeout",
+    "identity": "FunNat:13",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@3:22:3:69"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "setTimeout",
+    "identity": "FunNat:13",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@3:22:3:69",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "myFunction1",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_settimeout.js@5:1:5:14",
+    "ret": null
+  }
+]

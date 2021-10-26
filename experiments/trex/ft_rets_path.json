@@ -1,0 +1,22 @@
+[
+  {
+    "typ": "Create",
+    "funName": "z",
+    "identity": "FunNon:5",
+    "loc": "trex/ft_rets.js@1:0-27"
+  },
+  {
+    "typ": "LexRead",
+    "funName": "z",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_rets.js)",
+    "from": "Frm3:z",
+    "curr": "Frm13"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "z",
+    "identity": "FunNon:5",
+    "loc": "trex/ft_rets.js@2:48-51"
+  }
+]

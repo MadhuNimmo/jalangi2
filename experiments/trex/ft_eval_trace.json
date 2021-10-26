@@ -1,0 +1,37 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_eval.js@1:6:1:40"
+  },
+  {
+    "typ": "Write",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_eval.js@1:6:1:40",
+    "to": "Frm3:x"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_eval.js@1:1:2:5",
+    "from": "Frm3:x",
+    "curr": "Global",
+    "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_eval.js@1:1:2:5"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_eval.js@2:1:2:4"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_eval.js@2:1:2:4",
+    "ret": null
+  }
+]

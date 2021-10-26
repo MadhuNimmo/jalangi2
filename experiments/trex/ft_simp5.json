@@ -1,0 +1,236 @@
+[
+  {
+    "typ": "Create",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp5.js@1:1:3:2)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp5.js@1:1:18:21)",
+    "to": "Frm5:foo"
+  },
+  {
+    "typ": "Create",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@4:1:6:2)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@1:1:18:21)",
+    "to": "Frm5:bar"
+  },
+  {
+    "typ": "Create",
+    "funName": "quote",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp5.js@7:1:13:2)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "quote",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp5.js@1:1:18:21)",
+    "to": "Frm5:quote"
+  },
+  {
+    "typ": "Create",
+    "funName": "foo2",
+    "identity": "FunNon:11",
+    "loc": "(ft_simp5.js@14:1:16:2)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "foo2",
+    "identity": "FunNon:11",
+    "loc": "(ft_simp5.js@1:1:18:21)",
+    "to": "Frm5:foo2"
+  },
+  {
+    "typ": "Read",
+    "funName": "quote",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp5.js@17:1:17:6)",
+    "from": "Frm5:quote"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@17:17:17:20)",
+    "from": "Frm5:bar"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@7:1:13:2)",
+    "to": "Frm13:callee1"
+  },
+  {
+    "typ": "Read",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp5.js@9:17:9:20)",
+    "from": "Frm5:foo"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@9:23:9:30)",
+    "from": "Frm13:callee1"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@1:1:3:2)",
+    "to": "Frm15:func"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@2:9:2:13)",
+    "from": "Frm15:func"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@2:9:2:16)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp5.js@9:17:9:31)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "quote",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp5.js@17:1:17:21)",
+    "ret": null
+  },
+  {
+    "typ": "Read",
+    "funName": "quote",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp5.js@18:1:18:6)",
+    "from": "Frm5:quote"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@18:17:18:20)",
+    "from": "Frm5:bar"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@7:1:13:2)",
+    "to": "Frm19:callee1"
+  },
+  {
+    "typ": "Read",
+    "funName": "foo2",
+    "identity": "FunNon:11",
+    "loc": "(ft_simp5.js@11:17:11:21)",
+    "from": "Frm5:foo2"
+  },
+  {
+    "typ": "Read",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp5.js@11:24:11:27)",
+    "from": "Frm5:foo"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@11:28:11:35)",
+    "from": "Frm19:callee1"
+  },
+  {
+    "typ": "Declare",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp5.js@14:1:16:2)",
+    "to": "Frm21:func2"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@14:1:16:2)",
+    "to": "Frm21:callee2"
+  },
+  {
+    "typ": "Read",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp5.js@15:9:15:14)",
+    "from": "Frm21:func2"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@15:17:15:24)",
+    "from": "Frm21:callee2"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@1:1:3:2)",
+    "to": "Frm23:func"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@2:9:2:13)",
+    "from": "Frm23:func"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "(ft_simp5.js@2:9:2:16)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "foo",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp5.js@15:9:15:25)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "foo2",
+    "identity": "FunNon:11",
+    "loc": "(ft_simp5.js@11:17:11:36)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "quote",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp5.js@18:1:18:21)",
+    "ret": null
+  }
+]

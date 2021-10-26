@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript" language="javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+/*var json = JSON.stringify(test);
+var jsonp=JSON.parse(json);
+var txt="";
+//console.log()
+for (var prop in jsonp) {
+    console.log(jsonp[prop]+"\n");
+    txt+=jsonp[prop]+" ";
+}
+document.getElementById('demo').innerHTML=txt;*/
+    $(document).ready(function(e) {
+    $.getJSON( "test.json" , function( result ){
+        alert(result);
+    });
+});
+</script>
+
+</body>
+</html>

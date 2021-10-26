@@ -1,0 +1,157 @@
+[
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309",
+    "dest": "bound func (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309]",
+    "trace": [
+      "Calls to unmodelled native functions"
+    ]
+  },
+  {
+    "src": "bound func (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309]",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@9:173-232",
+    "trace": [
+      "Calls to bounded functions"
+    ]
+  },
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@14:319-332",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@4:85-145",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@4:85-145"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@2:34-156",
+        "to": "fullName"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@10:208-221",
+        "from": "fullName"
+      },
+      {
+        "typ": "Return",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@10:208-221"
+      },
+      {
+        "typ": "InvokeReturn",
+        "funName": "bound func",
+        "identity": "FunNat:15",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309",
+        "ret": [
+          {
+            "retId": "FunNon:11",
+            "retName": "anon",
+            "retLoc": "None"
+          }
+        ]
+      },
+      {
+        "typ": "Write",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309",
+        "to": "Frm7:newFullName"
+      },
+      {
+        "typ": "LocRead",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@1:1-407",
+        "from": "Frm7:newFullName",
+        "curr": "Frm7",
+        "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@1:1-407"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@14:319-332"
+      }
+    ]
+  },
+  {
+    "src": "call (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@15:361-380]",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@9:173-232",
+    "trace": [
+      "Multiple levels of Native functionality involved"
+    ]
+  },
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@16:390-404",
+    "dest": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@4:85-145",
+    "trace": [
+      {
+        "typ": "Create",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@4:85-145"
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@2:34-156",
+        "to": "fullName"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@10:208-221",
+        "from": "fullName"
+      },
+      {
+        "typ": "Return",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@10:208-221"
+      },
+      {
+        "typ": "InvokeReturn",
+        "funName": "bound func",
+        "identity": "FunNat:15",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@15:361-380",
+        "ret": [
+          {
+            "retId": "FunNon:11",
+            "retName": "anon",
+            "retLoc": "None"
+          }
+        ]
+      },
+      {
+        "typ": "Write",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@15:361-380",
+        "to": "Frm7:newFullName2"
+      },
+      {
+        "typ": "LocRead",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@1:1-407",
+        "from": "Frm7:newFullName2",
+        "curr": "Frm7",
+        "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@1:1-407"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:11",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@16:390-404"
+      }
+    ]
+  }
+]

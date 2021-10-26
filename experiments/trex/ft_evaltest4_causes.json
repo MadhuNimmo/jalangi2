@@ -1,0 +1,11 @@
+[
+  {
+    "source": "eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest4.js@4:110-120",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest4.js@2:21-50",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest4.js@2:21-50) and Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest4.js@1:1-176, [XYZ])",
+      "Eval Involved: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest4.js@1:1-176,XYZ and Var(eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest4.js@4:110-120,argFun",
+      "Eval Involved: Var(eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest4.js@4:110-120,argFun and Callee(eval:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest4.js@4:110-120)"
+    ]
+  }
+]

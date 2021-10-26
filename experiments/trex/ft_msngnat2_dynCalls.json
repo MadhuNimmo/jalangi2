@@ -1,0 +1,20 @@
+{
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_msngnat2.js@1:1:9:5": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_msngnat2.js@1:2:9:2"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_msngnat2.js@6:23:6:56": [
+        "bind (Native)"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_msngnat2.js@7:24:7:51": [
+        "filter (Native)"
+    ],
+    "filter (Native)": [
+        "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_msngnat2.js@3:9:5:14"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_msngnat2.js@4:24:4:39": [
+        "indexOf (Native)"
+    ],
+    "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_msngnat2.js@8:9:8:30": [
+        "bound consoleCall (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_msngnat2.js@8:9:8:30]"
+    ]
+}

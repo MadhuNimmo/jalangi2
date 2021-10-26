@@ -1,0 +1,43 @@
+[
+  {
+    "typ": "Create",
+    "funName": "func",
+    "identity": "FunNon:15",
+    "loc": "trex/ft_rets2.js@2:24-80"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "func",
+    "identity": "FunNon:15",
+    "loc": "trex/ft_rets2.js@1:0-103",
+    "from": "Frm13:func",
+    "curr": "Frm13"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "gen",
+    "identity": "FunNon:5",
+    "loc": "trex/ft_rets2.js@10:192-197",
+    "ret": [
+      {
+        "retId": "FunNon:15",
+        "retName": "func",
+        "retLoc": "trex/ft_rets2.js@1:0-103"
+      }
+    ]
+  },
+  {
+    "typ": "LocRead",
+    "funName": "func",
+    "identity": "FunNon:15",
+    "loc": "trex/ft_rets2.js@9:139-222",
+    "from": "Frm11:next",
+    "curr": "Frm11"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "func",
+    "identity": "FunNon:15",
+    "loc": "trex/ft_rets2.js@11:213-219"
+  }
+]

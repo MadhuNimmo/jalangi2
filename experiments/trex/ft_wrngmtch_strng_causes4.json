@@ -1,0 +1,10 @@
+{
+  "Get Key,/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch.js@16:311-324,bar,/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_wrngmtch.js@2:23-246": {
+    "GET": [
+      "FUNCTION_RETURN"
+    ],
+    "PUT": [
+      "CONSTANT"
+    ]
+  }
+}

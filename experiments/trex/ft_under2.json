@@ -1,0 +1,262 @@
+[
+  {
+    "typ": "Create",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@10:1:14:8"
+  },
+  {
+    "typ": "Declare",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "to": "Frm3:makeEmptyFunction"
+  },
+  {
+    "typ": "Create",
+    "funName": "emptyFunction",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:21:1:48"
+  },
+  {
+    "typ": "Write",
+    "funName": "emptyFunction",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:21:1:48",
+    "to": "Frm3:emptyFunction"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "emptyFunction",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "from": "Frm3:emptyFunction",
+    "curr": "Global"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "from": "Frm3:makeEmptyFunction",
+    "curr": "Global"
+  },
+  {
+    "typ": "Put",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@3:1:3:46",
+    "to": "FunNon:7:thatReturns"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "emptyFunction",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "from": "Frm3:emptyFunction",
+    "curr": "Global"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "from": "Frm3:makeEmptyFunction",
+    "curr": "Global"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@4:34:4:58"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@11:16:13:10"
+  },
+  {
+    "typ": "Return",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@11:16:13:10"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@4:34:4:58",
+    "ret": [
+      {
+        "retId": "FunNon:11",
+        "retName": "anon",
+        "retLoc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@10:1:14:8"
+      }
+    ]
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@4:1:4:58",
+    "to": "FunNon:7:thatReturnsFalse"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "emptyFunction",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "from": "Frm3:emptyFunction",
+    "curr": "Global"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "from": "Frm3:makeEmptyFunction",
+    "curr": "Global"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@5:33:5:56"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:15",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@11:16:13:10"
+  },
+  {
+    "typ": "Return",
+    "funName": "anon",
+    "identity": "FunNon:15",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@11:16:13:10"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@5:33:5:56",
+    "ret": [
+      {
+        "retId": "FunNon:15",
+        "retName": "anon",
+        "retLoc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@10:1:14:8"
+      }
+    ]
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@5:1:5:56",
+    "to": "FunNon:7:thatReturnsTrue"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "emptyFunction",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "from": "Frm3:emptyFunction",
+    "curr": "Global"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "from": "Frm3:makeEmptyFunction",
+    "curr": "Global"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@6:33:6:56"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:19",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@11:16:13:10"
+  },
+  {
+    "typ": "Return",
+    "funName": "anon",
+    "identity": "FunNon:19",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@11:16:13:10"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "makeEmptyFunction",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@6:33:6:56",
+    "ret": [
+      {
+        "retId": "FunNon:19",
+        "retName": "anon",
+        "retLoc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@10:1:14:8"
+      }
+    ]
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@6:1:6:56",
+    "to": "FunNon:7:thatReturnsNull"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "emptyFunction",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "from": "Frm3:emptyFunction",
+    "curr": "Global"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:21",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@7:33:9:2"
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:21",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@7:1:9:2",
+    "to": "FunNon:7:thatReturnsThis"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "emptyFunction",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@1:1:15:40",
+    "from": "Frm3:emptyFunction",
+    "curr": "Global"
+  },
+  {
+    "typ": "Get",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@15:7:15:37",
+    "from": "FunNon:7:thatReturnsFalse"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@15:7:15:39"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under2.js@15:7:15:39",
+    "ret": null
+  }
+]

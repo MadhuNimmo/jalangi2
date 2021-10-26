@@ -1,0 +1,60 @@
+[
+  {
+    "typ": "Create",
+    "funName": "bar",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@5:1:7:2"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@1:2:9:2",
+    "to": "Frm7:bar"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@1:2:9:2",
+    "from": "Frm7:bar",
+    "curr": "Frm7",
+    "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@1:2:9:2"
+  },
+  {
+    "typ": "Put",
+    "funName": "bar",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@2:1:4:2",
+    "to": "0"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@2:1:4:2",
+    "to": "Frm15:x"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@2:1:4:2",
+    "from": "Frm15:x",
+    "curr": "Frm15",
+    "eloc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@2:1:4:2"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "bar",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@3:16:3:29"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "bar",
+    "identity": "FunNon:11",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@3:16:3:29",
+    "ret": null
+  }
+]

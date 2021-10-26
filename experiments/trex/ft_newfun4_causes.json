@@ -1,0 +1,28 @@
+[
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun4.js@1:8-58",
+    "destination": "Function (Native)",
+    "reasons": "Calls to unmodelled native functions"
+  },
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun4.js@1:8-60",
+    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun4.js@1:8-58",
+    "reasons": [
+      "Function Constructor Involved: Ret(Func(Function (Native))) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun4.js@1:8-60)"
+    ]
+  },
+  {
+    "source": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun4.js@1:8-58",
+    "destination": "Function (Native)",
+    "reasons": "Calls to unmodelled native functions"
+  },
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun4.js@2:62-65",
+    "destination": "evalIndirect:evalIndirect(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun4.js@1:9:1:59",
+    "reasons": [
+      "Function Constructor Involved: Ret(Func(Function (Native))) and -3",
+      "Eval via New Function: Ret(Func(evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun4.js@1:8-58)) and Prop(x)",
+      "Dynamic Property Access between: Prop(x) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun4.js@2:62-65)"
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+something
+'global' (example3.js@7:1:7:9) -> 'anon' (example3.js@1:14:5:2)
+'anon' (example3.js@2:16:4:13) -> 'anon' (example3.js@2:17:4:10)
+'anon' (example3.js@3:13:3:37) -> 'bound consoleCall' (Native)

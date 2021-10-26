@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction2()">Load new document2</button>
+<button onclick="myFunction()">Load new document</button>
+
+<script>
+function myFunction() {
+  location.assign("file:///tmp/xssSinks/xss_locassign.html");
+}
+function myFunction2() {
+  var x = [].push(1)
+}
+
+</script>
+
+</body>
+</html>

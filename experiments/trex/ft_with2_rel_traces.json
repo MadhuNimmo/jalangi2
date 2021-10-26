@@ -1,0 +1,48 @@
+[
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with2.js@3:83-124",
+    "dest": "Function (Native)",
+    "trace": [
+      "Calls to unmodelled native functions"
+    ]
+  },
+  {
+    "src": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with2.js@6:167-177",
+    "dest": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with2.js@3:83-124",
+    "trace": [
+      {
+        "typ": "InvokeReturn",
+        "funName": "Function",
+        "identity": "FunNat:13",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with2.js@3:83-124",
+        "ret": [
+          {
+            "retId": "FunNon:19",
+            "retName": "anon",
+            "retLoc": "None"
+          }
+        ]
+      },
+      {
+        "typ": "Put",
+        "funName": "anon",
+        "identity": "FunNon:19",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with2.js@3:63-125",
+        "to": "getlog"
+      },
+      {
+        "typ": "Get",
+        "funName": "anon",
+        "identity": "FunNon:19",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with2.js@6:167-175",
+        "from": "getlog"
+      },
+      {
+        "typ": "InvokeCall",
+        "funName": "anon",
+        "identity": "FunNon:19",
+        "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with2.js@6:167-177"
+      }
+    ]
+  }
+]

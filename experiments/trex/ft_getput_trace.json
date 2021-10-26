@@ -1,0 +1,42 @@
+[
+  {
+    "typ": "Get",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_getput.js@12:17:12:22",
+    "from": [
+      "foo|bar",
+      "foo"
+    ]
+  },
+  {
+    "typ": "Get",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_getput.js@14:17:14:22",
+    "from": [
+      "foo|bar",
+      "bar"
+    ]
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_getput.js@15:9:15:18",
+    "to": [
+      "length|name|arguments|caller|prototype|*J$SID*|*J$IID*|*J$F*|*J$O*|*J$A*|bar",
+      "bar"
+    ]
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_getput.js@16:9:16:18",
+    "to": [
+      "foo",
+      "foo"
+    ]
+  }
+]

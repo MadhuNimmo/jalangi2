@@ -1,0 +1,16 @@
+[
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest.js@2:29-55",
+    "destination": "Function (Native)",
+    "reasons": "Calls to unmodelled native functions"
+  },
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest.js@5:108-123",
+    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest.js@2:29-55",
+    "reasons": [
+      "Function Constructor Involved: Ret(Func(Function (Native))) and Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest.js@1:1-125, [x])",
+      "Path found between: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest.js@1:1-125, [x]) and Prop(xyz)",
+      "Dynamic Property Access between: Prop(xyz) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_evaltest.js@5:108-123)"
+    ]
+  }
+]

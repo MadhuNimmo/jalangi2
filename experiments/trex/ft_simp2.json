@@ -1,0 +1,43 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp2.js@1:2:7:2)"
+  },
+  {
+    "typ": "Create",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "(ft_simp2.js@1:13:3:6)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "(ft_simp2.js@1:2:7:2)",
+    "to": "Frm7:foo"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "(ft_simp2.js@1:2:7:2)",
+    "from": "Frm7:foo",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "(ft_simp2.js@6:1:6:6)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp2.js@1:1:7:5)",
+    "ret": null
+  }
+]

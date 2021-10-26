@@ -1,0 +1,113 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp3.js@1:2:10:2)"
+  },
+  {
+    "typ": "Create",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "(ft_simp3.js@1:13:3:2)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "(ft_simp3.js@1:2:10:2)",
+    "to": "Frm7:foo"
+  },
+  {
+    "typ": "Create",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@4:1:6:2)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@1:2:10:2)",
+    "to": "Frm7:bar"
+  },
+  {
+    "typ": "Read",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "(ft_simp3.js@1:2:10:2)",
+    "from": "Frm7:foo",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@1:2:10:2)",
+    "from": "Frm7:bar",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@1:13:3:2)",
+    "to": "Frm11:quote"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@1:13:3:2)",
+    "from": "Frm11:quote",
+    "curr": "Frm11"
+  },
+  {
+    "typ": "Return",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@2:16:2:21)"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "(ft_simp3.js@8:9:8:17)",
+    "ret": [
+      {
+        "retId": "FunNon:9",
+        "retName": "bar",
+        "retLoc": "(ft_simp3.js@1:13:3:2)"
+      }
+    ]
+  },
+  {
+    "typ": "Write",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@8:9:8:17)",
+    "to": "Frm7:x"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@1:2:10:2)",
+    "from": "Frm7:x",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@9:1:9:4)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(ft_simp3.js@1:1:10:5)",
+    "ret": null
+  }
+]

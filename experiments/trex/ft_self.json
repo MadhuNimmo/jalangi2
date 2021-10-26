@@ -1,0 +1,42 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(ft_self.js@1:2:6:6)"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "(ft_self.js@2:18:4:10)"
+  },
+  {
+    "typ": "Write",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "(ft_self.js@2:18:4:10)",
+    "to": "bar"
+  },
+  {
+    "typ": "Read",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "(ft_self.js@5:9:5:12)",
+    "from": "bar"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "(ft_self.js@5:9:5:14)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(ft_self.js@1:2:6:8)",
+    "ret": null
+  }
+]

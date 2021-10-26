@@ -1,0 +1,20 @@
+[
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@6:132-140",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@4:73-93",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@4:73-93) and Prop(xyz)",
+      "Dynamic Property Access between: Prop(xyz) and Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@1:1-215,render",
+      "Source not found: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@1:1-215,render"
+    ]
+  },
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@8:181-189",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@4:73-93",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@4:73-93) and Prop(xyz)",
+      "Dynamic Property Access between: Prop(xyz) and LexVar(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@1, render)",
+      "Path found between: LexVar(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@1, render) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_render2.js@8:181-189)"
+    ]
+  }
+]

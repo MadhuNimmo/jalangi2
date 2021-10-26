@@ -1,0 +1,14 @@
+foo called
+foo2 called
+foo3 called
+foo called
+foo2 called
+foo3 called
+'global' (example5.js@10:1:10:6) -> 'foo' (example5.js@1:1:9:4)
+'foo' (example5.js@2:5:2:30) -> 'bound consoleCall' (Native)
+'foo' (example5.js@3:12:8:8) -> 'foo2' (example5.js@3:12:8:6)
+'foo2' (example5.js@4:7:4:33) -> 'bound consoleCall' (Native)
+'global' (example5.js@10:1:10:8) -> 'foo3' (example5.js@5:14:7:8)
+'foo3' (example5.js@6:9:6:35) -> 'bound consoleCall' (Native)
+'global' (example5.js@11:10:11:15) -> 'foo' (example5.js@1:1:9:4)
+'global' (example5.js@12:1:12:7) -> 'foo3' (example5.js@5:14:7:8)

@@ -1,0 +1,2 @@
+'global' (example4.js@2:9:2:45) -> 'map' (Native)
+'map' (Native) -> 'anon' (example4.js@2:15:2:44)

@@ -1,0 +1,23 @@
+[
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_propvar.js@4:60-84",
+    "destination": "Function (Native)",
+    "reasons": "Calls to unmodelled native functions"
+  },
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_propvar.js@8:146-149",
+    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_propvar.js@4:60-84",
+    "reasons": [
+      "Function Constructor Involved: Ret(Func(Function (Native))) and ",
+      "Source not found: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_propvar.js@1:1-238,x"
+    ]
+  },
+  {
+    "source": "call (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_propvar.js@10:201-213]",
+    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_propvar.js@4:60-84",
+    "reasons": [
+      "Function Constructor Involved: Ret(Func(Function (Native))) and LexVar(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_propvar.js@1, x)",
+      "Path found between: LexVar(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_propvar.js@1, x) and ReflectiveCallee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_propvar.js@10:201-213)"
+    ]
+  }
+]

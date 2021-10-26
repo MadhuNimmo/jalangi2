@@ -1,0 +1,8 @@
+{
+  "example.js@11": [
+    "foo@1"
+  ],
+  "example.js@14": [
+    "bar@5"
+  ]
+}

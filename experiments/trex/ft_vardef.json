@@ -1,0 +1,85 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:1:2:6:2)"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "113:1",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:1:1:6:5)"
+  },
+  {
+    "typ": "Create",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:2:9:2:35)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:1:2:6:2)",
+    "to": "Frm7:bar"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:1:2:6:2)",
+    "from": "Frm7:bar",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "Write",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:3:17:3:20)",
+    "to": "Frm7:x"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:1:2:6:2)",
+    "from": "Frm7:x",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "Write",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:4:17:4:18)",
+    "to": "Frm7:y"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:1:2:6:2)",
+    "from": "Frm7:y",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "bar",
+    "identity": "25:1",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:5:9:5:12)"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "bar",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:5:9:5:12)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:3",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_vardef.js:1:1:6:5)",
+    "ret": null
+  }
+]

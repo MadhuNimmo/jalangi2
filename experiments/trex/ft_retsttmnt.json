@@ -1,0 +1,85 @@
+[
+  {
+    "typ": "Create",
+    "funName": "x",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:1:1:3:2)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "x",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:1:1:9:9)",
+    "to": "Frm3:x"
+  },
+  {
+    "typ": "Create",
+    "funName": "y",
+    "identity": "FunNon:7",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:4:1:8:2)"
+  },
+  {
+    "typ": "Declare",
+    "funName": "y",
+    "identity": "FunNon:7",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:1:1:9:9)",
+    "to": "Frm3:y"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "y",
+    "identity": "FunNon:7",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:1:1:9:9)",
+    "from": "Frm3:y",
+    "curr": "Global"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "y",
+    "identity": "FunNon:7",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:9:1:9:9)"
+  },
+  {
+    "typ": "LexRead",
+    "funName": "x",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js)",
+    "from": "Frm3:x",
+    "curr": "Frm9"
+  },
+  {
+    "typ": "Write",
+    "funName": "x",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:6:20:6:36)",
+    "to": "Frm9:next"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "x",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:4:1:8:2)",
+    "from": "Frm9:next",
+    "curr": "Frm9"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "x",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:7:16:7:22)"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "x",
+    "identity": "FunNon:5",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:7:16:7:22)",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "y",
+    "identity": "FunNon:7",
+    "loc": "(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_retsttmnt.js:9:1:9:9)",
+    "ret": null
+  }
+]

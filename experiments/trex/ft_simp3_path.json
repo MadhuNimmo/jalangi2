@@ -1,0 +1,52 @@
+[
+  {
+    "typ": "Create",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@4:57-96)"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@1:1-122)",
+    "from": "Frm7:bar",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@1:12-56)",
+    "from": "Frm11:quote",
+    "curr": "Frm11"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "(ft_simp3.js@8:106-114)",
+    "ret": [
+      {
+        "retId": "FunNon:9",
+        "retName": "bar",
+        "retLoc": "(ft_simp3.js@1:13:3:2)"
+      }
+    ]
+  },
+  {
+    "typ": "Read",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@1:1-122)",
+    "from": "Frm7:x",
+    "curr": "Frm7"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "bar",
+    "identity": "FunNon:9",
+    "loc": "(ft_simp3.js@9:116-119)",
+    "ret": null
+  }
+]

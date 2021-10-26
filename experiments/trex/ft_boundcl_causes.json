@@ -1,0 +1,37 @@
+[
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309",
+    "destination": "bound func (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309]",
+    "reasons": "Calls to unmodelled native functions"
+  },
+  {
+    "source": "bound func (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@13:299-309]",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@9:173-232",
+    "reasons": "Calls to bounded functions"
+  },
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@14:319-332",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@4:85-145",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@4:85-145) and Prop(fullName)",
+      "Calls to bounded functions",
+      "Calls to bounded functions",
+      "Path found between: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@1:1-407, [newFullName]) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@14:319-332)"
+    ]
+  },
+  {
+    "source": "call (Native) [/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@15:361-380]",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@9:173-232",
+    "reasons": "Multiple levels of Native functionality involved"
+  },
+  {
+    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@16:390-404",
+    "destination": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@4:85-145",
+    "reasons": [
+      "Path found between: Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@4:85-145) and Prop(fullName)",
+      "Calls to bounded functions",
+      "Calls to bounded functions",
+      "Path found between: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@1:1-407, [newFullName2]) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_boundcl.js@16:390-404)"
+    ]
+  }
+]

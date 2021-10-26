@@ -1,0 +1,749 @@
+{
+  "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@1:0-19792": {
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@1:0-19792": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@30:902-968": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@34:971-1074": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@38:1077-1170": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@42:1173-1250": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@46:1253-1340": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@50:1343-1440": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@54:1443-1567": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@58:1570-1667": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@62:1670-1794": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@66:1797-1887": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@70:1890-1974": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@78:2196-3626": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@145:3877-3910": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@147:3939-4536": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@183:4960-10974": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@456:10977-11045": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@468:11359-14224": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@583:14540-14717": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@602:14967-16641": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@677:16887-16916": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@679:16943-17201": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@702:17498-17523": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@704:17548-18911": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@776:18914-18978": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@799:19493-19518": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/prologue.js@801:19543-19752": [
+      "Function (Native)"
+    ]
+  },
+  "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@1:0-18334": {
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@1:0-18334": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@11:562-573": [],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@13:576-647": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@17:650-744": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@21:747-2513": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@99:2515-3806": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@138:3809-3906": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@140:3909-4001": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@142:4004-4092": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@146:4095-4211": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@150:4214-4304": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@154:4306-5415": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@192:5417-5547": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@195:5549-5653": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@198:5655-5777": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@201:5779-5891": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@204:5893-6003": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@207:6005-6109": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@212:6113-6178": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@216:6180-6392": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@226:6394-6903": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@245:6905-7237": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@261:7241-7879": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@281:7881-8012": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@284:8014-8098": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@287:8100-8167": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@290:8170-8246": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@294:8249-8356": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@301:8410-8424": [
+      "Location (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@304:8475-8496": [
+      "DOMHTMLDocument (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@307:8543-8558": [
+      "DOMWindow (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@309:8577-8589": [],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@314:8669-8681": [],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@315:8700-8712": [],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@320:8812-8826": [
+      "Referrer (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@321:8828-8892": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@323:8893-8946": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@328:9041-9053": [
+      "Cookie (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@330:9056-9136": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@354:9566-9607": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@364:9825-9838": [
+      "DOJOObj (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@370:9903-11062": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@410:11065-11173": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@413:11175-11277": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@416:11279-11399": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@419:11401-11511": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@422:11513-11631": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@426:11634-11701": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@429:11704-11751": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@433:11754-11853": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@437:11856-11953": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@441:11956-13433": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@490:13506-14100": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@511:14103-14168": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@512:14207-14759": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@525:14782-16789": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@585:16791-17016": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@595:17018-17955": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@642:17958-18001": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@643:18003-18122": [
+      "Function (Native)"
+    ],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@648:18170-18191": [],
+    "file:/Users/madhurimachakraborty/.m2/repository/com/ibm/wala/com.ibm.wala.cast.js/1.5.6-SNAPSHOT/com.ibm.wala.cast.js-1.5.6-SNAPSHOT.jar!/preamble.js@649:18194-18227": [
+      "xhr_onreadystatechange (Native)"
+    ]
+  },
+  "Location (Native)": {
+    "Location (Native)": [
+      "Function (Native)"
+    ]
+  },
+  "Function (Native)": {},
+  "DOMHTMLElement (Native)": {
+    "DOMHTMLElement (Native)": [
+      "DOMElement (Native)",
+      "Function (Native)"
+    ]
+  },
+  "XMLHttpRequest (Native)": {
+    "XMLHttpRequest (Native)": [
+      "DOMNode (Native)",
+      "Function (Native)"
+    ]
+  },
+  "DOJOObj (Native)": {
+    "DOJOObj (Native)": [
+      "Function (Native)"
+    ]
+  },
+  "DOMWindow (Native)": {
+    "DOMWindow (Native)": [
+      "Function (Native)"
+    ]
+  },
+  "DOMHTMLTableElement (Native)": {
+    "DOMHTMLTableElement (Native)": [
+      "DOMHTMLElement (Native)",
+      "Function (Native)"
+    ]
+  },
+  "Referrer (Native)": {
+    "Referrer (Native)": [
+      "Function (Native)"
+    ]
+  },
+  "NamedNodeList (Native)": {
+    "NamedNodeList (Native)": [
+      "DOMElement (Native)",
+      "Function (Native)"
+    ]
+  },
+  "DOMHTMLFormElement (Native)": {
+    "DOMHTMLFormElement (Native)": [
+      "DOMHTMLElement (Native)",
+      "NamedNodeList (Native)",
+      "Function (Native)"
+    ]
+  },
+  "DOMNode (Native)": {
+    "DOMNode (Native)": [
+      "NamedNodeList (Native)",
+      "Function (Native)"
+    ]
+  },
+  "ActiveXObject (Native)": {
+    "ActiveXObject (Native)": [
+      "Function (Native)"
+    ]
+  },
+  "DOMDocument (Native)": {
+    "DOMDocument (Native)": [
+      "DOMNode (Native)",
+      "Function (Native)"
+    ]
+  },
+  "Cookie (Native)": {
+    "Cookie (Native)": [
+      "Function (Native)"
+    ]
+  },
+  "DOMHTMLGenericElement (Native)": {
+    "DOMHTMLGenericElement (Native)": [
+      "DOMHTMLElement (Native)",
+      "loadFile (Native)",
+      "Function (Native)"
+    ]
+  },
+  "DOMElement (Native)": {
+    "DOMElement (Native)": [
+      "DOMNode (Native)",
+      "ElementStyle (Native)",
+      "Function (Native)"
+    ]
+  },
+  "Document_prototype_getElementsByTagName (Native)": {
+    "Document_prototype_getElementsByTagName (Native)": [
+      "DOMHTMLGenericElement (Native)"
+    ]
+  },
+  "checkAndIncrease (Native)": {
+    "checkAndIncrease (Native)": []
+  },
+  "DOMHTMLDocument (Native)": {
+    "DOMHTMLDocument (Native)": [
+      "DOMDocument (Native)",
+      "HTMLBody (Native)"
+    ]
+  },
+  "String_prototype_split (Native)": {
+    "String_prototype_split (Native)": []
+  },
+  "String_prototype_match (Native)": {
+    "String_prototype_match (Native)": []
+  },
+  "Document_prototype_getElementById (Native)": {
+    "Document_prototype_getElementById (Native)": [
+      "DOMHTMLGenericElement (Native)"
+    ]
+  },
+  "Array_prototype_slice (Native)": {
+    "Array_prototype_slice (Native)": []
+  },
+  "Array_prototype_concat (Native)": {
+    "Array_prototype_concat (Native)": []
+  },
+  "Element_prototype_getElementsByTagName (Native)": {
+    "Element_prototype_getElementsByTagName (Native)": [
+      "DOMHTMLGenericElement (Native)"
+    ]
+  },
+  "xhr_getResponseHeader (Native)": {
+    "xhr_getResponseHeader (Native)": []
+  },
+  "Location_to_string (Native)": {
+    "Location_to_string (Native)": []
+  },
+  "Image (Native)": {
+    "Image (Native)": []
+  },
+  "unescape (Native)": {
+    "unescape (Native)": []
+  },
+  "preamble.js@8985 (Native)": {
+    "preamble.js@8985 (Native)": []
+  },
+  "encodeURIComponent (Native)": {
+    "encodeURIComponent (Native)": []
+  },
+  "String_prototype_charAt (Native)": {
+    "String_prototype_charAt (Native)": []
+  },
+  "String_prototype_toLocaleLowerCase (Native)": {
+    "String_prototype_toLocaleLowerCase (Native)": []
+  },
+  "prompt (Native)": {
+    "prompt (Native)": []
+  },
+  "encodeURI (Native)": {
+    "encodeURI (Native)": []
+  },
+  "preamble.js@8754 (Native)": {
+    "preamble.js@8754 (Native)": []
+  },
+  "CSS2Properties (Native)": {
+    "CSS2Properties (Native)": []
+  },
+  "preamble.js@14065 (Native)": {
+    "preamble.js@14065 (Native)": []
+  },
+  "HTMLBody (Native)": {
+    "HTMLBody (Native)": []
+  },
+  "Error (Native)": {
+    "Error (Native)": []
+  },
+  "EvalError (Native)": {
+    "EvalError (Native)": []
+  },
+  "escape (Native)": {
+    "escape (Native)": []
+  },
+  "String_prototype_toLowerCase (Native)": {
+    "String_prototype_toLowerCase (Native)": []
+  },
+  "String_prototype_trim (Native)": {
+    "String_prototype_trim (Native)": []
+  },
+  "xhr_getAllResponseHeaders (Native)": {
+    "xhr_getAllResponseHeaders (Native)": []
+  },
+  "createExpression (Native)": {
+    "createExpression (Native)": []
+  },
+  "String_prototype_substr (Native)": {
+    "String_prototype_substr (Native)": []
+  },
+  "String_prototype_anchor (Native)": {
+    "String_prototype_anchor (Native)": []
+  },
+  "String_prototype_substring (Native)": {
+    "String_prototype_substring (Native)": []
+  },
+  "ElementStyle (Native)": {
+    "ElementStyle (Native)": []
+  },
+  "String_prototype_toLocaleUpperCase (Native)": {
+    "String_prototype_toLocaleUpperCase (Native)": []
+  },
+  "decodeURI (Native)": {
+    "decodeURI (Native)": []
+  },
+  "decodeURIComponent (Native)": {
+    "decodeURIComponent (Native)": []
+  },
+  "String_prototype_replace (Native)": {
+    "String_prototype_replace (Native)": [
+      "Function_prototype_call (Native) [String_prototype_replace (Native)]"
+    ]
+  },
+  "String_prototype_toUpperCase (Native)": {
+    "String_prototype_toUpperCase (Native)": []
+  },
+  "String_prototype_indexOf (Native)": {
+    "String_prototype_indexOf (Native)": []
+  },
+  "String_prototype_charCodeAt (Native)": {
+    "String_prototype_charCodeAt (Native)": []
+  },
+  "Array_prototype_join (Native)": {
+    "Array_prototype_join (Native)": [
+      "Location_to_string (Native)",
+      "preamble.js@8985 (Native)",
+      "preamble.js@8754 (Native)",
+      "Object_prototype_toString (Native)",
+      "Function_prototype_toString (Native)",
+      "Array_prototype_toString (Native)",
+      "String_prototype_toString (Native)",
+      "Number_prototype_toString (Native)",
+      "Array_prototype_concat (Native)",
+      "String_prototype_concat (Native)"
+    ]
+  },
+  "Object_prototype_toString (Native)": {},
+  "Function_prototype_toString (Native)": {},
+  "Array_prototype_toString (Native)": {
+    "Array_prototype_toString (Native)": [
+      "Array_prototype_join (Native)"
+    ]
+  },
+  "String_prototype_toString (Native)": {},
+  "Number_prototype_toString (Native)": {},
+  "Node_prototype_replaceChild (Native)": {
+    "Node_prototype_replaceChild (Native)": [
+      "String_prototype_replace (Native)",
+      "Location_replace (Native)",
+      "replace (Native)"
+    ]
+  },
+  "Location_replace (Native)": {},
+  "replace (Native)": {
+    "replace (Native)": [
+      "getIndex (Native)"
+    ]
+  },
+  "getAttribute (Native)": {
+    "getAttribute (Native)": [
+      "preamble.js@14065 (Native)",
+      "getAttribute (Native)",
+      "Element_prototype_getAttribute (Native)",
+      "_get (Native)"
+    ]
+  },
+  "Element_prototype_getAttribute (Native)": {},
+  "setAttribute (Native)": {
+    "setAttribute (Native)": [
+      "setAttribute (Native)",
+      "Element_prototype_setAttribute (Native)"
+    ]
+  },
+  "Element_prototype_setAttribute (Native)": {},
+  "removeAttribute (Native)": {
+    "removeAttribute (Native)": [
+      "removeAttribute (Native)",
+      "Element_prototype_removeAttribute (Native)",
+      "remove (Native)"
+    ]
+  },
+  "Element_prototype_removeAttribute (Native)": {},
+  "xhr_orsc_handler (Native)": {
+    "xhr_orsc_handler (Native)": [
+      "xhr_onreadystatechange (Native)"
+    ]
+  },
+  "xhr_onreadystatechange (Native)": {},
+  "xhr_send (Native)": {
+    "xhr_send (Native)": [
+      "xhr_orsc_handler (Native)",
+      "notePostParameters (Native)"
+    ]
+  },
+  "xhr_open (Native)": {
+    "xhr_open (Native)": [
+      "noteURL (Native)",
+      "xhr_orsc_handler (Native)"
+    ]
+  },
+  "xhr_abort (Native)": {
+    "xhr_abort (Native)": [
+      "xhr_orsc_handler (Native)"
+    ]
+  },
+  "_get (Native)": {},
+  "Node_prototype_appendChild (Native)": {
+    "Node_prototype_appendChild (Native)": [
+      "add (Native)"
+    ]
+  },
+  "add (Native)": {
+    "add (Native)": [
+      "checkAndIncrease (Native)"
+    ]
+  },
+  "remove (Native)": {
+    "remove (Native)": [
+      "getIndex (Native)"
+    ]
+  },
+  "Node_prototype_removeChild (Native)": {
+    "Node_prototype_removeChild (Native)": [
+      "remove (Native)"
+    ]
+  },
+  "Node_prototype_insertBefore (Native)": {
+    "Node_prototype_insertBefore (Native)": [
+      "Node_prototype_insertBefore (Native)",
+      "insertBefore (Native)"
+    ]
+  },
+  "insertBefore (Native)": {
+    "insertBefore (Native)": [
+      "getIndex (Native)",
+      "checkAndIncrease (Native)"
+    ]
+  },
+  "collect (Native)": {
+    "collect (Native)": [
+      "collect (Native)",
+      "Array_prototype_push (Native)"
+    ]
+  },
+  "Array_prototype_toLocaleString (Native)": {
+    "Array_prototype_toLocaleString (Native)": [
+      "Array_prototype_toLocaleString (Native)",
+      "Object_prototype_toLocaleString (Native)",
+      "Array_prototype_concat (Native)",
+      "String_prototype_concat (Native)"
+    ]
+  },
+  "Object_prototype_toLocaleString (Native)": {},
+  "Date_now (Native)": {
+    "Date_now (Native)": [
+      "Date (Native)",
+      "valueOf (Native)",
+      "stringValueOf (Native)"
+    ]
+  },
+  "valueOf (Native)": {},
+  "stringValueOf (Native)": {},
+  "Array_prototype_some (Native)": {
+    "Array_prototype_some (Native)": [
+      "Function_prototype_call (Native) [Array_prototype_some (Native)]"
+    ]
+  },
+  "Function_prototype_call (Native) [Array_prototype_some (Native)]": {
+    "Function_prototype_call (Native) [Array_prototype_some (Native)]": []
+  },
+  "Array_prototype_filter (Native)": {
+    "Array_prototype_filter (Native)": [
+      "Function_prototype_call (Native) [Array_prototype_filter (Native)]"
+    ]
+  },
+  "Function_prototype_call (Native) [Array_prototype_filter (Native)]": {
+    "Function_prototype_call (Native) [Array_prototype_filter (Native)]": []
+  },
+  "Array_prototype_reduce (Native)": {
+    "Array_prototype_reduce (Native)": [
+      "Function_prototype_call (Native) [Array_prototype_reduce (Native)]"
+    ]
+  },
+  "Function_prototype_call (Native) [Array_prototype_reduce (Native)]": {
+    "Function_prototype_call (Native) [Array_prototype_reduce (Native)]": []
+  },
+  "Array_prototype_forEach (Native)": {
+    "Array_prototype_forEach (Native)": [
+      "Function_prototype_call (Native) [Array_prototype_forEach (Native)]"
+    ]
+  },
+  "Function_prototype_call (Native) [Array_prototype_forEach (Native)]": {
+    "Function_prototype_call (Native) [Array_prototype_forEach (Native)]": []
+  },
+  "Array_prototype_reduceRight (Native)": {
+    "Array_prototype_reduceRight (Native)": [
+      "Function_prototype_call (Native) [Array_prototype_reduceRight (Native)]"
+    ]
+  },
+  "Function_prototype_call (Native) [Array_prototype_reduceRight (Native)]": {
+    "Function_prototype_call (Native) [Array_prototype_reduceRight (Native)]": []
+  },
+  "Array_prototype_map (Native)": {
+    "Array_prototype_map (Native)": [
+      "Function_prototype_call (Native) [Array_prototype_map (Native)]"
+    ]
+  },
+  "Function_prototype_call (Native) [Array_prototype_map (Native)]": {
+    "Function_prototype_call (Native) [Array_prototype_map (Native)]": []
+  },
+  "Function_prototype_call (Native) [String_prototype_replace (Native)]": {
+    "Function_prototype_call (Native) [String_prototype_replace (Native)]": []
+  },
+  "Array_prototype_every (Native)": {
+    "Array_prototype_every (Native)": [
+      "Function_prototype_call (Native) [Array_prototype_every (Native)]"
+    ]
+  },
+  "Function_prototype_call (Native) [Array_prototype_every (Native)]": {
+    "Function_prototype_call (Native) [Array_prototype_every (Native)]": []
+  },
+  "String_prototype_concat (Native)": {},
+  "Array_prototype_push (Native)": {},
+  "Function_prototype_bind (Native)": {
+    "Function_prototype_bind (Native)": [
+      "Array_prototype_shift (Native)"
+    ]
+  },
+  "Array_prototype_shift (Native)": {},
+  "Function_prototype_call (Native)": {
+    "Function_prototype_call (Native)": [
+      "Array_prototype_shift (Native)"
+    ]
+  },
+  "Array_prototype_splice (Native)": {
+    "Array_prototype_splice (Native)": [
+      "Array_prototype_slice (Native)",
+      "String_prototype_slice (Native)"
+    ]
+  },
+  "String_prototype_slice (Native)": {
+    "String_prototype_slice (Native)": [
+      "String_prototype_substring (Native)"
+    ]
+  },
+  "loadFile (Native)": {},
+  "getIndex (Native)": {},
+  "noteURL (Native)": {},
+  "window_open (Native)": {
+    "window_open (Native)": [
+      "noteURL (Native)"
+    ]
+  },
+  "notePostParameters (Native)": {},
+  "Document_prototype_createDocumentFragment (Native)": {
+    "Document_prototype_createDocumentFragment (Native)": [
+      "DOMDocument (Native)"
+    ]
+  },
+  "Window_prototype_getComputedStyle (Native)": {
+    "Window_prototype_getComputedStyle (Native)": [
+      "CSS2Properties (Native)"
+    ]
+  },
+  "_item (Native)": {
+    "_item (Native)": [
+      "DOMElement (Native)"
+    ]
+  },
+  "Document_prototype_createTextNode (Native)": {
+    "Document_prototype_createTextNode (Native)": [
+      "DOMHTMLGenericElement (Native)"
+    ]
+  },
+  "Document_prototype_createElement (Native)": {
+    "Document_prototype_createElement (Native)": [
+      "DOMHTMLGenericElement (Native)"
+    ]
+  },
+  "preamble.js@13989 (Native)": {
+    "preamble.js@13989 (Native)": [
+      "CanvasRenderingContext2D (Native)"
+    ]
+  },
+  "CanvasRenderingContext2D (Native)": {},
+  "Date (Native)": {}
+}
