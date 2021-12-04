@@ -1,6 +1,7 @@
 var Graph = require('./Graph.js');
 const path = require('path');
 var regex = /(?!\[)((\S+)\@([0-9]+\:[0-9]+\:[0-9]+\:[0-9]+))/gi
+var hrefRegex =  /href\=\"\S*\(/gi
 
 const fs = require('fs');
 var filenames = [];
@@ -15,10 +16,8 @@ function main(typ) {
         if(typ==="funTrace"){
                 for (var item of FlowRead) {
                                 if (item["typ"]=== "LexRead"){
-                                                //console.log(item)
                                                 item["loc"] = formatFlowRead(item["loc"],true)
                                                 item["eloc"] = formatFlowRead(item["eloc"],false)
-                                                //console.log(item)
                                 }
                                 else {
                                         
@@ -38,6 +37,9 @@ function main(typ) {
 function formatFlowRead(input,lexRead) {
         // Replacing the Row-Column format to Character-Spaces format
         input = input.replace(/_orig_/g, '')
+        if(input.includes("href=\"javascript:iidToDisplayCodeLocation:")){
+                input = input.replace(hrefRegex,"")
+        }
         regex_pattern = regex.exec(input);
         regex.lastIndex=0;
         if(regex_pattern!==null){
@@ -51,6 +53,11 @@ function formatFlowRead(input,lexRead) {
                 }
                 if(path.dirname(regex_pattern[2]).split(path.sep)[1]==="tmp"){
                         var intpath = regex_pattern[2].split(path.sep).slice(2).join(path.sep)
+                        var fileName = path.join(fileParentDir,intpath);
+                        filePath = fileName
+                
+                }else if(path.dirname(regex_pattern[2]).split(path.sep)[0]==="cache"){
+                        var intpath = regex_pattern[2]//.split(path.sep).slice(2).join(path.sep)
                         var fileName = path.join(fileParentDir,intpath);
                         filePath = fileName
                 

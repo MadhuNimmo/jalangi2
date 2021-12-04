@@ -1,6 +1,6 @@
 module.exports=function() {
-        const fs = require('fs');
-        var jsonList = JSON.parse('/Users/madhurimachakraborty/Documents/JuiceShop_results/callees.json','utf8');
+        //const fs = require('fs');
+        var jsonList = JSON.parse('/Users/madhurimachakraborty/Documents/StaticResults/optpes/calleeMap.json','utf8');
                  //fs.readFileSync("/Users/madhurimachakraborty/Documents/StaticResults/newfun/callees.json"
                 //"/Users/madhurimachakraborty/Documents/StaticResults/applycall/callees.json",'utf8'));
                 //"/Users/madhurimachakraborty/Documents/todomvcResults_natModPes/todo_angularjs/callees.json", 'utf8'));

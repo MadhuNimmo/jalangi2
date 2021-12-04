@@ -9,8 +9,9 @@ var data = "";
 var root = "/tmp";
 var inputDir = [];
 inputDir.push(process.argv[2]);
+var calleeMap = process.argv[4];
 var astHandler = function() {
-  var jsonList = JSON.parse(fs.readFileSync("/Users/madhurimachakraborty/Documents/todomvcResults_natMod/todo_react2/calleeMap.json",'utf8'));
+  var jsonList = JSON.parse(fs.readFileSync(calleeMap,'utf8'));
   return jsonList
 }
 var options = {

@@ -77,20 +77,15 @@
                 newObj.ret = others;
             }
             else if (typ=="Get" || typ=="Getter"){
-                newObj.from = others[0];
-                newObj.comp = others[1];
+                newObj.from = others;
             }
             else if (typ=="LocRead" || typ=="LexRead"){
                 newObj.from = others[0];
                 newObj.curr = others[1];
                 newObj.eloc = others[2]
             }
-            else if (typ=="Write" || typ=="Declare"){
+            else if (typ=="Write" || typ=="Declare" || typ=="Put" || typ=="Setter"){
                 newObj.to = others;
-            }
-            else if (typ=="Put" || typ=="Setter"){
-                newObj.to = others[0];
-                newObj.comp = others[1];
             }
             output.push(newObj)
           //}
@@ -171,14 +166,14 @@
                         funName = desc.set.name? desc.set.name: "anon"
                         funId= getValue(desc.set)
                         if(lst.indexOf(funId) > -1){
-                            addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),["set",isComputed])
+                            addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),"set")
                             addToTrace("InvokeSetter",funName,funId,getLoc("put",J$.getGlobalIID(iid)))
                         }
                     }else if (typeof val== 'function'){
                             funName = val.name? val.name: "anon"
                             funId= getValue(val)
                             if(lst.indexOf(funId) > -1){
-                                addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),[String(offset),isComputed])
+                                addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),String(offset))
                             }
                         }
                 },
@@ -188,15 +183,14 @@
                         funName = desc.get.name? desc.get.name: "anon"
                         funId=getValue(desc.get)
                         if(lst.indexOf(funId) > -1){
-                            addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),["get",isComputed])
+                            addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),"get")
                             addToTrace("InvokeGetter",funName,funId,getLoc("get",J$.getGlobalIID(iid)))
                         }
                     }else if (typeof val== 'function'){
                             funName = val.name? val.name: "anon"
                             funId= getValue(val)
-                            //|| funId.startsWith("FunNat:")
-                            if(lst.indexOf(funId)> -1 || funId.indexOf("FunNat:") === 0){
-                                addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),[String(offset),isComputed])   
+                            if(lst.indexOf(funId)> -1){
+                                addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),String(offset))   
                             }
 
                     }
@@ -209,7 +203,7 @@
                                 funName= value.name ? value.name : "anon";
                                 funId= getValue(value)
                                 if(lst.indexOf(funId) > -1){
-                                    addToTrace("Put",funName, funId,getLoc("declare",J$.getGlobalIID(iid)),[String(key),"arguments"])
+                                    addToTrace("Put",funName, funId,getLoc("declare",J$.getGlobalIID(iid)),String(key))
                                 }
                             }
                         }
@@ -229,6 +223,7 @@
                         funId = getValue(val)
                         
                         //if(J$.ast_info.indexOf(getLoc("literal",J$.getGlobalIID(iid))) > -1){
+                        console.log(lstKeys,getLoc("literal",J$.getGlobalIID(iid)))
                         if(lstKeys.indexOf(getLoc("literal",J$.getGlobalIID(iid))) > -1){
                                 addToTrace("Create",funName,funId,getLoc("literal",J$.getGlobalIID(iid)),[],true)
                                 lst.push(funId)
@@ -245,7 +240,7 @@
                                     funName= val[key].name ? val[key].name : "anon";
                                     funId= getValue(val[key])
                                     if(lst.indexOf(funId) > -1){
-                                        addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[String(key),null])
+                                        addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),String(key))
                                     }
                                 }
                             }
@@ -259,7 +254,7 @@
                                         funName= value.name ? value.name : "anon";
                                         funId= getValue(value)
                                         if(lst.indexOf(funId) > -1){
-                                            addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[String(key),null])
+                                            addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),String(key))
                                         }
                                     }
                                 }
@@ -314,7 +309,7 @@
                                 funId= getValue(value)
                                 if(lst.indexOf(funId) > -1){
                                     var index = String(base.length+Number(key))
-                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[index,"arguments"])
+                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),index)
                                 }
 
                             }
@@ -327,7 +322,7 @@
                                 funId= getValue(base[key])
                                 if(lst.indexOf(funId) > -1){
                                     var indx = String(Number(key) - 1)
-                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[indx,null])
+                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),indx)
                                 }
 
                             }
@@ -340,7 +335,7 @@
                                 funName= value.name ? value.name : "anon";
                                 funId= getValue(value)
                                 if(lst.indexOf(funId) > -1){
-                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[String(key),null])
+                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),String(key))
                                 }
 
                             }
@@ -351,7 +346,7 @@
                                 funId= getValue(base[key])
                                 var indx = String(Number(key) + args.length)
                                 if(lst.indexOf(funId) > -1){
-                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[indx,null])
+                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),indx)
                                 }
 
                             }
@@ -366,8 +361,7 @@
                         funName = f.name? f.name : "anon"
                         funId= getValue(f,SPECIAL_PROP_IID,SPECIAL_PROP_SID)
                     }
-                    //|| funId.startsWith("FunNat:")
-                    if(lst.indexOf(funId) > -1 || funId.indexOf("FunNat:") === 0 ){
+                    if(lst.indexOf(funId) > -1){
                         addToTrace("InvokeCall",funName,funId,getLoc("invkcll",J$.getGlobalIID(iid)))
                     }
                 },
@@ -404,17 +398,15 @@
                         var lstCaller = lstMap[funId];
                         if(lstCaller){
                             var lstCallees = J$.ast_info[lstCaller]
-                            if(lstCallees){
-                                var lstCalleeInd = lstCallees.indexOf(getLoc("invkretrn",J$.getGlobalIID(iid)))
-                                if(lstCalleeInd > -1 ){
-                                    lstCallees.splice(lstCalleeInd,1);
-                                    if(lstCallees.length==0){
-                                        delete J$.ast_info[lstCaller]
-                                        lstKeys=Object.keys(J$.ast_info)
-                                        lst.splice(lst.indexOf(funId), 1);
-                                    }else{
-                                        J$.ast_info[lstCaller] = lstCallees
-                                    }
+                            var lstCalleeInd = lstCallees.indexOf(getLoc("invkretrn",J$.getGlobalIID(iid)))
+                            if(lstCalleeInd > -1 ){
+                                lstCallees.splice(lstCalleeInd,1);
+                                if(lstCallees.length==0){
+                                    delete J$.ast_info[lstCaller]
+                                    lstKeys=Object.keys(J$.ast_info)
+                                    lst.splice(lst.indexOf(funId), 1);
+                                }else{
+                                    J$.ast_info[lstCaller] = lstCallees
                                 }
                             }
                         }
@@ -429,7 +421,7 @@
                             funName = result.name ? result.name : "anon";
                             funId = getValue(result)
                             if(lst.indexOf(funId) > -1) {
-                                addToTrace("Get",funName, funId, getLoc("invkretrn",J$.getGlobalIID(iid)),[indx,null])
+                                addToTrace("Get",funName, funId, getLoc("invkretrn",J$.getGlobalIID(iid)),indx)
                             }
 
                         }
@@ -495,7 +487,6 @@
                     const json = JSON.stringify(output, null, 2);
                     //console.log(json)
                     filename=(process.argv[1]).replace(/.js$/,"_trace.json");
-                    //console.log(filename)
                     fs.writeFileSync(filename, json, 'utf8',function(err) {
                         if(err) console.log('error', err);
                     });

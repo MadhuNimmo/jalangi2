@@ -1,4 +1,4 @@
-var { processInputs } = require("./preprocess2.js");
+var { processInputs } = require("./preprocess2JShop.js");
 var Graph = require("./Graph.js");
 const path = require("path");
 const clonedeep = require("lodash.clonedeep");
@@ -9,6 +9,7 @@ var DCG = new Graph();
 var SCG = new Graph();
 var patterns = {};
 var editMaps = {};
+var DCGregex = /(?!\[)((\S+)\@([0-9]+)\:([0-9]+\-[0-9]+))/gi;
 
 function main() {
   [DCG, SCG, patterns, editMaps] = processInputs(
@@ -24,6 +25,7 @@ function getEdgeDiff() {
   // Identifying common edges between DCG and SCG
   DCG_keys = [...DCG.getKeys()];
   SCG_keys = [...SCG.getKeys()];
+  //console.log(DCG,SCG)
   var Mis_edges = clonedeep(DCG);
 
   for (var DCG_key of DCG_keys) {
@@ -51,17 +53,8 @@ function getEdgeDiff() {
   patterns = inverse(patterns);
   editMaps = inverse(editMaps);
 
-  var json = JSON.stringify(Mis_edges.getGraph(), null, 2);
-  fs.writeFile(path.join(outPath, "diff.json"), json, "utf8", function (err) {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log(
-        "The dynamic call edges missing from static call graph is saved in: " +
-          path.join(outPath, "diff.json")
-      );
-    }
-  });
+  var valpattern = "";
+  var keypattern = "";
 
   var DCGEditMap = {};
   for (var key of Mis_edges.getKeys()) {
@@ -72,7 +65,7 @@ function getEdgeDiff() {
       } else if (editMaps[value]) {
         valpattern = editMaps[value];
       }
-      if (!(valpattern in DCGEditMap)) {
+      if (!(editMaps[value] in DCGEditMap)) {
         DCGEditMap[valpattern] = [];
       }
       if (key.endsWith("(Native)")) {
@@ -85,10 +78,11 @@ function getEdgeDiff() {
       }
     }
   }
-  var json3 = JSON.stringify(DCGEditMap, null, 2);
+
+  var json = JSON.stringify(Mis_edges.getGraph(), null, 2);
   fs.writeFile(
-    path.join(outPath, "calleeMap.json"),
-    json3,
+    path.join(outPath, "diffLoadOnly.json"),
+    json,
     "utf8",
     function (err) {
       if (err) {
@@ -96,17 +90,27 @@ function getEdgeDiff() {
       } else {
         console.log(
           "The dynamic call edges missing from static call graph is saved in: " +
+            path.join(outPath, "diff.json")
+        );
+      }
+    }
+  );
+  var json2 = JSON.stringify(DCGEditMap, null, 2);
+  fs.writeFile(
+    path.join(outPath, "calleeMap.json"),
+    json2,
+    "utf8",
+    function (err) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(
+          "The calleeMap for missing call edges is saved in: " +
             path.join(outPath, "calleeMap.json")
         );
       }
     }
   );
-  var size3 = 0;
-  for (var key of Object.keys(DCGEditMap)) {
-    var values = DCGEditMap[key];
-    size3 += values.length;
-  }
-  console.log(size3);
 }
 
 function getInputs() {

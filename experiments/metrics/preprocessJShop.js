@@ -3,6 +3,8 @@ const path = require('path');
 var DCGregex = /(?!\[)((\S+)\@([0-9]+\:[0-9]+\:[0-9]+\:[0-9]+))/gi
 var SCGregex = /(?!\[)((\S+)\@([0-9]+)\:([0-9]+\-[0-9]+))/gi
 
+var hrefRegex =  /href\=\"\S*\(/gi
+
 const fs = require('fs');
 var filenames = [];
 var fileData = {};
@@ -17,6 +19,7 @@ var fileIdentifier=""
 var fileParentDir=""
 var patternStore={}
 var EditMapping={}
+var tmpFlag=true;
 
 
 function main() {
@@ -24,10 +27,13 @@ function main() {
         // Identyfing the root folder to express the paths
         fileIdentifier = path.basename(inputDir).split(path.sep).pop()
         fileParentDir = path.dirname(inputDir)
+        if (fileIdentifier=="cache"){
+                tmpFlag=false
+        }
         // Formatting DCG json input
         var DCG = JSON.parse(fs.readFileSync(DCGFilename, 'utf8'));
         var dynCallGraph = {}
-        for (var key of Object.keys(DCG)) {
+        for (var key in DCG) {
                 new_key = formatDCG(key)
                 if(!(new_key in dynCallGraph)){
                         dynCallGraph[new_key] = []
@@ -40,7 +46,7 @@ function main() {
                         }
                 }
         }
-
+        
         const json = JSON.stringify(dynCallGraph, null, 2)
         var filename=(DCGFilename).replace(/.json$/,"_EDIT.json");
         fs.writeFileSync(filename, json, 'utf8',function(err) {
@@ -48,7 +54,7 @@ function main() {
         });
         // Converting json to graph
         dynCallGraphEdit = jsonToGraph(dynCallGraph);
-
+        
         if (metricType == "Metric1" || metricType == "EdgeDiff") { //calling loc -> callee
                 // Converting json to graph
                 var SCG = JSON.parse(fs.readFileSync(SCGFilename, 'utf8'));
@@ -176,9 +182,13 @@ function formatSCG(input) {
         return input;
 }
 function formatDCG(input) {
-        var unEditedInput=input
+        
         // Removing unnecessary information 
+        var unEditedInput=input
         input = input.replace(/_orig_/g, '')
+        if(input.includes("href=\"javascript:iidToDisplayCodeLocation:")){
+                input = input.replace(hrefRegex,"")
+        }
         // Replacing the Row-Column format to Character-Spaces format
         var DCG_pattern = DCGregex.exec(input);
         DCGregex.lastIndex=0;
@@ -191,14 +201,23 @@ function formatDCG(input) {
                         evalString=DCG_pattern[2].split(":")[0]+":"
                         DCG_pattern[2]=DCG_pattern[2].split(":")[1]
                 }
+                
                 if(path.dirname(DCG_pattern[2]).split(path.sep)[1]==="tmp"){
                         var intpath = DCG_pattern[2].split(path.sep).slice(2).join(path.sep)
                         var fileName = path.join(fileParentDir,intpath);
                         filePath = fileName
                 
+                }else if(path.dirname(DCG_pattern[2]).split(path.sep)[0]==="cache"){
+                        var intpath = DCG_pattern[2]//.split(path.sep).slice(2).join(path.sep)
+                        var fileName = path.join(fileParentDir,intpath);
+                        filePath = fileName
                 }else{
-                        fileName=DCG_pattern[2]
-                        filePath=DCG_pattern[2]
+                        for(var filenm of filenames){
+                                if(filenm.endsWith(DCG_pattern[2]) ){
+                                        fileName=filenm
+                                        filePath=filenm
+                                }
+                        }
                 }
                 var fileLoc = DCG_pattern[3];
                 if(filenames.includes(fileName)){  
@@ -219,7 +238,6 @@ function formatDCG(input) {
                                 console.log("DCG Formatting issues :" + input)
                         }
                 }
-
         }
         if(!EditMapping[unEditedInput]){
                 EditMapping[unEditedInput]=input
@@ -300,9 +318,11 @@ function processInputs(DCG,SCG,JSfiles,metric) {
                
                 }else{
                         //optimize this later 
-                        for(var key of Object.keys(patternStore)){
-                                patternStore[key.replace(".js","_orig_.js")] = patternStore[key]
-                                delete patternStore[key]
+                        if(tmpFlag){
+                                for(var key of Object.keys(patternStore)){
+                                        patternStore[key.replace(".js","_orig_.js")] = patternStore[key]
+                                        delete patternStore[key]
+                                }
                         }
                         return [dynCallGraphEdit,statCallGraphEdit,patternStore,EditMapping];
 

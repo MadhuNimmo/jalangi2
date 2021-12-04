@@ -153,12 +153,12 @@
                     var desc = getPropertyDescriptor(base,offset);
                     funName = desc.set.name? desc.set.name: "anon"
                     funId= getValue(desc.set)
-                    addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),"set",isComputed)
+                    addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),"set")
                     addToTrace("InvokeSetter",funName,funId,getLoc("put",J$.getGlobalIID(iid)))
                 }else if (typeof val== 'function'){
                         funName = val.name? val.name: "anon"
                         funId= getValue(val)
-                        addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),offset.toString(),isComputed)
+                        addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),String(offset))
                     }
             },
             getField : function (iid, base, offset, val, isComputed, isOpAssign) {
@@ -166,12 +166,12 @@
                     var desc = getPropertyDescriptor(base,offset);
                     funName = desc.get.name? desc.get.name: "anon"
                     funId=getValue(desc.get)
-                    addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),"get",isComputed)
+                    addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),"get")
                     addToTrace("InvokeGetter",funName,funId,getLoc("get",J$.getGlobalIID(iid)))
                 }else if (typeof val== 'function'){
                         funName = val.name? val.name: "anon"
                         funId= getValue(val)
-                        addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),offset.toString(),isComputed)     
+                        addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),String(offset))     
 
                 }
             },

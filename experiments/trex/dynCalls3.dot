@@ -1,4 +1,0 @@
-digraph G{
-        "Func(definitionLocation)"->"Prop(MyName)";
-        "Prop(MyName)"->"Callee(Calling Location)"  [color="red" style="dashed"]
-}

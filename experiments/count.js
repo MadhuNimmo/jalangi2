@@ -1,6 +1,8 @@
 const fs = require('fs')
 let filePath = process.argv[2];
 let outPath = process.argv[3];
+let oneReasonEdges=0
+let mulReasonEdges=0
 
 
 if (process.argv.length < 3) {
@@ -51,7 +53,7 @@ function reasonInserter(map, reason){
 
 // Function to increment found/missed/total paths on only on top level edges.
 function pathIncrementer(pathStr, role){
-    if(role == "parent"){
+    // if(role == "parent"){
         if(pathStr.includes("Path found") || pathStr.includes("Source and Destination are same")){
             foundPaths += 1
         }else{
@@ -72,7 +74,7 @@ function pathIncrementer(pathStr, role){
             newMaxEdge.paths += 1
         }
         totalPaths += 1
-    }
+    // }
 }
 
 // Function to convert map to object.
@@ -102,12 +104,16 @@ function mapToObj(input){
             edgeCnt = edgeCnt + 1
         }
 
-        const reasons = edge.reasons;
+        var reasons = edge.reasons;
     
         // Begin processing reasons
         if(reasons != null){
             if(typeof(reasons) == "string"){// Reason is a string.
                 // Insert reason into appropriate map.
+                // if(reasons.startsWith("Dynamic Property Access between")){
+                //     reasons = "Dynamic Property Access between"
+                // }
+                reasons = reasons.split(":")[0]
                 reasonInserter(totalReasonMap, reasons)
                 if(role == "parent"){
                     if(!Object.keys(msngReasons).includes(reasons)){
@@ -128,6 +134,8 @@ function mapToObj(input){
 
                     try{
                         reasonDesc = reason.split(":")[0]
+
+
                     }catch(error){// Reason is an interdependent call object.
                         for(interdependentCall in reason){
                             reasonDesc = interdependentCall.split(":")[0]
@@ -179,7 +187,30 @@ function mapToObj(input){
             }
         }
         // End of edge.
-
+        
+        if( !(typeof edge.reasons == "string")){
+            var cnt=0
+            var dyncnt=0
+            var flag=false
+            for(var item of edge.reasons){
+                if(typeof item === 'string'){
+                    if(!item.startsWith("Path found") && !item.startsWith("Source and Destination are same") && item.includes("between")){
+                        cnt+=1
+                    }
+                    if(item.includes("Dynamic Property Access")){
+                        dyncnt+=1
+                        flag=true
+                    }
+                }
+            }
+            if(flag){
+                if(cnt==dyncnt){
+                    oneReasonEdges+=1
+                }else{
+                    mulReasonEdges+=1
+                }
+            }
+        }
         // Check if we have new max edges, except on the first edge as there are no edges to compare it to.
         if(edgeCnt > 1){
             if(newMaxEdge.paths > currentMaxEdge.paths){
@@ -207,7 +238,8 @@ console.log("Interdependent Reasons Count:")
 console.log(childReasonMap)
 console.log("Total Reason Count:")
 console.log(totalReasonMap)
-console.log("Missing Reasons:")
+console.log("Repeated Missing Reasons:")
+
 for(item of Object.keys(msngReasons)){
     if((!item.startsWith("Path found") && !item.startsWith("Source and Destination are same")) && item.includes("between") && msngReasons[item]>5){
         console.log(item +" : "+ msngReasons[item])
@@ -218,7 +250,15 @@ console.log("Edge with maximum no of paths: ")
 console.log(currentMaxEdge)
 console.log("Edge with maximum no of missed paths: ")
 console.log(currentMaxMissedEdge)
+
+console.log("Edges with 1 reason: ")
+console.log(oneReasonEdges)
+console.log("Edges with more than 1 reason: ")
+console.log(mulReasonEdges)
+resultsMap.set("Edge with maximum no of paths",currentMaxEdge);
+resultsMap.set("Edge with maximum no of missed paths",currentMaxMissedEdge);
 var name = outPath.split("/").pop()
+
 fs.writeFile(outPath+"/"+name+"_resultCount.json", JSON.stringify(mapToObj(resultsMap), null, 2), (err) => {
     if(err){
         console.error(err);

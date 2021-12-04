@@ -1,8 +1,0 @@
-Dynamic fuction calls for example2.js consolidated: 
-example2.js defined at 17 calls the following: 
-foo defined at 1
-foo defined at 3 calls the following: 
-foo2 defined at 3
-example2.js defined at 20 calls the following: 
-bar defined at 11
-Number of function calls: 15Number of functions calls: 15

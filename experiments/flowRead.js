@@ -15,7 +15,8 @@ var precReadCreate = {};
 var readIndex = 0;
 var writeIndex = 0;
 var traceIndex = 0;
-
+var callnotfndCnt=0;
+var calleefndlst={}
 
 var funcId = "";
 var output = [];
@@ -55,19 +56,46 @@ function findWith(trace, funID, startSearch, input) {
         return null;     
 }
 function findCallee(trace, input) {
+        if(input in calleefndlst){
+                return calleefndlst[input];
+        }else{
+                var i=0;
+                var list=[];
+                while (i <trace.length) {
+                        //new for href
+                                if (trace[i]["typ"]==="Create" && (trace[i]["loc"] === input || (input.startsWith("href") && trace[i]["loc"].includes(input)))) {
+                                        list.push(trace[i])                          
+                                }
+                        i++;
+                }
+                calleefndlst[input]=list
+                return list;     
+        }       
+}
 
+function findNatCallee(trace, dest,src) {
         var i=0;
         var list=[];
         while (i <trace.length) {
-                        if (trace[i]["typ"]==="Create" && trace[i]["loc"] === input) {
-                                list.push(trace[i])                          
+                //new for href
+                        if(trace[i]["typ"]==="InvokeCall" && (trace[i]["loc"] === src || (src.startsWith("href") && trace[i]["loc"].includes(src)))) {
+                                        list.push(trace[i])                          
                         }
                 i++;
+        }
+        for (fID of list ){
+                var i=0;
+                while (i <trace.length) {
+                                if (trace[i]["typ"]=="Get" && trace[i]["identity"] === fID["identity"] && trace[i]["comp"] == true && trace[i]["funName"] === dest.split(" (Native)")[0]) {
+                                        return true                        
+                                }
+                        i++;
                 }  
-        return list;     
+        }
+        return null;     
 }
 
-function findRelevantCopies(trace, input) {
+function findRelevantCopies(trace, input, lex=false) {
         var Copies=[]
         funcId = input["identity"];
         var initIndex = trace.findIndex((val) => isEquivalent(val, input));
@@ -93,7 +121,7 @@ function findRelevantCopies(trace, input) {
                 traceIndex = readIndex;
                 pathCopies.push(precReadCreate)
                 while ((precReadCreate['typ'] !== "Create" ) && traceIndex >= 0) {
-                        writeValues = precWrite(trace, readIndex, funcId);
+                        writeValues = precWrite(trace, readIndex, funcId,lex);
                         /*if(writeValues ===undefined){
                                 console.error("Write",input, readIndex,pathCopies)
                         }*/
@@ -119,7 +147,8 @@ function findRelevantCopies(trace, input) {
                 Copies.push(pathCopies)
                 }
                 catch(e){
-                        console.log(pathCopies)
+                        //console.log("here")
+                        //console.log(pathCopies)
                         //to reason partial traces
                         //Copies.push([])
                         pathCopies.unshift(input)
@@ -133,10 +162,19 @@ function precReadOrCreate(trace, index, id, ops) {
         return returnPrec(trace, index, id, ops)
 }
 
-function precWrite(trace, index, id) {
+function precWrite(trace, index, id,lex) {
         //Matching preceding writes
-        if (trace[index]["typ"] == "LocRead" || trace[index]["typ"] == "LexRead") {
+        if (trace[index]["typ"] == "LocRead"){
                 return returnPrec(trace, index, id, ["Write","Declare"] )
+        }else if (trace[index]["typ"] == "LexRead") {
+                //new to create better traces
+                if(lex){
+                        if (trace[index]["loc"].endsWith('.js')){
+                                return returnPrec(trace, index, id, ["Put"] )
+                        }
+                }else{
+                        return returnPrec(trace, index, id, ["Write","Declare"] )
+                }
         }
         else if (trace[index]["typ"] == "Get") {
                 return returnPrec(trace, index, id, ["Put"])
@@ -177,8 +215,15 @@ function returnPrec(trace, index, id, oper) {
                                         }
                         }
                         else {
-                                if (trace[i]["identity"] == id) {
-                                        return [trace[i], i]
+                                if (trace[i]["identity"] == id ) {
+                                        //new for react the if clause
+                                        if(trace[i]["typ"]=="LocRead"){
+                                                if(!trace[i]["from"].endsWith(":this")){
+                                                        return [trace[i], i]
+                                                }
+                                        }else{
+                                                return [trace[i], i]
+                                        }
                                 }
 
                         }
@@ -198,6 +243,12 @@ for(var mismatch_key in mismatches){
 inputDir = inputDir
 //processing the trace beforehand
 trace = flowProcess(trace,inputDir)
+const json = JSON.stringify(trace, null, 2)
+filename="/Users/madhurimachakraborty/Documents/JShop_results/trace_edited.json"
+fs.writeFileSync(filename, json, 'utf8',function(err) {
+if(err) console.log('error', err);
+});
+
 //finding the approprate trace item with respect to the concerned call
 for(var item of input){
                 if( ["apply (Native)","call (Native)"].some(element => item.source.includes(element))  || !(item.source.includes("(Native)")) ){
@@ -212,7 +263,11 @@ for(var item of input){
                                 }else if(item.destination.startsWith("bound ")){
                                         output.push({"src":item.source,"dest":item.destination,"trace":"Calls involving bounded functions"})
                                 }else{
-                                        output.push({"src":item.source,"dest":item.destination,"trace":"Calls to unmodelled native functions"})
+                                        if(findNatCallee(trace,item.destination,item.source)===true){
+                                                output.push({"src":item.source,"dest":item.destination,"trace":"Dynamic Property Access between: "+item.source+" and "+item.destination})
+                                        }else{
+                                                output.push({"src":item.source,"dest":item.destination,"trace":"Calls to unmodelled native functions"})
+                                        }
                                 }
                         }
                         /*else if(item.source.startsWith("eval:") || item.destination.startsWith("eval:")){
@@ -261,12 +316,16 @@ for(var item of input){
                                                                 //new to handle with
                                                                 var callWith = findWith(trace, funCalled, traceItem, call)
                                                                 if(callWith!==null){
-                                                                        //rel_traces[0].unshift("With involved")
                                                                         rel_traces[0].push(["Use of With"])
                                                                         output.push({"src":item.source,"dest":item.destination,"trace":rel_traces[0]})
-                                                                }
-                                                                else{
-                                                                        rel_traces[0].push(["Dynamic Trace could not be filtered"])
+                                                                }else{
+                                                                        if(firstItem.typ=="LexRead"){
+                                                                                rel_traces = findRelevantCopies(trace, call,true)
+                                                                        }
+                                                                        firstItem= rel_traces[0][rel_traces[0].length-1]
+                                                                        if(!(firstItem.typ=="Create") && !(firstItem.typ=="InvokeReturn" && firstItem.identity.startsWith("FunNat:"))){
+                                                                                rel_traces[0].push(["Dynamic Trace could not be filtered partially"])
+                                                                        }
                                                                         output.push({"src":item.source,"dest":item.destination,"trace":rel_traces[0]})
                                                                 }
                                                         }else{
@@ -279,6 +338,7 @@ for(var item of input){
                                         }
                                 }else{
                                         console.log("Callee not found : "+ item.source,item.destination)
+                                        callnotfndCnt+=1
                                 }
                         }
                 }else if (item.source.includes("(Native)")){
@@ -293,7 +353,13 @@ for(var item of input){
                                         output.push({"src":item.source,"dest":item.destination,"trace":"Use of Eval"})
                                 }else if(item.destination.startsWith("evalIndirect:")){
                                         output.push({"src":item.source,"dest":item.destination,"trace":"Eval via New Function"})
+                                /*}else if(unmodelledNatFuns.includes(item.source)){
+                                        output.push({"src":item.source,"dest":item.destination,"trace":"Calls from unmodelled native functions"})
                                 }else{
+                                        output.push({"src":item.source,"dest":item.destination,"trace":"Path missed due to Parameter Pass"})
+                                }*/
+                                }else{
+                                //console.log("here")
                                         output.push({"src":item.source,"dest":item.destination,"trace":"Calls from unmodelled native functions"})
                                 }
                         }
@@ -304,7 +370,7 @@ for(var item of input){
 for(var copy of output){
         copy.trace = [].concat(copy.trace).reverse();
 }
-
+console.log("Callee not found for "+ callnotfndCnt+" calls")
 return output;
 }
 

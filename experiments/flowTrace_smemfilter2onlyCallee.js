@@ -215,7 +215,6 @@
                     if(typeof val== 'function'){
                         funName = val.name? val.name : "anon"
                         funId = getValue(val)
-                        
                         if(J$.ast_info.indexOf(getLoc("literal",J$.getGlobalIID(iid))) > -1){
                                 addToTrace("Create",funName,funId,getLoc("literal",J$.getGlobalIID(iid)),[],true)
                                 lst.push(funId)

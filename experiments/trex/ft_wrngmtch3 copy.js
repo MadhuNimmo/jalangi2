@@ -10,8 +10,10 @@
       return "a";
     },
   };
+  function barret() {
+    return "bar";
+  }
   var x = obj["b" + "ar"];
-  var y = obj["bar"];
+  var y = obj[barret()];
   obj.foo(x, y);
-  console.log("hello")
 })();

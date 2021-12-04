@@ -1,7 +1,10 @@
 (function () {
   function foo() {
-    return function bar() {};
+    return function b() { return;};
   }
   var qoute = foo();
+  function bar(){
   qoute();
+  }
+  bar();
 })();

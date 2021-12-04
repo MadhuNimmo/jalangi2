@@ -1,9 +1,16 @@
 (function(){
-function foo(x){ 
-        return x.apply(this);
+function foo(){ 
+        return //bar.apply(this);
 }
 function bar(){ 
-        return;
+        return foo;
 }
-foo.call(this,bar);
+/*foo.call(this);
+function quote(){ 
+        return;
+}*/
+var yuo = bar();
+yuo.call(this)
+
+foo()
 })()

@@ -66,6 +66,9 @@
             if (typ=="InvokeReturn"){
                 newObj.ret = others;
             }
+            else if (typ=="InvokeCall"){
+                newObj.arg = others;
+            }
             else if (typ=="Get" || typ=="Getter"){
                 newObj.from = others;
             }
@@ -164,6 +167,7 @@
                         }
                 },
                 getField : function (iid, base, offset, val, isComputed, isOpAssign) {
+                    console.log(iid, offset, val, isComputed)
                     if(isGetter(base,offset)){
                         var desc = getPropertyDescriptor(base,offset);
                         funName = desc.get.name? desc.get.name: "anon"

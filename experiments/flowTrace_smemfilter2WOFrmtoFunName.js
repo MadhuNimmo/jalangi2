@@ -2,7 +2,7 @@
         //Datastructure Listing
         var output= [];
         var callStack=[];
-        //var frmToFunName = {};
+        var frmToFunName = {};
         var funIDToDecl = {};
         var scriptSet = []
         var lst = []
@@ -54,10 +54,6 @@
             }
             return base[prop];
         }
-        function getFrameToFunName(obj){
-                if (obj === undefined || obj === null) return "None";
-                return obj["FUN_NAME"];
-        }
         function getFrameID(name) {
                 return "Frm"+J$.smemory.getIDFromShadowObjectOrFrame(J$.smemory.getShadowFrame(name));
         }
@@ -77,20 +73,15 @@
                 newObj.ret = others;
             }
             else if (typ=="Get" || typ=="Getter"){
-                newObj.from = others[0];
-                newObj.comp = others[1];
+                newObj.from = others;
             }
             else if (typ=="LocRead" || typ=="LexRead"){
                 newObj.from = others[0];
                 newObj.curr = others[1];
                 newObj.eloc = others[2]
             }
-            else if (typ=="Write" || typ=="Declare"){
+            else if (typ=="Write" || typ=="Declare" || typ=="Put" || typ=="Setter"){
                 newObj.to = others;
-            }
-            else if (typ=="Put" || typ=="Setter"){
-                newObj.to = others[0];
-                newObj.comp = others[1];
             }
             output.push(newObj)
           //}
@@ -171,14 +162,14 @@
                         funName = desc.set.name? desc.set.name: "anon"
                         funId= getValue(desc.set)
                         if(lst.indexOf(funId) > -1){
-                            addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),["set",isComputed])
+                            addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),"set")
                             addToTrace("InvokeSetter",funName,funId,getLoc("put",J$.getGlobalIID(iid)))
                         }
                     }else if (typeof val== 'function'){
                             funName = val.name? val.name: "anon"
                             funId= getValue(val)
                             if(lst.indexOf(funId) > -1){
-                                addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),[String(offset),isComputed])
+                                addToTrace("Put",funName,funId,getLoc("put",J$.getGlobalIID(iid)),String(offset))
                             }
                         }
                 },
@@ -188,15 +179,14 @@
                         funName = desc.get.name? desc.get.name: "anon"
                         funId=getValue(desc.get)
                         if(lst.indexOf(funId) > -1){
-                            addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),["get",isComputed])
+                            addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),"get")
                             addToTrace("InvokeGetter",funName,funId,getLoc("get",J$.getGlobalIID(iid)))
                         }
                     }else if (typeof val== 'function'){
                             funName = val.name? val.name: "anon"
                             funId= getValue(val)
-                            //|| funId.startsWith("FunNat:")
-                            if(lst.indexOf(funId)> -1 || funId.indexOf("FunNat:") === 0){
-                                addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),[String(offset),isComputed])   
+                            if(lst.indexOf(funId)> -1){
+                                addToTrace("Get",funName,funId,getLoc("get",J$.getGlobalIID(iid)),String(offset))   
                             }
 
                     }
@@ -209,7 +199,7 @@
                                 funName= value.name ? value.name : "anon";
                                 funId= getValue(value)
                                 if(lst.indexOf(funId) > -1){
-                                    addToTrace("Put",funName, funId,getLoc("declare",J$.getGlobalIID(iid)),[String(key),"arguments"])
+                                    addToTrace("Put",funName, funId,getLoc("declare",J$.getGlobalIID(iid)),String(key))
                                 }
                             }
                         }
@@ -245,7 +235,7 @@
                                     funName= val[key].name ? val[key].name : "anon";
                                     funId= getValue(val[key])
                                     if(lst.indexOf(funId) > -1){
-                                        addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[String(key),null])
+                                        addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),String(key))
                                     }
                                 }
                             }
@@ -259,7 +249,7 @@
                                         funName= value.name ? value.name : "anon";
                                         funId= getValue(value)
                                         if(lst.indexOf(funId) > -1){
-                                            addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[String(key),null])
+                                            addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),String(key))
                                         }
                                     }
                                 }
@@ -272,16 +262,13 @@
                         var funName = f.name 
                         var funId = getValue(f)
                         if(funName === ""){
-                            //frmToFunName[frm] = getLoc("fenter1",J$.getGlobalIID(iid))
-                            J$.smemory.getCurrentFrame()["FUN_NAME"] = getLoc("fenter1",J$.getGlobalIID(iid))
+                            frmToFunName[frm] = getLoc("fenter1",J$.getGlobalIID(iid))
                             
                         }else{
                             if (callStack.length === 0) {
-                                //frmToFunName[frm] = "system"+"/"+funName;
-                                J$.smemory.getCurrentFrame()["FUN_NAME"] = "system"+"/"+funName;
+                                frmToFunName[frm] = "system"+"/"+funName;
                             }else{
-                                //frmToFunName[frm] =  funIDToDecl[funId]+"/"+funName
-                                J$.smemory.getCurrentFrame()["FUN_NAME"] = funIDToDecl[funId]+"/"+funName
+                                frmToFunName[frm] =  funIDToDecl[funId]+"/"+funName
                             }
                         }
                         callStack.push(giid);
@@ -293,13 +280,13 @@
                         var frm= getCurrentFrameID();
                         var giid = J$.getGlobalIID(iid);
                         var funName = originalFileName
-                        //frmToFunName[frm] = funName
-                        J$.smemory.getCurrentFrame()["FUN_NAME"] = funName
+                        frmToFunName[frm] = funName
                         callStack.push(giid);
                         //new to resolve eval/evalIndirect issues
                         scriptName=funName;
                         //scriptSet.push(scriptName)
                         scriptSet.push(frm)
+                        //console.log("here",J$.ast_info[0])
                         lstKeys = Object.keys(J$.ast_info)
                 },
                 scriptExit: function (iid, wrappedExceptionVal) {
@@ -314,7 +301,7 @@
                                 funId= getValue(value)
                                 if(lst.indexOf(funId) > -1){
                                     var index = String(base.length+Number(key))
-                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[index,"arguments"])
+                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),index)
                                 }
 
                             }
@@ -327,7 +314,7 @@
                                 funId= getValue(base[key])
                                 if(lst.indexOf(funId) > -1){
                                     var indx = String(Number(key) - 1)
-                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[indx,null])
+                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),indx)
                                 }
 
                             }
@@ -340,7 +327,7 @@
                                 funName= value.name ? value.name : "anon";
                                 funId= getValue(value)
                                 if(lst.indexOf(funId) > -1){
-                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[String(key),null])
+                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),String(key))
                                 }
 
                             }
@@ -351,7 +338,7 @@
                                 funId= getValue(base[key])
                                 var indx = String(Number(key) + args.length)
                                 if(lst.indexOf(funId) > -1){
-                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),[indx,null])
+                                    addToTrace("Put",funName, funId,getLoc("literal",J$.getGlobalIID(iid)),indx)
                                 }
 
                             }
@@ -366,8 +353,7 @@
                         funName = f.name? f.name : "anon"
                         funId= getValue(f,SPECIAL_PROP_IID,SPECIAL_PROP_SID)
                     }
-                    //|| funId.startsWith("FunNat:")
-                    if(lst.indexOf(funId) > -1 || funId.indexOf("FunNat:") === 0 ){
+                    if(lst.indexOf(funId) > -1){
                         addToTrace("InvokeCall",funName,funId,getLoc("invkcll",J$.getGlobalIID(iid)))
                     }
                 },
@@ -404,17 +390,15 @@
                         var lstCaller = lstMap[funId];
                         if(lstCaller){
                             var lstCallees = J$.ast_info[lstCaller]
-                            if(lstCallees){
-                                var lstCalleeInd = lstCallees.indexOf(getLoc("invkretrn",J$.getGlobalIID(iid)))
-                                if(lstCalleeInd > -1 ){
-                                    lstCallees.splice(lstCalleeInd,1);
-                                    if(lstCallees.length==0){
-                                        delete J$.ast_info[lstCaller]
-                                        lstKeys=Object.keys(J$.ast_info)
-                                        lst.splice(lst.indexOf(funId), 1);
-                                    }else{
-                                        J$.ast_info[lstCaller] = lstCallees
-                                    }
+                            var lstCalleeInd = lstCallees.indexOf(getLoc("invkretrn",J$.getGlobalIID(iid)))
+                            if(lstCalleeInd > -1 ){
+                                lstCallees.splice(lstCalleeInd,1);
+                                if(lstCallees.length==0){
+                                    delete J$.ast_info[lstCaller]
+                                    lstKeys=Object.keys(J$.ast_info)
+                                    lst.splice(lst.indexOf(funId), 1);
+                                }else{
+                                    J$.ast_info[lstCaller] = lstCallees
                                 }
                             }
                         }
@@ -429,7 +413,7 @@
                             funName = result.name ? result.name : "anon";
                             funId = getValue(result)
                             if(lst.indexOf(funId) > -1) {
-                                addToTrace("Get",funName, funId, getLoc("invkretrn",J$.getGlobalIID(iid)),[indx,null])
+                                addToTrace("Get",funName, funId, getLoc("invkretrn",J$.getGlobalIID(iid)),indx)
                             }
 
                         }
@@ -443,13 +427,11 @@
                         funId = getValue(val)
                         if(lst.indexOf(funId) > -1) {
                             //new to model variable uses inside eval/evalIndirect
-                            //if (frmToFunName[getFrameID(name)] && !frmToFunName[getFrameID(name)].indexOf("eval") === 0 && scriptSet.indexOf(getFrameID(name)) > -1 ){
-                            if (getFrameToFunName(J$.smemory.getShadowFrame(name)) && !getFrameToFunName(J$.smemory.getShadowFrame(name)).indexOf("eval") === 0 && scriptSet.indexOf(getFrameID(name)) > -1 ){
+                            if (frmToFunName[getFrameID(name)] && !frmToFunName[getFrameID(name)].indexOf("eval") === 0 && scriptSet.indexOf(getFrameID(name)) > -1 ){
                                 addToTrace("LocRead",funName,funId,getLoc("read",callStack[callStack.length-1]),[getFrameID(name)+":"+name,"Global",getLoc("read",callStack[callStack.length-1])])
                             }
                             else if(getFrameID(name)!==getCurrentFrameID()){
-                                    //addToTrace("LexRead",funName,funId,frmToFunName[getFrameID(name)]==undefined?"None":frmToFunName[getFrameID(name)],[getFrameID(name)+":"+name,getCurrentFrameID(),getLoc("read",callStack[callStack.length-1])])
-                                    addToTrace("LexRead",funName,funId,getFrameToFunName(J$.smemory.getShadowFrame(name)),[getFrameID(name)+":"+name,getCurrentFrameID(),getLoc("read",callStack[callStack.length-1])])
+                                    addToTrace("LexRead",funName,funId,frmToFunName[getFrameID(name)]==undefined?"None":frmToFunName[getFrameID(name)],[getFrameID(name)+":"+name,getCurrentFrameID(),getLoc("read",callStack[callStack.length-1])])
                             }else{
                                     addToTrace("LocRead",funName,funId,getLoc("read",callStack[callStack.length-1]),[getFrameID(name)+":"+name,getCurrentFrameID(),getLoc("read",callStack[callStack.length-1])])
                             }
@@ -495,12 +477,11 @@
                     const json = JSON.stringify(output, null, 2);
                     //console.log(json)
                     filename=(process.argv[1]).replace(/.js$/,"_trace.json");
-                    //console.log(filename)
                     fs.writeFileSync(filename, json, 'utf8',function(err) {
                         if(err) console.log('error', err);
                     });
                 }else{
-                    //console.log("output",output)
+                    console.log("output",output)
                     J$.CallTrace= output;
                     return J$.CallTrace;
                 }

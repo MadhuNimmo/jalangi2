@@ -74,7 +74,7 @@ for(var item of inpItems){
 }
 
 var strngReasons = output
-var filename=(process.argv[3]).replace(/props.json$/,"strng_causes2.json");
+var filename=(process.argv[3]).replace(/props.json$/,"strng_causes.json");
 const json = JSON.stringify(strngReasons, null, 2)
 fs.writeFileSync(filename, json, 'utf8',function(err) {
 if(err) console.log('error', err);
@@ -98,7 +98,7 @@ console.log("String Reason Counts:")
 console.log(outputCnt)
 var result = {"Total Unique Properties": itmcnt,"String Reason Counts": outputCnt}
 var name = outPath.split("/").pop()
-fs.writeFile(outPath+"/"+name+"_strngCount2.json", JSON.stringify(result, null, 2), (err) => {
+fs.writeFile(outPath+"/"+name+"_strngCount.json", JSON.stringify(result, null, 2), (err) => {
         if(err){
             console.error(err);
             return;
