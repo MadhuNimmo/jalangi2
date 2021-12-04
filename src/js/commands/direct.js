@@ -44,10 +44,6 @@ function runAnalysis(initParam) {
     var script = args.script_and_args.shift();
 
     var path = require('path');
-    try {
-        babel = require('@babel/core');
-        babel.transform('', { presets: ["@babel/preset-env"] });
-    } catch (e) {}
     acorn = require("acorn");
     esotope = require("esotope");
     require('../headers').headerSources.forEach(function(header){

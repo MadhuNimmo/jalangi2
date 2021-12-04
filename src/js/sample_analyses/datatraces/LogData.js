@@ -14,6 +14,7 @@
         function logEvent(str) {
             traceWriter.logToFile(str+"\n");
             //@todo dump and clear the logs array once its size exceeds some constant, say 1024
+            console.log(str+"\n")
         }
 
         function getValue(v) {
@@ -73,6 +74,7 @@
             var ownerId = shadowObj.owner ? sandbox.smemory.getIDFromShadowObjectOrFrame(shadowObj.owner) : 0;
             if (shadowObj.isProperty) {
                 logEvent('G,' + sandbox.sid + "," + iid + "," + objectId + "," + ownerId + "," + getStringIndex(offset) + "," + getValue(val) + "," + getType(val));
+                console.log(iid, base, offset, val,sandbox.iidToLocation(sandbox.getGlobalIID(iid)))
             }
         };
 
@@ -84,26 +86,31 @@
             var ownerId = shadowObj.owner ? sandbox.smemory.getIDFromShadowObjectOrFrame(shadowObj.owner) : 0;
             if (shadowObj.isProperty) {
                 logEvent('P,' + sandbox.sid + "," + iid + "," + objectId + "," + ownerId + "," + getStringIndex(offset) + "," + getValue(val) + "," + getType(val));
+                console.log(iid, base, offset, val,sandbox.iidToLocation(sandbox.getGlobalIID(iid)))
             }
         };
 
         this.read = function (iid, name, val, isGlobal, isScriptLocal) {
             var shadowFrame = sandbox.smemory.getShadowFrame(name);
             logEvent('R,' + sandbox.sid + "," + iid + "," + sandbox.smemory.getIDFromShadowObjectOrFrame(shadowFrame) + "," + getStringIndex(name) + "," + getValue(val) + "," + getType(val));
+            console.log(iid, name, val,sandbox.iidToLocation(sandbox.getGlobalIID(iid)),sandbox.smemory.getActualObjectOrFunctionFromShadowObjectOrFrame(name))
         };
 
         this.write = function (iid, name, val, lhs, isGlobal, isScriptLocal) {
             var shadowFrame = sandbox.smemory.getShadowFrame(name);
             logEvent('W,' + sandbox.sid + "," + iid + "," + sandbox.smemory.getIDFromShadowObjectOrFrame(shadowFrame) + "," + getStringIndex(name) + "," + getValue(val) + "," + getType(val));
+            console.log(iid, name, val,sandbox.iidToLocation(sandbox.getGlobalIID(iid)),sandbox.smemory.getActualObjectOrFunctionFromShadowObjectOrFrame(val))
         };
 
         this.functionEnter = function (iid, f, dis, args) {
             var shadowFrame = sandbox.smemory.getShadowFrame('this');
             logEvent('C,'+lastsid+","+lastiid+","+getValue(f)+","+sandbox.smemory.getIDFromShadowObjectOrFrame(shadowFrame));
+            console.log(iid, f,sandbox.iidToLocation(sandbox.getGlobalIID(iid)),sandbox.smemory.getActualObjectOrFunctionFromShadowObjectOrFrame(shadowFrame))
         };
 
         this.functionExit = function (iid, returnVal, wrappedExceptionVal) {
             logEvent('E,' + sandbox.sid + "," + iid + "," + getValue(returnVal) + "," + getType(returnVal));
+            console.log(iid, returnVal,sandbox.iidToLocation(sandbox.getGlobalIID(iid)))
         };
 
         this.endExecution = function () {

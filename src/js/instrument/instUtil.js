@@ -26,8 +26,7 @@ var urlParser = require('url');
 
 
 var headerSources = ["node_modules/esotope/esotope.js",
-    "node_modules/acorn/dist/acorn.js",
-    "node_modules/@babel/core/lib/index.js"];
+    "node_modules/acorn/dist/acorn.js"];
 
 var headersSet = false;
 
@@ -122,6 +121,7 @@ function genInitParamsCode(initParams) {
     var initParamsObj = {};
     if (initParams) {
         initParams.forEach(function (keyVal) {
+            console.log(keyVal)
             var split = keyVal.split(':');
             if (split.length !== 2) {
                 throw new Error("invalid initParam " + keyVal);

@@ -27,9 +27,7 @@
 
 (function (sandbox) {
     var branches = {};
-
     function MyAnalysis() {
-
         /**
          * This callback is called after a condition check before branching.
          * Branching can happen in various statements

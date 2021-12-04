@@ -24,10 +24,7 @@ if (typeof J$ === 'undefined') {
 
 
 (function (sandbox) {
-    try {
-        babel = require('@babel/core');
-        babel.transform('', { presets: ["@babel/preset-env"] });
-    } catch (e) {}
+
     acorn = require("acorn");
     esotope = require("esotope");
     require('../headers').headerSources.forEach(function (header) {
@@ -86,7 +83,11 @@ if (typeof J$ === 'undefined') {
         if (options.only_include) {
             onlyIncludeList = options.only_include.split(path.delimiter);
         }
-
+        //new
+        /*var jsonInp=[];
+        if (options.jsoninp) {
+            jsonInp = options.jsoninp//JSON.parse(fs.readFileSync(options.jsoninp, 'utf8'));
+        }*/
         var jalangiRoot = getJalangiRoot();
 
         // should we store instrumented app directly in the output directory?
@@ -494,6 +495,7 @@ if (typeof J$ === 'undefined') {
         parser.addArgument(['--no_html'], {help: "don't inject Jalangi runtime into HTML files", action: 'storeTrue'});
         parser.addArgument(['--outputDir'], {help: "directory in which to place instrumented files", required: true});
         parser.addArgument(['--verbose'], {help: "print verbose output", action: 'storeTrue'});
+
         parser.addArgument(['--astHandlerModule'], {help: "Path to a node module that exports a function to be used for additional AST handling after instrumentation"});
         parser.addArgument(['inputFiles'], {
             help: "either a list of JavaScript files to instrument, or a single directory under which all JavaScript and HTML files should be instrumented (modulo the --no_html and --exclude flags)",

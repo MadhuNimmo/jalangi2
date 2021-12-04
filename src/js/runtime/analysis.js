@@ -36,7 +36,7 @@ if (typeof J$ === 'undefined') {
     // we need to keep a stack since a function may return and then
     // have another function call in a finally block (see test
     // call_in_finally.js)
-
+    
     var global = this;
     var Function = global.Function;
     var returnStack = [];

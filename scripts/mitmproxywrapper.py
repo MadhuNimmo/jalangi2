@@ -27,32 +27,32 @@ class Wrapper(object):
 
     def proxy_state_for_service(self, service):
         state = self.run_networksetup_command('-getwebproxy', service).splitlines()
-        return dict([re.findall(r'([^:]+): (.*)', line)[0] for line in state])
+        return dict([re.findall(r'([^:]+): (.*)', line.decode('utf-8'))[0] for line in state])
 
     def enable_proxy_for_service(self, service):
-        print 'Enabling proxy on {}...'.format(service)
+        print('Enabling proxy on {}...'.format(service))
         for subcommand in ['-setwebproxy', '-setsecurewebproxy']:
             self.run_networksetup_command(subcommand, service, '127.0.0.1', str(self.port))
 
     def disable_proxy_for_service(self, service):
-        print 'Disabling proxy on {}...'.format(service)
+        print('Disabling proxy on {}...'.format(service))
         for subcommand in ['-setwebproxystate', '-setsecurewebproxystate']:
             self.run_networksetup_command(subcommand, service, 'Off')
 
     def interface_name_to_service_name_map(self):
         order = self.run_networksetup_command('-listnetworkserviceorder')
-        mapping = re.findall(r'\(\d+\)\s(.*)$\n\(.*Device: (.+)\)$', order, re.MULTILINE)
+        mapping = re.findall(r'\(\d+\)\s(.*)$\n\(.*Device: (.+)\)$', order.decode('utf-8'), re.MULTILINE)
         return dict([(b, a) for (a, b) in mapping])
 
     def run_command_with_input(self, command, input):
         popen = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-        (stdout, stderr) = popen.communicate(input)
+        stdout, stderr = popen.communicate(input.encode())
         return stdout
 
     def primary_interace_name(self):
         scutil_script = 'get State:/Network/Global/IPv4\nd.show\n'
         stdout = self.run_command_with_input('/usr/sbin/scutil', scutil_script)
-        interface, = re.findall(r'PrimaryInterface\s*:\s*(.+)', stdout)
+        interface, = re.findall(r'PrimaryInterface\s*:\s*(.+)', stdout.decode('utf-8'))
         return interface
 
     def primary_service_name(self):
@@ -73,13 +73,13 @@ class Wrapper(object):
     def connected_service_names(self):
         scutil_script = 'list\n'
         stdout = self.run_command_with_input('/usr/sbin/scutil', scutil_script)
-        service_ids = re.findall(r'State:/Network/Service/(.+)/IPv4', stdout)
+        service_ids = re.findall(r'State:/Network/Service/(.+)/IPv4', stdout.decode('utf-8'))
 
         service_names = []
         for service_id in service_ids:
             scutil_script = 'show Setup:/Network/Service/{}\n'.format(service_id)
             stdout = self.run_command_with_input('/usr/sbin/scutil', scutil_script)
-            service_name, = re.findall(r'UserDefinedName\s*:\s*(.+)', stdout)
+            service_name, = re.findall(r'UserDefinedName\s*:\s*(.+)', stdout.decode('utf-8'))
             service_names.append(service_name)
 
         return service_names
@@ -87,6 +87,7 @@ class Wrapper(object):
     def wrap_mitmproxy(self):
         with self.wrap_proxy():
             cmd = ['mitmdump', '-p', str(self.port)]
+            #'--mode upstream:http://localhost:9876 --ssl-insecure','--mode transparent']
             if self.extra_arguments:
                 cmd.extend(self.extra_arguments)
             subprocess.check_call(cmd)
@@ -115,7 +116,7 @@ class Wrapper(object):
     @classmethod
     def ensure_superuser(cls):
         if os.getuid() != 0:
-            print 'Relaunching with sudo...'
+            print('Relaunching with sudo...')
             os.execv('/usr/bin/sudo', ['/usr/bin/sudo'] + sys.argv)
 
     @classmethod
@@ -128,6 +129,7 @@ class Wrapper(object):
         parser.add_argument('-d', '--auto-disable', action='store_true', help='auto disable the proxy')
 #         parser.add_argument('--honeyproxy', action='store_true', help='run honeyproxy instead of mitmproxy')
         parser.add_argument('-p', '--port', type=int, help='override the default port of 8080', default=8080)
+        #parser.add_argument('--mode', default= 'transparent')
         args, extra_arguments = parser.parse_known_args()
 
         wrapper = cls(port=args.port, extra_arguments=extra_arguments)

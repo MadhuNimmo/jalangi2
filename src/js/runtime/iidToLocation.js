@@ -43,11 +43,12 @@ if (typeof J$ === 'undefined') {
                 }
                 arr = ret[iid];
                 if (arr) {
-                    if (sandbox.Results) {
+                    /*if (sandbox.Results) {
                         return "<a href=\"javascript:iidToDisplayCodeLocation('"+gid+"');\">(" + fname + ":" + arr[0] + ":" + arr[1] + ":" + arr[2] + ":" + arr[3] + ")</a>";
                     } else {
                         return "(" + fname + ":" + arr[0] + ":" + arr[1] + ":" + arr[2] + ":" + arr[3] + ")";
-                    }
+                    }*/
+                    return "(" + fname + ":" + arr[0] + ":" + arr[1] + ":" + arr[2] + ":" + arr[3] + ")";
                 } else {
                     return "(" + fname + ":iid" + iid + ")";
                 }

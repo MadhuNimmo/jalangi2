@@ -37,15 +37,17 @@
         var frameId = 2;
         var scriptCount = 0;
         var HOP = Constants.HOP;
+        var jObjCreate = Object.create
+        var jDefProperty = Object.defineProperty
 
 
-        var frame = Object.create(null);
+        var frame = jObjCreate(null);
 
         var frameStack = [frame];
         var evalFrames = [];
 
         var processEnv = !sandbox.Constants.isBrowser && process && process.env;
-        var shadowEnv = Object.create(null);
+        var shadowEnv = jObjCreate(null);
         if (processEnv) {
             shadowEnv[SPECIAL_PROP_SOBJECT] = objectId;
             shadowEnv[SPECIAL_PROP_ACTUAL] = process.env;
@@ -89,8 +91,8 @@
         this.getShadowFrame = function (name) {
             var f = this.getFrame(name);
             var ret = this.getShadowObjectOfObject(f);
-            if (Object && Object.defineProperty && typeof Object.defineProperty === 'function') {
-                Object.defineProperty(ret, SPECIAL_PROP_ACTUAL, {
+            if (Object && jDefProperty && typeof jDefProperty === 'function') {
+                jDefProperty(ret, SPECIAL_PROP_ACTUAL, {
                     enumerable: false,
                     writable: true
                 });
@@ -98,7 +100,20 @@
             ret[SPECIAL_PROP_ACTUAL] = f[SPECIAL_PROP_ACTUAL];
             return ret;
         };
-
+        //new
+        //bcz getFrame doesnot return the right value for global frame
+        this.getCurrentFrame = function () {
+            var f = frameStack[frameStack.length-1];
+            var ret = this.getShadowObjectOfObject(f);
+            if (Object && jDefProperty && typeof jDefProperty === 'function') {
+                jDefProperty(ret, SPECIAL_PROP_ACTUAL, {
+                    enumerable: false,
+                    writable: true
+                });
+            }
+            ret[SPECIAL_PROP_ACTUAL] = f[SPECIAL_PROP_ACTUAL];
+            return ret;
+        };
         // public function
         /**
          * Given a shadow object or frame, it returns the unique id of the shadow object or frame.  It returns undefined,
@@ -205,18 +220,18 @@
         function createShadowObject(val) {
             var type = typeof val;
             if ((type === 'object' || type === 'function') && val !== null && !HOP(val, SPECIAL_PROP_SOBJECT)) {
-                if (Object && Object.defineProperty && typeof Object.defineProperty === 'function') {
-                    Object.defineProperty(val, SPECIAL_PROP_SOBJECT, {
+                if (Object && jDefProperty && typeof jDefProperty === 'function') {
+                    jDefProperty(val, SPECIAL_PROP_SOBJECT, {
                         enumerable: false,
                         writable: true
                     });
-                    Object.defineProperty(val, SPECIAL_PROP_ACTUAL, {
+                    jDefProperty(val, SPECIAL_PROP_ACTUAL, {
                         enumerable: false,
                         writable: true
                     });
                 }
                 try {
-                    val[SPECIAL_PROP_SOBJECT] = Object.create(null);
+                    val[SPECIAL_PROP_SOBJECT] = jObjCreate(null);
                     val[SPECIAL_PROP_SOBJECT][SPECIAL_PROP_SOBJECT] = objectId;
                     val[SPECIAL_PROP_SOBJECT][SPECIAL_PROP_ACTUAL] = val;
                     objectId = objectId + 2;
@@ -229,8 +244,8 @@
 
         this.defineFunction = function (f) {
             if (typeof f === 'function') {
-                if (Object && Object.defineProperty && typeof Object.defineProperty === 'function') {
-                    Object.defineProperty(f, SPECIAL_PROP_FRAME, {
+                if (Object && jDefProperty && typeof jDefProperty === 'function') {
+                    jDefProperty(f, SPECIAL_PROP_FRAME, {
                         enumerable: false,
                         writable: true
                     });
@@ -255,13 +270,13 @@
         };
 
         this.functionEnter = function (val) {
-            frameStack.push(frame = Object.create(null));
-            if (Object && Object.defineProperty && typeof Object.defineProperty === 'function') {
-                Object.defineProperty(frame, SPECIAL_PROP_FRAME, {
+            frameStack.push(frame = jObjCreate(null));
+            if (Object && jDefProperty && typeof jDefProperty === 'function') {
+                jDefProperty(frame, SPECIAL_PROP_FRAME, {
                     enumerable: false,
                     writable: true
                 });
-                Object.defineProperty(frame, SPECIAL_PROP_ACTUAL, {
+                jDefProperty(frame, SPECIAL_PROP_ACTUAL, {
                     enumerable: false,
                     writable: true
                 });
@@ -284,7 +299,7 @@
                     if (Constants.isBrowser) {
                         frame = frameStack[0];
                     } else {
-                        frameStack.push(frame = Object.create(null));
+                        frameStack.push(frame = jObjCreate(null));
                         frame[SPECIAL_PROP_FRAME] = frameStack[0];
                     }
                     isEvalScript.push(false);
