@@ -54,7 +54,7 @@ for framework in list_of_exercised_frameworks:
     parse_call_cmd = f'node --max-old-space-size=4096 {path_to_experiments}parse_call.js {out_path}/diff.json {out_path}/todo_{framework}_trace.json  {path_to_todomvc}examples/{framework}/ {out_path}/FG_{typ_scg}.json {out_path}/SCG_{typ_scg}.json {out_path}/DCG_EDIT.json {typ_scg}'
     find_prop_reasons_cmd = f'node {path_to_experiments}findPropReasons.js {out_path}/StaticProps.json {out_path}/todo_{framework}_props.json {out_path}'
     count_cmd = f'node {path_to_experiments}count.js {out_path}/todo_{framework}_causes.json {out_path}'
-    cnterror_cmd = f'python {path_to_experiments}cnterror.py {out_path}/todo_{framework}_causes.json'''
+    cnterror_cmd = f'python3 {path_to_experiments}cnterror.py {out_path}/todo_{framework}_causes.json'''
     list_of_cmds = [cd_walaacg, opt_cmd, cd_walapropsrc, propsrc_cmd,cd_jalangiexp, pupserv_cmd, metric1_cmd, metric2_cmd, metric3_cmd, stat_dyn_diff_cmd, pupserv2_cmd, parse_call_cmd, find_prop_reasons_cmd, count_cmd, cnterror_cmd]
     #[cd_jalangiexp, parse_call_cmd, find_prop_reasons_cmd, count_cmd, cnterror_cmd]
     # [cd_jalangiexp, stat_dyn_diff_cmd, pupserv2_cmd, parse_call_cmd, find_prop_reasons_cmd, count_cmd, cnterror_cmd]
