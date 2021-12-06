@@ -26,13 +26,18 @@ if chosen_frameworks[0].lower() == 'all':
     list_of_exercised_frameworks = ["angularjs", "backbone", "knockback", "knockoutjs", "canjs", "react", "mithril", "vue", "vanillajs", "jquery"]
 else:
     list_of_exercised_frameworks.extend(chosen_frameworks)
-
+if typ_scg == 'PES':
+    typ_output = "PessimisticResults"
+else:
+    typ_output = "OptimisticResults"
+if not os.path.exists(f'{outpath}{typ_output}'):
+    os.mkdir(f'{outpath}{typ_output}')
 for framework in list_of_exercised_frameworks:
     path_to_current_framework = path_to_todomvc_frameworks + framework + "/"
     # print(path_to_current_framework)
     print(f'Executing scripts for {framework}')
 
-    out_path = f'{outpath}todo_{framework}'
+    out_path = f'{outpath}{typ_output}/todo_{framework}'
     #full_out_path = out_path + '/'
     cd_walaacg= path_to_wala_acg#f'cd {path_to_wala_acg}'
     #os.chdir(path_to_wala_acg)
