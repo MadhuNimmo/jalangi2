@@ -1,5 +1,5 @@
 var Graph = require("./Graph.js");
-var { processInputs } = require("./preprocess2.js");
+var { processInputs } = require("./preprocess.js");
 const path = require("path");
 const fs = require("fs");
 var frmFiles = [];

@@ -243,11 +243,11 @@ for(var mismatch_key in mismatches){
 inputDir = inputDir
 //processing the trace beforehand
 trace = flowProcess(trace,inputDir)
-const json = JSON.stringify(trace, null, 2)
+/*const json = JSON.stringify(trace, null, 2)
 filename="/Users/madhurimachakraborty/Documents/JShop_results/trace_edited.json"
 fs.writeFileSync(filename, json, 'utf8',function(err) {
 if(err) console.log('error', err);
-});
+});*/
 
 //finding the approprate trace item with respect to the concerned call
 for(var item of input){

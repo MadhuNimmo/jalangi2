@@ -1,4 +1,4 @@
-var { processInputs } = require("./preprocess2.js");
+var { processInputs } = require("./preprocess.js");
 var Graph = require("./Graph.js");
 const path = require("path");
 const fs = require("fs");
