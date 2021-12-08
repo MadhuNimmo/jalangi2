@@ -1,7 +1,7 @@
 (function(){
         var obj= {
                 MyName:function(){
-                        return "Nimmo"
+                        return "XYZ"
                 },
                 MyPhone:function(){
                         return "XXX-XXX-XXXX"
