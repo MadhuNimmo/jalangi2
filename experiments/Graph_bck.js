@@ -106,8 +106,6 @@ class Graph {
                                 }
                         }
                 }
-                //console.log(input,cntFunc)
-                //console.log(nimmo)
                 return cntFunc;
         } 
         getGraph() {

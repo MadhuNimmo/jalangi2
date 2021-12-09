@@ -69,7 +69,6 @@ var t0 = performance.now()
 for(var item of dynTrace){
      try{
         if(typeof item["trace"][0] === "string"){
-                //abs new
                 if(optPes=="OPT"){
                         finalOutput.push({"source":item["src"],"destination":item["dest"],"reasons":item["trace"][0]})
                 }else{
@@ -85,20 +84,6 @@ for(var item of dynTrace){
                         }
                         
                 }
-        }
-        else if ((item["src"].includes("(Native)") || item["dest"].includes("(Native)")) && !(["apply (Native)","call (Native)"].some(element => item["src"].includes(element)))){
-                /*if (item["src"]===("system (Native)")){
-                        finalOutput.push({"source":item["src"],"destination":item["dest"],"reasons":"Entry point edge"})  
-                }  
-                //new calls to bounded functions react
-                else if ((item["src"].startsWith("bound ") || item["dest"].startsWith("bound ")) && item["src"].includes("(Native)")){
-                        finalOutput.push({"source":item["src"],"destination":item["dest"],"reasons":"Calls involving bounded functions"})
-                }else if (item["src"].includes("(Native)")){
-                        finalOutput.push({"source":item["src"],"destination":item["dest"],"reasons":"Calls from unmodelled native functions"})
-                }else if (item["dest"].includes("(Native)")){
-                        finalOutput.push({"source":item["src"],"destination":item["dest"],"reasons":"Calls to unmodelled native functions"})
-                }*/
-                console.log('when is it here?')
         }else {
                 var trace = item["trace"]
                 var missingPaths = []
@@ -134,7 +119,7 @@ for(var item of dynTrace){
                                 for(var i=0;i<trace.length-2;i+=2){
                                         missingPaths.push(findPath(trace[i],trace[i+2],[trace,i,i+2],optPes));
                                 }
-                                //new to identify calls to getters/setters
+                                //identify calls to getters/setters
                                 if(trace[trace.length-1].typ=="InvokeGetter" || trace[trace.length-1].typ=="InvokeSetter"){
                                         missingPaths.push("Call to Getter/Setter")
                                 }
@@ -206,13 +191,8 @@ function findPath(src,sink,inter,optPes,applycall = false){
                                                 propArr.push(propItem)
                                         }
                         }
-                        //if((src.typ == "Get" &&  (src.comp== true || inter[0][inter[1]-1].comp==true)) || (sink.typ == "Get" &&  (sink.comp== true || inter[0][inter[2]-1].comp==true))){
                                 return("Dynamic Property Access between: "+src_ptrn+" and "+stat_sink )
-                        /*}else{
-                                console.log("here dpa")
-                        }*/
                 }else{
-                        //new 
                         if(typeof src_ptrn === "string" && src_ptrn.startsWith("Ret(Func") && src_ptrn.includes("(Native)")){
                                 return "Calls from unmodelled native functions"
                         }else{
@@ -244,15 +224,8 @@ function findPath(src,sink,inter,optPes,applycall = false){
                                                 propArr.push(propItem)
                                         }
                         }
-                        //return("Dynamic Property Access between: "+stat_src+" and "+sink_ptrn) //bug fix may be needed
-                        //if((src.typ == "Get" &&  (src.comp== true || inter[0][inter[1]-1].comp==true)) || (sink.typ == "Get" &&  (sink.comp== true || inter[0][inter[2]-1].comp==true))){
                                 return("Dynamic Property Access between: "+stat_src+" and "+sink_ptrn )
-                        /*}else{
-                                console.log("here dpa2",stat_src,sink_ptrn)
-                                console.log(nimmo)
-                        }*/
                 }else{
-                        //new to capture call/apply
                         if (typeof sink_ptrn === "string" && sink_ptrn.startsWith("ReflectiveCallee") && inter[0][inter[1]-1].typ==='Declare'){
                                 return("Path missed due to Parameter Pass: "+stat_src+" and "+sink_ptrn)
                         }else{
@@ -262,13 +235,11 @@ function findPath(src,sink,inter,optPes,applycall = false){
                                         return("Destination not found: "+sink_ptrn)
                                 }
                         }
-                        //return("Destination not found: "+sink_ptrn)
                 }
         }
         else{   
                 stat_src= typeof stat_src === 'string' ? [stat_src] : stat_src;
                 stat_sink= typeof stat_sink === 'string' ? [stat_sink] : stat_sink;
-                //console.log(stat_src,stat_sink)
                 if (stat_src.some(el=> stat_sink.includes(el)) === true){
                         return("Source and Destination are same: "+stat_src);
                 }
@@ -278,29 +249,6 @@ function findPath(src,sink,inter,optPes,applycall = false){
                         var prop_sink = propRegex.exec(stat_sink);
                         propRegex.lastIndex=0;
                         if(prop_src == null && prop_sink ==null){
-                                //if formal parameter
-                                /*if(inter[0][inter[2]-1].typ=="Declare"){
-                                        var applyCaller=[];
-                                        var app_src =src.eloc
-                                        if(src.typ=="Create"){
-                                                app_src= getEncFuncOfDef(stat_src.toString())
-                                        }
-                                        //whether called via apply native
-                                        var applyCaller = getApplyCallers(inter[0][inter[2]-1].loc)
-                                        if(applyCaller){
-                                                for(var applyItem of applyCaller){
-                                                        //if the call and the return belong to the same enclosing function
-                                                        var enc_src2 = getEncFuncCall(applyItem,app_src)
-                                                        if(enc_src2 ==true){
-                                                                return("Parameter Pass via Apply between: "+stat_src+" and "+stat_sink)
-                                                        }
-                                                }
-                                                //new //find out what happens here
-                                                //return("Path missed due to Parameter Pass between2: "+stat_src+" and "+stat_sink) 
-                                        }else{// new
-                                                return("Path missed due to Parameter Pass between: "+stat_src+" and "+stat_sink) 
-                                        }
-                                }*/
                                 if(src.typ == "InvokeReturn"){
                                         var intcl_src = Object.keys(missingFuncs).filter(el => el.includes(src.loc))
                                         if(missingFuncs[intcl_src] && missingFuncs[intcl_src].includes(src["ret"][0]["retLoc"])){
@@ -316,8 +264,6 @@ function findPath(src,sink,inter,optPes,applycall = false){
                                                 }
                                         }else{
                                                 var intcl_sink= sink.loc
-                                                //new to resolve canjs paramtere pass issue
-                                                //if(sink.typ=="LexRead" && inter[0][inter[2]-1].typ=="Declare"){
                                                 if((sink.typ=="LexRead" || sink.typ=="LocRead") && inter[0][inter[2]-1].typ=="Declare"){
                                                         intcl_sink= inter[0][inter[2]-1].loc
                                                 }
@@ -334,28 +280,9 @@ function findPath(src,sink,inter,optPes,applycall = false){
                                                         }
                                                 }
                                                 else if(inter[0][inter[2]-1].typ=="Declare"){
-                                                        //if formal parameter
-                                                                /*var enc_src = getEncFunc(src.loc)
-                                                                var applyCaller = getApplyCallers(inter[0][inter[2]-1].loc)
-                                                                //console.log("here",src.loc,enc_src,applyCaller)
-                                                                //if called via apply
-                                                                if(applyCaller){
-                                                                        for(var applyItem of applyCaller){
-                                                                                //if the call and the return belong to the same enclosing function
-                                                                                //new removed the enclosing condition 
-                                                                                //var enc_src2 = getEncFuncCall(applyItem,enc_src[0])
-                                                                                //if(enc_src2 ==true){
-                                                                                        return("Parameter Pass via Apply between: "+stat_src+" and "+stat_sink)
-                                                                                //}
-                                                                        }
-                                                                }    */
-                                                        //latest
                                                         return("Path missed due to Parameter Pass: "+stat_src+" and "+stat_sink)
 
                                                 }else{
-                                                        //console.log("edge not found 1 ",src,sink)
-                                                        //new for return pessimistic
-                                                        //console.log("here")
                                                         return("Path missing for Function Return between: "+stat_src+" and "+stat_sink)
                                                 }
                                         }
@@ -405,13 +332,10 @@ function findPath(src,sink,inter,optPes,applycall = false){
                                                 }
                                         }else{
                                                 var intcl_sink= sink.loc
-                                                //if(inter[0][inter[2]-1].typ=="Declare"){\
-                                                
                                                 if(sink.typ=="LexRead" && inter[0][inter[2]-1].typ=="Declare"){
                                                         intcl_sink= inter[0][inter[2]-1].loc
                                                 }
                                                 var intcl_src = getCaller([src.eloc],intcl_sink)
-                                                //console.log("here",intcl_src,intcl_sink,missingFuncs[intcl_src] && missingFuncs[intcl_src].includes(intcl_sink))
                                                 if(missingFuncs[intcl_src] && missingFuncs[intcl_src].includes(intcl_sink)){
                                                         var dep_cl = finalOutput.filter(val => val["source"]==intcl_src && val["destination"]==intcl_sink)
                                                         if(!dep_cl){
@@ -422,23 +346,7 @@ function findPath(src,sink,inter,optPes,applycall = false){
                                                                 new_obj[key]=dep_cl
                                                                 return(new_obj) ;
                                                         }
-                                                //new to figure out the missing call edge in angularjs
-                                                }/*else{
-                                                        var enc_src = getEncFunc(src.eloc)
-                                                        var intcl_src = getCaller([enc_src],sink.loc)
-                                                        if(missingFuncs[intcl_src] && missingFuncs[intcl_src].includes(intcl_sink)){
-                                                                var dep_cl = finalOutput.filter(val => val["source"]==intcl_src && val["destination"]==intcl_sink)
-                                                                if(!dep_cl){
-                                                                        console.log("reason not found",intcl_src,sink["ret"][0]["retLoc"])
-                                                                }else{
-                                                                                var key= "Path missing for interdependent call between: "+stat_src+" and "+stat_sink
-                                                                                var new_obj={}
-                                                                                new_obj[key]=dep_cl
-                                                                                return(new_obj) ;
-        
-                                                                }
-                                                        }
-                                                }*/
+                                                }
                                         }
                                 }
                                 if(src.typ=="Create"){
@@ -466,46 +374,15 @@ function findPath(src,sink,inter,optPes,applycall = false){
                                 if(inter[0][inter[2]-1].typ=="Declare"){
                                         var applyCaller=[];
                                         var app_src = src.eloc
-                                        /*if(src.eloc){
-                                                app_src = src.eloc
-                                        }else if(sink.eloc){
-                                                app_src = sink.eloc
-                                        }*/
                                         if(src.typ=="Create"){
                                                 app_src= getEncFuncOfDef(stat_src.toString())
                                         }
-                                        //whether called via apply native
-                                        /*var applyCaller = getApplyCallers(inter[0][inter[2]-1].loc)
-                                        if(applyCaller){
-                                                //return("Parameter Pass via Apply between: "+stat_src+" and "+stat_sink)
-                                                for(var applyItem of applyCaller){
-                                                        //if the call and the return belong to the same enclosing function
-                                                        var enc_src2 = getEncFuncCall(applyItem,app_src)
-                                                        if(applyItem==app_src || enc_src2 ==true){
-                                                                return("Parameter Pass via Apply between: "+stat_src+" and "+stat_sink)
-                                                        }
-                                                }
-                                                //new //find out what happens here
-                                                //console.log("here",applyCaller,app_src)
-                                                return("Path missed due to Parameter Pass2: "+stat_src+" and "+stat_sink) 
-                                        }else{// new
-                                                return("Path missed due to Parameter Pass: "+stat_src+" and "+stat_sink) 
-                                        }*/
                                         return("Path missed due to Parameter Pass: "+stat_src+" and "+stat_sink) 
                                 }
-                                /*if(inter[0][inter[1]-1]===undefined){
-                                        console.log(stat_src+" and "+stat_sink,src,sink)
-                                        console.log(nimmo)
-                                }*/
-                                //new to get edges write after declare ex: angular.js @864
                                 if(inter[0][inter[1]-1].typ=="Declare"){
                                         return("Path missed due to Parameter Pass: "+stat_src+" and "+stat_sink) 
                                 }
-                                /*if(getPath(stat_src,stat_sink,true)){
-                                        return("Path found between: "+stat_src+" and "+stat_sink);
-                                }else{*/
                                         return("Path missing between: "+stat_src+" and "+stat_sink);
-                                //}
                         }else{
                                 //Dynamic Property Access Reasoning
                                 if(prop_src!=null && src.typ=="Get"){
@@ -523,37 +400,26 @@ function findPath(src,sink,inter,optPes,applycall = false){
                                         }
                                 }
                                 if(optPes=="OPT"){
-                                        //if((src.typ=="Get" && (src.comp== true || inter[0][inter[1]-1].comp==true)) || (sink.typ=="Get" && (sink.comp== true || inter[0][inter[2]-1].comp==true))){
                                                 return("Dynamic Property Access between: "+stat_src+" and "+stat_sink)
-                                        /*}else{
-                                                return("Path missing between2: "+stat_src+" and "+stat_sink)
-                                        }*/
                                 }else if (optPes=="PES"){
-                                //new for pessimistic paramter pass
+                                //pessimistic parameter pass
                                         if(prop_src!=null && src.typ=="Get" && inter[0][inter[2]-1].typ=="Declare"){
                                                 return("Path missed due to Parameter Pass: "+stat_src+" and "+stat_sink)
                                         }else if((prop_src!=null && src.typ=="Get" && inter[0][inter[1]-1].comp==="arguments") || (prop_sink!=null && sink.typ=="Get" && inter[0][inter[2]-1].comp==="arguments")){
                                                 return("Path missed due to Parameter Pass: "+stat_src+" and "+stat_sink)
                                         }else if(src.typ=="InvokeReturn" && sink.typ=="Get"){
                                                 return("Path missing for Function Return between: "+stat_src+" and "+stat_sink)
-                                        }/*else if((src.typ=="Get" && (src.comp== true || inter[0][inter[1]-1].comp==true)) || (sink.typ=="Get" && (sink.comp== true || inter[0][inter[2]-1].comp==true))){
-                                                return("Dynamic Property Access between: "+stat_src+" and "+stat_sink)
-                                        }*/
+                                        }
                                         else{
                                                 return("Dynamic Property Access between: "+stat_src+" and "+stat_sink)
-                                                //return("Path missing between: "+stat_src+" and "+stat_sink)
                                         }
                                 }
-                                //new
-                                //return("Path missing between: "+stat_src+" and "+stat_sink);
                         }
-                }//may be replaced by else only no need to find paths
+                }
                 else if (getPath(stat_src,stat_sink)=== true){
                         return("Path found between: "+stat_src+" and "+stat_sink)
                 }
         }
-        //return("Path found between: "+stat_src+" and "+stat_sink)
-
 }
 function getCaller(encfuncset,callee){
         var encFuncs = Object.keys(scallGraph)
@@ -636,8 +502,6 @@ function getPath(stat_src,stat_sink,ifAtAll=false){
 }
 function existsItem(input){
         //return input if exact match else list of matching values
-        //new to add src and sink for eval/evalIndirect
-        //console.log(input)
         if(input.includes("(Native)")){
                 if(input.startsWith("Ret(Func(Function")){
                         return -1
@@ -708,7 +572,6 @@ function parse(inp,applycall){
                 return "Prop("+inp.from+")"
         }
         else if(inp.typ==="LexRead"){
-                // to capture global m in mithril - the if statement
                 if(inp.loc.endsWith('.js')){
                         return "Prop("+inp.from.split(":")[1]+")";
                 }else {
@@ -730,7 +593,7 @@ function parse(inp,applycall){
                 }else{
                         return "Ret(Func("+inp["funName"]+" (Native)))"
                 }
-        }//to create traces for getters/setters
+        }
         else if(inp.typ==="InvokeCall" || inp.typ==="InvokeGetter" || inp.typ==="InvokeSetter"){
                 if(applycall){
                         return "ReflectiveCallee("+inp.loc+")";
