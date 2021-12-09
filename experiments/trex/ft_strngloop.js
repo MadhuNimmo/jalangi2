@@ -9,7 +9,7 @@
                 }
         }
         obj[x] = function(){
-                return "XYZ"
+                return "Nimmo"
         }
         obj['My'+'Hobby'] = function(){
                 return "Nothing"

@@ -2,10 +2,10 @@
   var obj = {
     MyNames: {
       NickName: function () {
-        return "XY";
+        return "Nimmo";
       },
       FullName: function () {
-        return "XYZ";
+        return "Madhurima";
       },
     },
     MyPhone: function () {

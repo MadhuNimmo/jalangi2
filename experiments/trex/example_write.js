@@ -3,12 +3,14 @@ txt="";
 
 function foo(){
   console.log("foo callled");
+  //fs.writeFileSync('write.txt',"foo called");
   txt+="foo \n";
 }
 
 function bar(){
   console.log("bar called");
   txt+="boo \n";
+  //fs.writeFileSync('write.txt',"bar called");
 }
 
 for (var i = 0; i < 10; i++){
@@ -19,5 +21,5 @@ for (var i = 0; i < 10; i++){
   }
 }
 //fs.close(); 
-fs.writeFileSync('/home/anon/jalangi2/write.txt',txt);
+fs.writeFileSync('/home/nimmo/jalangi2/write.txt',txt);
 console.log("done");

@@ -1,7 +1,7 @@
 (function () {
   var obj = {
     MyName: function () {
-      return "XYZ";
+      return "Nimmo";
     },
   };
   function foo(tuples) {
