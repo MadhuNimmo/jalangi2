@@ -22585,7 +22585,6 @@ if (typeof module !== 'undefined') {
                         var funName = f.name 
                         var funId = getValue(f)
                         if(funName === ""){
-                            //manu change suggested
                             //frmToFunName[frm] = getLoc("fenter1",J$.getGlobalIID(iid)).indexOf("eval") > -1 ? "eval": iid
                             J$.smemory.getCurrentFrame()["FUN_NAME"] = getLoc("create",J$.getGlobalIID(iid))
                             //getLoc("fenter1",J$.getGlobalIID(iid))

@@ -5,7 +5,7 @@ module.exports=function() {
                 console.log(output.length) 
         }, 5000);*/
         var fileWrt = function(){
-                fs.writeFileSync('/Users/madhurimachakraborty/Downloads/hello'+globalX+'.json', globalX, 'utf8',function(err) {
+                fs.writeFileSync('/home/anon/Downloads/hello'+globalX+'.json', globalX, 'utf8',function(err) {
                         if(err) console.log('error', err);
                 });
                 globalX+=1;
