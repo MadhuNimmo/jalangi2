@@ -26,7 +26,7 @@ const fs = require('fs');
 
         const data = (await page.evaluate('J$.callList'));
        
-        fs.writeFile('/Users/madhurimachakraborty/Documents/misc/response.json', JSON.stringify(data), function(err) {
+        fs.writeFile('/home/anon/misc/response.json', JSON.stringify(data), function(err) {
                 if (err) throw err;
                 console.log('complete');
             });
