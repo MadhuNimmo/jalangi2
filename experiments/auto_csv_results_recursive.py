@@ -6,14 +6,14 @@ import sys
 import openpyxl
 
 target = sys.argv[1]
-analysis_type = sys.argv[2].lower()
-out_path = sys.argv[3]
+out_path = sys.argv[2]
+analysis_type = sys.argv[3].lower()
 results_dict = {}
 
 for subdir, dirs, files in os.walk(target):
     for file in files:
-        print(analysis_type)
-        print(subdir.lower())
+        #print(analysis_type)
+        #print(subdir.lower())
         if file.endswith('.json') and 'resultCount' in file and analysis_type in subdir.lower():
             print('Loading json....')
             with open(os.path.join(target, subdir, file), "r") as framework_res_json:
