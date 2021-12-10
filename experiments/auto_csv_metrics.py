@@ -6,7 +6,7 @@ import sys
 import openpyxl
 
 target = sys.argv[1]
-out_path = sys.argv[2]
+out_path = target
 metrics1_dict = {}
 metrics2_dict = {}
 metrics3_dict = {}
