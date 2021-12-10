@@ -2,7 +2,7 @@
         var obj= [
                 MyName,
                 function(){
-                        return "Nimmo"
+                        return "XYZ"
                 }
         ]
         function foo(x,y,z){

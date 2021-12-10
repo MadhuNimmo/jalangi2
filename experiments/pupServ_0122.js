@@ -28,8 +28,8 @@ var siteassets = path.sep+ path.join(main,"site-assets")+path.sep;
 app.use(express.static(root));
 app.use(express.static(main));
 app.use(express.static(siteassets));
-/*app.use(express.static("/Users/madhurimachakraborty/Documents/todomvc-master/"));
-app.use(express.static("/Users/madhurimachakraborty/Documents/todomvc-master/site-assets/"))*/
+/*app.use(express.static("/home/anon/todomvc-master/"));
+app.use(express.static("/home/anon/todomvc-master/site-assets/"))*/
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
     res.sendFile(root + '/index.html');
@@ -174,4 +174,4 @@ fs.writeFile(outpath, JSON.stringify(data,null,"    "), function (err) {
     server.close()
   })();
 //module.exports = {pupServ};
-//node experiments/pupServ.js /Users/madhurimachakraborty/Documents/todomvc-master/examples/vanillajs /Users/madhurimachakraborty/Documents/todomvc-study/DCG.json
+//node experiments/pupServ.js /home/anon/todomvc-master/examples/vanillajs /home/anon/todomvc-study/DCG.json

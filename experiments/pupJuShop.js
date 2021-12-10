@@ -1,8 +1,8 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 const {performance} = require('perf_hooks');
-//var jalangi = require("/Users/madhurimachakraborty/Documents/jalangi2/src/js/utils/api.js");
-const waitForAnySelector = require("/Users/madhurimachakraborty/Documents/jalangi2/experiments/helpers.js");
+//var jalangi = require("/home/anon/jalangi2/src/js/utils/api.js");
+const waitForAnySelector = require("/home/anon/jalangi2/experiments/helpers.js");
 var inputDir = [];
 var data = "";
 inputDir.push(process.argv[2]);

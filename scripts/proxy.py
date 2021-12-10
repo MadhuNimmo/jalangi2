@@ -82,9 +82,9 @@ def processFile (flow, content, ext):
         hash = hashlib.md5(content.encode('utf-8')).hexdigest()
         fileName = 'cache/' + flow.request.host + '/' + hash + '/' + name + '.' + ext
         instrumentedFileName = 'cache/' + flow.request.host + '/' + hash + '/' + name + '_jalangi_.' + ext
-        if not os.path.exists("/Users/madhurimachakraborty/Documents/BenchInst/ "+flow.request.host + "/"):
-            os.makedirs("/Users/madhurimachakraborty/Documents/BenchInst/ "+flow.request.host + "/")
-        with open("/Users/madhurimachakraborty/Documents/BenchInst/ "+flow.request.host + "/"+name+"."+ext, 'w+') as file:
+        if not os.path.exists("/home/anon/BenchInst/ "+flow.request.host + "/"):
+            os.makedirs("/home/anon/BenchInst/ "+flow.request.host + "/")
+        with open("/home/anon/BenchInst/ "+flow.request.host + "/"+name+"."+ext, 'w+') as file:
             file.write(content)
         if not os.path.exists('cache/' + flow.request.host + '/' + hash):
             os.makedirs('cache/' + flow.request.host + '/' + hash)

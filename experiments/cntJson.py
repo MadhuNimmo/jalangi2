@@ -1,6 +1,6 @@
 import json
 import sys
-#filename='/Users/madhurimachakraborty/Documents/js-acg-examples-master/Knockout_test_results/StatWala.json'
+#filename='/home/anon/js-acg-examples-master/Knockout_test_results/StatWala.json'
 
 cnt=0
 cnt2=0
@@ -53,9 +53,7 @@ print(len(listy2))'''
               for k1,v1 in value1.items():
                   for k2,v2 in value2.items():
                       if(v1!=v2):
-                          print(key1,value1)
-                          print(nimmo)'''
-            
+                          print(key1,value1)'''            
 #if two json obs are same
 '''a, b = json.dumps(data1, sort_keys=True), json.dumps(data2, sort_keys=True)
 print(a == b)'''

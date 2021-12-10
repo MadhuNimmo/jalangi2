@@ -2,7 +2,7 @@
         var obj= {}
         obj["MyName"]= function(){
                         var xyz = "MyPhone"
-                        return "Nimmo"
+                        return "XYZ"
                 }
         obj["MyPhone"]= function(){
                         return "XXX"

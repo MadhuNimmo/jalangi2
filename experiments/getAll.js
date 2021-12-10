@@ -34,5 +34,5 @@ function walkDir(dir) {
         });
       };
 
-const result = walkDir('/Users/madhurimachakraborty/Documents/todomvc-master/examples/vanillajs')
+const result = walkDir('/home/anon/todomvc-master/examples/vanillajs')
 console.log(result)

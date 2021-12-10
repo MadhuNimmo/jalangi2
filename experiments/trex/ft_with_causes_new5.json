@@ -1,41 +1,41 @@
 [
   {
-    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@3:52-144",
+    "source": "/home/anon/jalangi2/experiments/trex/ft_with.js@3:52-144",
     "destination": "Function (Native)",
     "reasons": "Calls to unmodelled native functions"
   },
   {
-    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@6:195-198",
-    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@3:52-144",
+    "source": "/home/anon/jalangi2/experiments/trex/ft_with.js@6:195-198",
+    "destination": "evalIndirect:/home/anon/jalangi2/experiments/trex/ft_with.js@3:52-144",
     "reasons": "Function Constructor involved"
   },
   {
-    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@7:208-211",
-    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@3:52-144",
+    "source": "/home/anon/jalangi2/experiments/trex/ft_with.js@7:208-211",
+    "destination": "evalIndirect:/home/anon/jalangi2/experiments/trex/ft_with.js@3:52-144",
     "reasons": "Dynamic Trace could not be filtered"
   },
   {
-    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@10:293-323",
+    "source": "/home/anon/jalangi2/experiments/trex/ft_with.js@10:293-323",
     "destination": "Function (Native)",
     "reasons": "Calls to unmodelled native functions"
   },
   {
-    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@13:382-388",
-    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@10:293-323",
+    "source": "/home/anon/jalangi2/experiments/trex/ft_with.js@13:382-388",
+    "destination": "evalIndirect:/home/anon/jalangi2/experiments/trex/ft_with.js@10:293-323",
     "reasons": "Function Constructor involved"
   },
   {
-    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@14:397-404",
-    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@10:293-323",
+    "source": "/home/anon/jalangi2/experiments/trex/ft_with.js@14:397-404",
+    "destination": "evalIndirect:/home/anon/jalangi2/experiments/trex/ft_with.js@10:293-323",
     "reasons": [
-      "Source not found: Func(evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@10:293-323)",
-      "Source not found: Ret(Func(evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@10:293-323))",
-      "Path found between: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@1:1-406, [final]) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@14:397-404)"
+      "Source not found: Func(evalIndirect:/home/anon/jalangi2/experiments/trex/ft_with.js@10:293-323)",
+      "Source not found: Ret(Func(evalIndirect:/home/anon/jalangi2/experiments/trex/ft_with.js@10:293-323))",
+      "Path found between: Var(/home/anon/jalangi2/experiments/trex/ft_with.js@1:1-406, [final]) and Callee(/home/anon/jalangi2/experiments/trex/ft_with.js@14:397-404)"
     ]
   },
   {
     "source": "anon (Native)",
-    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@10:293-323",
+    "destination": "evalIndirect:/home/anon/jalangi2/experiments/trex/ft_with.js@10:293-323",
     "reasons": "Calls from unmodelled native functions"
   }
 ]

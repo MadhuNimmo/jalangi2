@@ -1,8 +1,8 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 const {performance} = require('perf_hooks');
-//var jalangi = require("/Users/madhurimachakraborty/Documents/jalangi2/src/js/utils/api.js");
-const waitForAnySelector = require("/Users/madhurimachakraborty/Documents/jalangi2/experiments/helpers.js");
+//var jalangi = require("/home/anon/jalangi2/src/js/utils/api.js");
+const waitForAnySelector = require("/home/anon/jalangi2/experiments/helpers.js");
 var inputDir = [];
 var data = []
 var iidToLocMap = {};
@@ -50,7 +50,7 @@ module.exports = (async () => {
   await Promise.all([page.coverage.startJSCoverage()]);
   await page.waitFor(3000);
   var t0 = performance.now()
-  await page._client.send('Page.setDownloadBehavior', {behavior: 'allow', downloadPath: '/Users/madhurimachakraborty/Documents/JShop_results/ResultsNewAll/'});
+  await page._client.send('Page.setDownloadBehavior', {behavior: 'allow', downloadPath: '/home/anon/JShop_results/ResultsNewAll/'});
   page.setDefaultNavigationTimeout(0); 
   page.setDefaultTimeout(0);
   await Promise.race([

@@ -10,7 +10,7 @@ function conv(xarr)
 {
       fileconv(xarr);
       //console.log(xarr);
-      fs.writeFileSync("/Users/madhurimachakraborty/Documents/js-acg-examples-master/react15_test_results/DynRes_react15NatEdit.txt",xarr.join("\n"));
+      fs.writeFileSync("/home/anon/js-acg-examples-master/react15_test_results/DynRes_react15NatEdit.txt",xarr.join("\n"));
 }
 
 function fileconv(xarr){

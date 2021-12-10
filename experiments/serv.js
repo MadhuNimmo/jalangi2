@@ -7,8 +7,8 @@ const waitForAnySelector =  require('./helpers.js');
 
 var root = "/tmp/react"
 app.use(express.static(root));
-app.use(express.static("/Users/madhurimachakraborty/Documents/todomvc-master/"));
-app.use(express.static("/Users/madhurimachakraborty/Documents/todomvc-master/site-assets/"))
+app.use(express.static("/home/anon/todomvc-master/"));
+app.use(express.static("/home/anon/todomvc-master/site-assets/"))
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
     res.sendFile(path.resolve(root + '/index.html'));
@@ -44,7 +44,7 @@ var server =app.listen(8080);
 
         const data = (await page.evaluate('J$.callList'));
        
-        fs.writeFile('/Users/madhurimachakraborty/Documents/misc/response.json', JSON.stringify(data), function(err) {
+        fs.writeFile('/home/anon/misc/response.json', JSON.stringify(data), function(err) {
                 if (err) throw err;
                 console.log('complete');
             });

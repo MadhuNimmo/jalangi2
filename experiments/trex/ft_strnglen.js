@@ -1,6 +1,6 @@
 (function(){
         var arr= [function(){
-                        return "Nimmo"
+                        return "XYZ"
                 },
                 function(){
                         return "XXX-XXX-XXXX"

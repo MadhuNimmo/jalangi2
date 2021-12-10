@@ -32,7 +32,7 @@ var t0 = performance.now()
 for(var i=0;i<DynTrace.length-1;i++){
         findPath(DynTrace[i],DynTrace[i+1],i);
 }
-//console.log(output.getPath("Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun.js@2:32-58)","Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_newfun.js@5:83-86)"))
+//console.log(output.getPath("Func(/home/anon/jalangi2/experiments/trex/ft_newfun.js@2:32-58)","Callee(/home/anon/jalangi2/experiments/trex/ft_newfun.js@5:83-86)"))
 
 var t1 = performance.now()
 console.log("Call to findPath took " + (t1 - t0) + " milliseconds.")

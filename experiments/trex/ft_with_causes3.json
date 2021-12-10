@@ -1,21 +1,21 @@
 [
   {
-    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@3:45-151",
+    "source": "/home/anon/jalangi2/experiments/trex/ft_with.js@3:45-151",
     "destination": "Function (Native)",
     "reasons": "Calls to unmodelled native functions"
   },
   {
-    "source": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@8:176-179",
-    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@3:45-151",
+    "source": "/home/anon/jalangi2/experiments/trex/ft_with.js@8:176-179",
+    "destination": "evalIndirect:/home/anon/jalangi2/experiments/trex/ft_with.js@3:45-151",
     "reasons": [
-      "Function Constructor Involved: Ret(Func(Function (Native))) and Ret(Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@2:17-156))",
-      "Path found between: Ret(Func(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@2:17-156)) and Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@1:1-181, [x])",
-      "Path found between: Var(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@1:1-181, [x]) and Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@8:176-179)"
+      "Function Constructor Involved: Ret(Func(Function (Native))) and Ret(Func(/home/anon/jalangi2/experiments/trex/ft_with.js@2:17-156))",
+      "Path found between: Ret(Func(/home/anon/jalangi2/experiments/trex/ft_with.js@2:17-156)) and Var(/home/anon/jalangi2/experiments/trex/ft_with.js@1:1-181, [x])",
+      "Path found between: Var(/home/anon/jalangi2/experiments/trex/ft_with.js@1:1-181, [x]) and Callee(/home/anon/jalangi2/experiments/trex/ft_with.js@8:176-179)"
     ]
   },
   {
-    "source": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@3:45-151",
-    "destination": "evalIndirect:/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_with.js@3:45-151",
+    "source": "evalIndirect:/home/anon/jalangi2/experiments/trex/ft_with.js@3:45-151",
+    "destination": "evalIndirect:/home/anon/jalangi2/experiments/trex/ft_with.js@3:45-151",
     "reasons": "With involved"
   }
 ]

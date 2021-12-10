@@ -262,5 +262,5 @@ getInputs()
 
 
 /*
-node experiments/statVSDyn.js /Users/madhurimachakraborty/Documents/js-acg-examples-master/Knockout_test_results/response.json /Users/madhurimachakraborty/Documents/js-acg-examples-master/Knockout_test_results/StatRes_knockrev.txt /Users/madhurimachakraborty/Documents/js-acg-examples-master/knockout_rev/ /Users/madhurimachakraborty/Documents/js-acg-examples-master/Knockout_test_results/
+node experiments/statVSDyn.js /home/anon/js-acg-examples-master/Knockout_test_results/response.json /home/anon/js-acg-examples-master/Knockout_test_results/StatRes_knockrev.txt /home/anon/js-acg-examples-master/knockout_rev/ /home/anon/js-acg-examples-master/Knockout_test_results/
 */

@@ -11,7 +11,7 @@ describe('listFilesInDirectorySync', () => {
 
   /*beforeEach(() => {
     // Set up some mocked out file info before each test
-    require('fs').__setMockFiles('/Users/madhurimachakraborty/Documents/GitHub/DynamicCallGraph/examples/');
+    require('fs').__setMockFiles('/home/anon/GitHub/DynamicCallGraph/examples/');
   });*/
 
   test('includes all files in the directory in the summary', async () => {

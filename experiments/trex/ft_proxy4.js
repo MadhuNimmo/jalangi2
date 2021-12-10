@@ -13,7 +13,7 @@ var obj ={
             
       proxy1.sum(1, 2);  
 /*
-{ '(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_proxy4.js:12:20:12:43)': [ 'Proxy (Native)' ],
-  '(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_proxy4.js:14:7:14:23)':
-   [ '(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_proxy4.js:2:15:4:14)' ] }
+{ '(/home/anon/jalangi2/experiments/trex/ft_proxy4.js:12:20:12:43)': [ 'Proxy (Native)' ],
+  '(/home/anon/jalangi2/experiments/trex/ft_proxy4.js:14:7:14:23)':
+   [ '(/home/anon/jalangi2/experiments/trex/ft_proxy4.js:2:15:4:14)' ] }
    */

@@ -4,7 +4,7 @@ const {pupServ} = require('./pupServ')
 tests=fs.readFileSync(file).toString().split("\n");
 async function pupJest(testFile) {
                 try{
-                        command = "node /Users/madhurimachakraborty/Documents/jalangi2/experiments/pupServ.js"+" /Users/madhurimachakraborty/Documents/todomvc-master/"+" /Users/madhurimachakraborty/Documents/misc/";
+                        command = "node /home/anon/jalangi2/experiments/pupServ.js"+" /home/anon/todomvc-master/"+" /home/anon/misc/";
                         exec(command)
  
                 }

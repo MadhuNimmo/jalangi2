@@ -3,66 +3,66 @@
     "typ": "Get",
     "funName": "push",
     "identity": "FunNat:5",
-    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under.js@2:1:2:9",
+    "loc": "/home/anon/jalangi2/experiments/trex/ft_under.js@2:1:2:9",
     "from": "Obj7:push"
   },
   {
     "typ": "Create",
     "funName": "anon",
     "identity": "FunNon:9",
-    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under.js@2:11:4:2"
+    "loc": "/home/anon/jalangi2/experiments/trex/ft_under.js@2:11:4:2"
   },
   {
     "typ": "InvokeCall",
     "funName": "push",
     "identity": "FunNat:5",
-    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under.js@2:1:4:3"
+    "loc": "/home/anon/jalangi2/experiments/trex/ft_under.js@2:1:4:3"
   },
   {
     "typ": "InvokeReturn",
     "funName": "push",
     "identity": "FunNat:5",
-    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under.js@2:1:4:3",
+    "loc": "/home/anon/jalangi2/experiments/trex/ft_under.js@2:1:4:3",
     "ret": null
   },
   {
     "typ": "Get",
     "funName": "anon",
     "identity": "FunNon:9",
-    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under.js@5:1:5:7",
+    "loc": "/home/anon/jalangi2/experiments/trex/ft_under.js@5:1:5:7",
     "from": "Obj7:0"
   },
   {
     "typ": "InvokeCall",
     "funName": "anon",
     "identity": "FunNon:9",
-    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under.js@5:1:5:9"
+    "loc": "/home/anon/jalangi2/experiments/trex/ft_under.js@5:1:5:9"
   },
   {
     "typ": "Get",
     "funName": "bound consoleCall",
     "identity": "FunNat:13",
-    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under.js@3:9:3:20",
+    "loc": "/home/anon/jalangi2/experiments/trex/ft_under.js@3:9:3:20",
     "from": "Obj15:log"
   },
   {
     "typ": "InvokeCall",
     "funName": "bound consoleCall",
     "identity": "FunNat:13",
-    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under.js@3:9:3:39"
+    "loc": "/home/anon/jalangi2/experiments/trex/ft_under.js@3:9:3:39"
   },
   {
     "typ": "InvokeReturn",
     "funName": "bound consoleCall",
     "identity": "FunNat:13",
-    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under.js@3:9:3:39",
+    "loc": "/home/anon/jalangi2/experiments/trex/ft_under.js@3:9:3:39",
     "ret": null
   },
   {
     "typ": "InvokeReturn",
     "funName": "anon",
     "identity": "FunNon:9",
-    "loc": "/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_under.js@5:1:5:9",
+    "loc": "/home/anon/jalangi2/experiments/trex/ft_under.js@5:1:5:9",
     "ret": null
   }
 ]

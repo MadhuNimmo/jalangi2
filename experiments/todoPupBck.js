@@ -81,7 +81,7 @@ var checkboxes;
                 console.log(`Utilization percetages ${entry}: ${cov[entry]['js_used_bytes'] / cov[entry]['js_total_bytes'] * 100}%`);
               }
         /*const data= (await page.evaluate('J$.callList'));
-        fs.writeFile('/Users/madhurimachakraborty/Documents/js-acg-examples-master/js-callgraph/todomvc/response.json', JSON.stringify(data), function(err) {
+        fs.writeFile('/home/anon/js-acg-examples-master/js-callgraph/todomvc/response.json', JSON.stringify(data), function(err) {
                 if (err) throw err;
                 console.log('complete');
             });*/

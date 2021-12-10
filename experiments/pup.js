@@ -34,7 +34,7 @@ const port = 8888;
               });
 	try {
 		const page = await browser.newPage();
-		const response = await page.goto('file:///Users/madhurimachakraborty/Documents/jalangi2/experiments/html/html2/index.html', {
+		const response = await page.goto('file:///home/anon/jalangi2/experiments/html/html2/index.html', {
 			timeout: 25000,
 			waitUntil: 'networkidle2'
                 });

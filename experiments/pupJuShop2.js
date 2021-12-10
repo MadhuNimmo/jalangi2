@@ -1,8 +1,8 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 const {performance} = require('perf_hooks');
-//var jalangi = require("/Users/madhurimachakraborty/Documents/jalangi2/src/js/utils/api.js");
-const waitForAnySelector = require("/Users/madhurimachakraborty/Documents/jalangi2/experiments/helpers.js");
+//var jalangi = require("/home/anon/jalangi2/src/js/utils/api.js");
+const waitForAnySelector = require("/home/anon/jalangi2/experiments/helpers.js");
 var inputDir = [];
 var data = 0;
 //var iidToLocMap = {};
@@ -50,7 +50,7 @@ module.exports = (async () => {
   await Promise.all([page.coverage.startJSCoverage()]);
   await page.waitFor(3000);
   var t0 = performance.now()
-  await page._client.send('Page.setDownloadBehavior', {behavior: 'allow', downloadPath: '/Users/madhurimachakraborty/Documents/JuiceShop_results/ResultsNewAll/'});
+  await page._client.send('Page.setDownloadBehavior', {behavior: 'allow', downloadPath: '/home/anon/JuiceShop_results/ResultsNewAll/'});
   await Promise.race([
     page.goto("http://192.168.1.223:3000/index.html", { waitUntil: ["load", "networkidle2"] , timeout: 0}),//waitUntil: ["load", "networkidle2"]
     page.waitFor("body"),
@@ -61,7 +61,7 @@ module.exports = (async () => {
   await page.setViewport({ width: 1440, height: 706 })
   await page.waitFor(5000);
   //dont use this
-  //await page._client.send('Page.setDownloadBehavior', {behavior: 'allow', downloadPath: '/Users/madhurimachakraborty/Documents/JuiceShop_results/Results3/'});
+  //await page._client.send('Page.setDownloadBehavior', {behavior: 'allow', downloadPath: '/home/anon/JuiceShop_results/Results3/'});
   // dismiss info 
   await page.waitForSelector('#mat-dialog-0 > .ng-star-inserted > .mat-typography > div > .close-dialog')
   await page.click('#mat-dialog-0 > .ng-star-inserted > .mat-typography > div > .close-dialog')

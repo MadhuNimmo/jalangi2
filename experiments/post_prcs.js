@@ -67,7 +67,7 @@ function post_prcs(statflowGraph){
                                 StatFlowOut[key] = []
                                 
                                 for (var val of values) {
-                                        /*if(val === "Callee(/Users/madhurimachakraborty/Documents/jalangi2/experiments/trex/ft_applycall.js@10:96-144)"){
+                                        /*if(val === "Callee(/home/anon/jalangi2/experiments/trex/ft_applycall.js@10:96-144)"){
                                                 console.log("reached")
                                         }*/
                                         if(!(val.includes("prologue.js"))){// || val.includes("%ssa_val")
