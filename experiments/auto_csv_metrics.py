@@ -6,6 +6,7 @@ import sys
 import openpyxl
 
 target = sys.argv[1]
+out_path = sys.argv[2]
 metrics1_dict = {}
 metrics2_dict = {}
 metrics3_dict = {}
@@ -23,7 +24,7 @@ for subdir, dirs, files in os.walk(target):
 
     framework = subdir.split('/')[len(subdir.split('/')) - 1]
     for file in files:
-        print(file)
+        #print(file)
         if file.endswith('.json') and 'Metrics' in file:
             print('Loading json....')
             with open(os.path.join(target, subdir, file), "r") as framework_res_json:
@@ -123,7 +124,7 @@ met3_df_avg = pd.DataFrame([[met3_opt_pre_avg, met3_opt_rec_avg, met3_pes_pre_av
 met3_df = met3_df.append(met3_df_avg)
 
 
-writer = pd.ExcelWriter('metrics_output.xlsx')
+writer = pd.ExcelWriter(out_path +'/metrics_output.xlsx')
 
 met1_df.to_excel(writer,sheet_name='Final(CallSite)')  
 met2_df.to_excel(writer,

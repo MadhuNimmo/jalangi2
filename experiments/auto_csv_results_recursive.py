@@ -7,6 +7,7 @@ import openpyxl
 
 target = sys.argv[1]
 analysis_type = sys.argv[2].lower()
+out_path = sys.argv[3]
 results_dict = {}
 
 for subdir, dirs, files in os.walk(target):
@@ -53,7 +54,7 @@ frameworks = ['Canjs', 'Knockback', 'Knockoutjs', 'React', 'Angularjs', 'Backbon
 reasons_results = ['Entry point edge', 'Calls to unmodelled native functions', 'Calls from unmodelled native functions', 'Use of Eval', 'Eval via New Function', 'Creation via Function Constructor', 'Dynamic Property Access', 'Use of With', 'Calls involving bounded functions', 'Dynamic Trace could not be filtered', 'Source/Destination not found', 'Path missing due to interdependent call', 'Multiple levels of Native functionality involved', 'Path missing due to unknown reasons','WALA bug(Finally)(repeat at count)', 'Calls to Getters/Setters', 'Path missed due to parameter pass/2', 'Path missing for Function Return between', 'missed edges', 'missed paths', 'Effectiveness', 'Average number of missed path/edge', 'Notes', 'Any edge with all paths as found', 'Edge with maximum number of paths', 'Edge with maximum number of missed paths']
 res_df = pd.DataFrame.from_dict(results_dict, orient='index', dtype=None, columns=reasons_results)
 print(res_df.head())
-res_df.to_csv(analysis_type + '_root_causes.csv')
+res_df.to_csv(out_path+'/'+analysis_type + '_root_causes.csv')
 
 
 res_df.to_excel(analysis_type + "_root_causes_output.xlsx",

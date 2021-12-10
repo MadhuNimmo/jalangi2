@@ -16,7 +16,6 @@ for key1, value1 in data.items():
           for key2, value2 in data2.items():
               if(key1==key2 or str(key2) in str(key1)):
                   print(key1,key2)
-                  print(nimmo)
                   for item1 in value1:
                     for item2 in value2:
                       if(item1==item2 or (str(item2) in str(item1))):

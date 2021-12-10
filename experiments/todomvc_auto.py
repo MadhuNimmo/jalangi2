@@ -3,6 +3,8 @@ import sys
 import os
 import time
 
+import time
+startTime = time.time()
 print('Number of arguments:', len(sys.argv), 'arguments.')
 print('Argument List:', str(sys.argv))
 print(sys.argv[1].split('=')[1])
@@ -111,3 +113,5 @@ if len(failed)>0:
     print('Please follow the instructions to run them separately')
 else:
     print(f'All frameworks have been executed and you can find the output files here: {outpath}{typ_output}')
+executionTime = (time.time() - startTime)
+print('Execution time in seconds: ' + str(executionTime))
