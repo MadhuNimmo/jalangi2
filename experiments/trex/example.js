@@ -1,8 +1,11 @@
-function foo(){
-  return bar; 
+(function(){function foo(x,y){
+  x()
 }
 function bar(){
   return
 }
-x= foo();
-x();
+function dave(){
+  return
+}
+foo(bar,dave)
+})()

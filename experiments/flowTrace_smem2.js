@@ -411,3 +411,5 @@
 };
 
 }());
+
+//node src/js/commands/jalangi.js --inlineIID --inlineSource --analysis src/js/sample_analyses/ChainedAnalyses.js --analysis src/js/runtime/SMemory.js --analysis experiments/flowTrace_smem2.js experiments/trex/example.js

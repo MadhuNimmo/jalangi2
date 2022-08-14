@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Helper tool to enable/disable OS X proxy and wrap mitmproxy
 #
@@ -87,7 +87,6 @@ class Wrapper(object):
     def wrap_mitmproxy(self):
         with self.wrap_proxy():
             cmd = ['mitmdump', '-p', str(self.port)]
-            #'--mode upstream:http://localhost:9876 --ssl-insecure','--mode transparent']
             if self.extra_arguments:
                 cmd.extend(self.extra_arguments)
             subprocess.check_call(cmd)
@@ -129,7 +128,6 @@ class Wrapper(object):
         parser.add_argument('-d', '--auto-disable', action='store_true', help='auto disable the proxy')
 #         parser.add_argument('--honeyproxy', action='store_true', help='run honeyproxy instead of mitmproxy')
         parser.add_argument('-p', '--port', type=int, help='override the default port of 8080', default=8080)
-        #parser.add_argument('--mode', default= 'transparent')
         args, extra_arguments = parser.parse_known_args()
 
         wrapper = cls(port=args.port, extra_arguments=extra_arguments)
