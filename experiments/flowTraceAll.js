@@ -91,6 +91,8 @@
             else if (typ=="Put" || typ=="Setter"){
                 newObj.to = others[0];
                 newObj.comp = others[1];
+            }else if (typ=="InvokeCall"){
+                newObj.to = others;
             }
             output.push(newObj)
           //}
@@ -368,7 +370,8 @@
                     }
                     //|| funId.startsWith("FunNat:")
                     if(lst.indexOf(funId) > -1 || funId.indexOf("FunNat:") === 0 || J$.ast_info.length == 0 ){
-                        addToTrace("InvokeCall",funName,funId,getLoc("invkcll",J$.getGlobalIID(iid)))
+                        //console.log("caller",getLoc("invkcll",J$.getGlobalIID(iid)),"callee",getLoc("invkfun",functionSid+":"+functionIid))
+                        addToTrace("InvokeCall",funName,funId,getLoc("invkcll",J$.getGlobalIID(iid)),getLoc("invkfun",functionSid+":"+functionIid))
                     }
                 },
                 invokeFun: function (iid, f, base, args, result, isConstructor, isMethod, functionIid, functionSid) {
