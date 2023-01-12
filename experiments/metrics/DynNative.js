@@ -16,10 +16,10 @@
   var calleeIid = "";
   var calleeIids = "";
   var format = /(?!\()(\S+\.js)\:([0-9]+\:[0-9]+\:[0-9]+\:[0-9]+)\)/gi;
-  var jSetTimeout = setTimeout;
-  var jSetInterval = setInterval;
-  var jClearTimeout = clearTimeout;
-  var jClearInterval = clearInterval;
+  var jSetTimeout = globalThis.setTimeout;
+  var jSetInterval = globalThis.setInterval;
+  var jClearTimeout = globalThis.clearTimeout;
+  var jClearInterval = globalThis.clearInterval;
   var spclList = [jSetTimeout, jSetInterval, jClearTimeout, jClearInterval];
   //var spclCaller="";
   var jToString = Function.prototype.toString;

@@ -53,25 +53,25 @@ function getInlinedScripts(analyses, initParams, extraAppScripts, EXTRA_SCRIPTS_
                 if (jalangiRoot) {
                     src = path.join(jalangiRoot, src);
                 }
-                headerCode += "<script type=\"text/javascript\">";
+                //headerCode += "<script type=\"text/javascript\">";
                 headerCode += fs.readFileSync(src);
-                headerCode += "</script>";
+                //headerCode += "</script>";
             });
         }
 
         if (analyses) {
-            var initParamsCode = genInitParamsCode(initParams);
+            /*var initParamsCode = genInitParamsCode(initParams);
             if (initParamsCode) {
                 headerCode += initParamsCode;
-            }
+            }*/
             if (cdn) {
                 headerCode += "<script type=\"text/javascript\" src=\"" + cdn + "/analyses.js\"></script>";
             } else {
                 analyses.forEach(function (src) {
                     src = path.resolve(src);
-                    headerCode += "<script type=\"text/javascript\">";
+                    //headerCode += "<script type=\"text/javascript\">";
                     headerCode += fs.readFileSync(src);
-                    headerCode += "</script>";
+                    //headerCode += "</script>";
                 });
             }
         }
@@ -129,7 +129,8 @@ function genInitParamsCode(initParams) {
             initParamsObj[split[0]] = split[1];
         });
     }
-    return "<script>J$.initParams = " + JSON.stringify(initParamsObj) + ";</script>";
+    //return "<script>J$.initParams = " + JSON.stringify(initParamsObj) + ";</script>";
+    return "J$.initParams = " + JSON.stringify(initParamsObj);
 }
 
 function applyASTHandler(instResult, astHandler, sandbox) {

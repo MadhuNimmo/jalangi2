@@ -33,6 +33,7 @@ var Q = require("q");
 var instDir = require('./../commands/instrument');
 var cp = require('child_process');
 
+var instUtil = require("../instrument/instUtil");
 
 function getInstOutputFile(filePath) {
     if (filePath) {
@@ -118,6 +119,16 @@ function instrumentString(code, options) {
         setupConfig(options.instHandler);
     }
     var result = J$.instrumentCode(instCodeOptions);
+    //var other_results = instUtil.getInlinedScripts(analyses, initParams, extraAppScripts, EXTRA_SCRIPTS_DIR, jalangiRoot, cdn)
+    instUtil.setHeaders()
+    var other_results = instUtil.getInlinedScripts([
+        '/Users/madhurimachakraborty/Documents/GitHub/jalangi2/src/js/sample_analyses/ChainedAnalyses.js',
+        '/Users/madhurimachakraborty/Documents/GitHub/jalangi2/src/js/sample_analyses/dlint/Utils.js',
+        '/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/metrics/DynNative.js'
+      ],null,[], "__jalangi_extra","/Users/madhurimachakraborty/Documents/GitHub/jalangi2",undefined)
+    /*if (other_results){
+        result.code = other_results + result.code
+    }*/
     clearConfig();
     if (options.astHandler) {
         var info = options.astHandler(result.instAST);
@@ -125,7 +136,7 @@ function instrumentString(code, options) {
             result.code = J$.Constants.JALANGI_VAR + ".ast_info = " + JSON.stringify(info) + ";\n" + result.code;
         }
     }
-    return result;
+    return [result,other_results];
 }
 
 

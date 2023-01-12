@@ -255,7 +255,7 @@ if (typeof J$ === 'undefined') {
         associateSidWithFunction(val, internalIid);
         if (hasGetterSetter) {
             for (var offset in val) {
-                if (hasGetOwnPropertyDescriptor && val.hasOwnProperty(offset)) {
+                if (hasGetOwnPropertyDescriptor && Object.prototype.hasOwnProperty.call(val, offset)) {
                     var desc = Object.getOwnPropertyDescriptor(val, offset);
                     if (desc !== undefined) {
                         if (typeof desc.get === 'function') {
