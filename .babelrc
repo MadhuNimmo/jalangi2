@@ -1,3 +1,15 @@
 {
-        "presets" : [ "@babel/env" ]
+        "presets": [
+                [
+                        "@babel/preset-env",
+                        {
+                                "modules": false,
+                                "forceAllTransforms": true
+                        }
+                ],
+                "@babel/preset-react"
+        ],
+        "plugins": [
+                "transform-remove-strict-mode"
+        ]
 }
