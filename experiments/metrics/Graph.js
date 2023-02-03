@@ -43,6 +43,12 @@ class Graph {
     }
     return this.AdjList;
   }
+  removeKey(caller) {
+      if (this.AdjList.has(caller) && this.getValues(caller).length >=0) {
+        this.AdjList.delete(caller);
+      } 
+    return this.AdjList;
+  }
   // identifying if an edge is present
   hasEdge(caller, callee) {
     return (

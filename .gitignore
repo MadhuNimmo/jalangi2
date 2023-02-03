@@ -1,3 +1,5 @@
 .idea
 node_modules
-*~
+*_jalangi_*
+*dynCalls*
+.DS_Store

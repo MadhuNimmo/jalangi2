@@ -48,7 +48,7 @@ function main() {
         });
         // Converting json to graph
         dynCallGraphEdit = jsonToGraph(dynCallGraph);
-
+        statCallGraph = {}
         if (metricType == "Metric1" || metricType == "EdgeDiff") { //calling loc -> callee
                 // Converting json to graph
                 var SCG = JSON.parse(fs.readFileSync(SCGFilename, 'utf8'));

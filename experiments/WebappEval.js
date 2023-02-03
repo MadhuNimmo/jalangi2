@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const process = require('process');
-var jalangi = require('/home/anon/jalangi2/src/js/utils/api');
+var jalangi = require('../src/js/utils/api');
 var inputDir =[]
 inputDir.push(process.argv[2])
 var options = {
