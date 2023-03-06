@@ -200,6 +200,7 @@
       functionIid,
       functionSid
     ) {
+      if(f!==undefined){
       var funName = f.name;
       var giid = J$.getGlobalIID(iid);
       var fgiid = functionSid + ":" + functionIid;
@@ -242,6 +243,7 @@
 
         callStack.push(giid);
       }
+    }
     },
 
     /**
@@ -254,6 +256,7 @@
      * @returns {undefined} - Any return value is ignored
      */
     functionEnter: function (iid, f, dis, args) {
+      if(f!==undefined){
       var funName = f.name;
       var giid = J$.getGlobalIID(iid);
       iidToFunName[giid] = funName == "" ? "anon" : funName;
@@ -304,6 +307,7 @@
       delete iidToCallerLoc[giid];
       callStack.push(giid);
       //console.log(f, callStack.length)
+    }
     },
     /**
      * @desc Removes the top element of the setterGetter after a set method
@@ -372,6 +376,7 @@
       functionIid,
       functionSid
     ) {
+      if(f!==undefined){
       var giid = J$.getGlobalIID(iid);
       if (callStack[callStack.length - 1] == giid) {
         callStack.pop();
@@ -382,6 +387,7 @@
       /*if(spclList.includes(f)){
                                 spclCaller=f.name;
                         }*/
+      }
     },
     /**
      * @desc Removes the top element of the CallStack when the execution of a function body completes

@@ -193,7 +193,9 @@ if (typeof J$ === 'undefined') {
             } else if (isConstructor) {
                 result = callAsConstructor(f, args);
             } else {
+                if(f!==undefined){
                 result = Function.prototype.apply.call(f, base, args);
+                }
             }
             return result;
         } finally {
