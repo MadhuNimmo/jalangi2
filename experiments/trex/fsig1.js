@@ -1,14 +1,9 @@
-(function(){
-        function foo(x,y){
-                arguments[0]()
-                var arr = [].push("something");
-                dave()
+function greet(firstName,secondName) {
+        if(secondName){
+            console.log("Hello, "+firstName +" "+secondName);
+        }else{
+            console.log("Hello, "+firstName);
         }
-        function bar(){
-                return "bar"
-        }
-        function dave(){
-                return "dave"
-        }
-        foo(bar,dave)
-})()
+    }
+    //greet("John"); // Hello, John!
+    greet("John", "Doe"); // Hello, John Doe!
