@@ -1,3 +1,6 @@
+/*
+The edges present in static but not in dynamic with the caller more than 2 callees.
+*/
 var { processInputs } = require("./preprocess.js");
 var Graph = require("./Graph.js");
 const path = require("path");

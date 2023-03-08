@@ -23,7 +23,7 @@ function main() {
   );
   getEdgeComm();
   [Comm, FSSCG, patterns, editMaps] = processInputs(
-        path.join(outPath, "comm.json"),
+        path.join(outPath, "EdgesinDCGandSCG.json"),
         FSSCGFilename,
         inputDir,
         "EdgeDiff"
@@ -68,13 +68,13 @@ function getEdgeComm() {
           }*/
         }
   var json = JSON.stringify(Comm_edges.getGraph(), null, 2);
-  fs.writeFileSync(path.join(outPath, "comm.json"), json, "utf8", function (err) {
+  fs.writeFileSync(path.join(outPath, "EdgesinDCGandSCG.json"), json, "utf8", function (err) {
     if (err) {
       console.log(err);
     } else {
       console.log(
-        "The dynamic call edges missing from static call graph is saved in: " +
-          path.join(outPath, "comm.json")
+        "The dynamic call edges common with original static call graph is saved in: " +
+          path.join(outPath, "EdgesinDCGandSCG.json")
       );
     }
   });
@@ -82,9 +82,8 @@ function getEdgeComm() {
 }
 
 function getEdgeDiff() {
-        // Identifying common edges between Comm and SCG
+        // Identifying edges in Comm but missing from pruned SCG
         Comm_keys = [...Comm.getKeys()];
-        //console.log(Comm_keys)
         FSSCG_keys = [...FSSCG.getKeys()];
         var Mis_edges = clonedeep(Comm);
 
@@ -95,7 +94,7 @@ function getEdgeDiff() {
                     if (Comm_key === FSSCG_key || FSSCG_key.includes(Comm_key)) {
                     for (FSSCG_value of FSSCG.getValues(FSSCG_key)) {
                       if (Comm_value == FSSCG_value || FSSCG_value.includes(Comm_value)) {
-                      Mis_edges.removeEdge(Comm_key, Comm_value);
+                        Mis_edges.removeEdge(Comm_key, Comm_value);
                       }
                 }
               }
@@ -104,13 +103,13 @@ function getEdgeDiff() {
         }
 
         var json = JSON.stringify(Mis_edges.getGraph(), null, 2);
-        fs.writeFileSync(path.join(outPath, "diff.json"), json, "utf8", function (err) {
+        fs.writeFileSync(path.join(outPath, "EdgesinDCGandSCGnotinFS3SCG.json"), json, "utf8", function (err) {
           if (err) {
             console.log(err);
           } else {
             console.log(
               "The dynamic call edges missing from static call graph is saved in: " +
-                path.join(outPath, "diff.json")
+                path.join(outPath, "EdgesinDCGandSCGnotinFS3SCG.json")
             );
           }
         });
