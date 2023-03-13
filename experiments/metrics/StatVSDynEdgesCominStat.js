@@ -103,13 +103,13 @@ function getEdgeDiff() {
         }
 
         var json = JSON.stringify(Mis_edges.getGraph(), null, 2);
-        fs.writeFileSync(path.join(outPath, "EdgesinDCGandSCGnotinFS3SCG.json"), json, "utf8", function (err) {
+        fs.writeFileSync(path.join(outPath, "EdgesinDCGandSCGnotinFS5SCG.json"), json, "utf8", function (err) {
           if (err) {
             console.log(err);
           } else {
             console.log(
               "The dynamic call edges missing from static call graph is saved in: " +
-                path.join(outPath, "EdgesinDCGandSCGnotinFS3SCG.json")
+                path.join(outPath, "EdgesinDCGandSCGnotinFS5SCG.json")
             );
           }
         });
@@ -131,3 +131,5 @@ function getInputs() {
     );
   }
 }
+
+getInputs();
