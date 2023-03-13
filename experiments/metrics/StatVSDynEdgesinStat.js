@@ -96,7 +96,7 @@ function getEdgeDiff() {
       console.log(err);
     } else {
       console.log(
-        "The dynamic call edges missing from static call graph is saved in: " +
+        "The static call edges missing from dynamic call graph is saved in: " +
           path.join(outPath, "diff.json")
       );
     }
@@ -172,3 +172,7 @@ function getInputs() {
 }
 
 getInputs();
+
+/*
+node /Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/metrics/StatVSDynEdgesinStat.js /Users/madhurimachakraborty/Documents/FSMetrics/todo_vanillajs/todo_vanillajs_DCG.json /Users/madhurimachakraborty/Documents/FSMetrics/todo_vanillajs/FS5SCG_OPT.json /Users/madhurimachakraborty/Documents/todomvc-master/examples/vanillajs/ /Users/madhurimachakraborty/Documents/FSMetrics/todo_vanillajs/
+*/
