@@ -99,6 +99,7 @@ class Graph {
   }
   //to get all the edges present in the graph
   getAllEdges() {
+    var cnt=0;
     var output = new Graph();
     var get_keys = this.getKeys();
 
@@ -106,9 +107,12 @@ class Graph {
     for (var i of get_keys) {
       var get_values = this.AdjList.get(i);
       // iterate over all the values
-      for (var j of get_values) {
-        if (!output.hasEdge(i, j)) {
-          output.addEdge(i, j);
+      if(i!=="system (Native)"){
+        for (var j of get_values) {
+          if (!output.hasEdge(i, j)) {
+            output.addEdge(i, j);
+            cnt+=1;
+          }
         }
       }
     }

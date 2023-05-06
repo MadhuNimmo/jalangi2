@@ -41,13 +41,15 @@ function getEdgeComm() {
   for (var SCG_key of SCG_keys) {
         //var flag_key = true;
           for (var DCG_key of DCG_keys) {
-            if (SCG_key === DCG_key || SCG_key.includes(DCG_key) && (!SCG_key.includes("(Native)") && !SCG_key.includes("prologue.js") && !SCG_key.includes("preamble.js"))) {
+            //if (SCG_key === DCG_key || SCG_key.includes(DCG_key) && (!SCG_key.includes("(Native)") && !SCG_key.includes("prologue.js") && !SCG_key.includes("preamble.js"))) {
+            if (SCG_key === DCG_key || SCG_key.includes(DCG_key) || DCG_key.split(":")[DCG_key.split(":").length-1] == SCG_key.split(":")[SCG_key.split(":").length-1]) {
                 //flag_key = false;
               var DCG_values = DCG.getValues(DCG_key);
-                for(DCG_value of DCG_values){
+              var SCG_values= SCG.getValues(SCG_key);
+              for(DCG_value of DCG_values){
                         //var flag=true
-                        for (SCG_value of SCG.getValues(SCG_key)) {
-                        if (DCG_value == SCG_value || SCG_value.includes(DCG_value)) {
+                      for (SCG_value of SCG_values) {
+                        if (DCG_value == SCG_value || SCG_value.includes(DCG_value) || DCG_value.split(":")[DCG_value.split(":").length-1] == SCG_value.split(":")[SCG_value.split(":").length-1]) {
                                 Comm_edges.addEdge(SCG_key, SCG_value);
                                 break;
                               }
@@ -91,8 +93,9 @@ function getEdgeDiff() {
           var Comm_values = Comm.getValues(Comm_key);
           for (Comm_value of Comm_values) {
             for (FSSCG_key of FSSCG_keys) {
-                    if (Comm_key === FSSCG_key || FSSCG_key.includes(Comm_key)) {
-                    for (FSSCG_value of FSSCG.getValues(FSSCG_key)) {
+              if (Comm_key == FSSCG_key || FSSCG_key.includes(Comm_key)) {
+                //console.log("here", Comm_values, FSSCG.getValues(FSSCG_key))
+                for (FSSCG_value of FSSCG.getValues(FSSCG_key)) {
                       if (Comm_value == FSSCG_value || FSSCG_value.includes(Comm_value)) {
                         Mis_edges.removeEdge(Comm_key, Comm_value);
                       }
@@ -103,13 +106,13 @@ function getEdgeDiff() {
         }
 
         var json = JSON.stringify(Mis_edges.getGraph(), null, 2);
-        fs.writeFileSync(path.join(outPath, "EdgesinDCGandSCGnotinFS5SCG.json"), json, "utf8", function (err) {
+        fs.writeFileSync(path.join(outPath, "EdgesinDCGandSCGnotinOtherSCG.json"), json, "utf8", function (err) {
           if (err) {
             console.log(err);
           } else {
             console.log(
               "The dynamic call edges missing from static call graph is saved in: " +
-                path.join(outPath, "EdgesinDCGandSCGnotinFS5SCG.json")
+                path.join(outPath, "EdgesinDCGandSCGnotinOtherSCG.json")
             );
           }
         });
