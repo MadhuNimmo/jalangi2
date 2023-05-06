@@ -1,7 +1,9 @@
 .idea
 node_modules
-*~
-.DS_Store
 *_jalangi_.js
 *_jalangi_.json
 *_dynCalls.json
+*_jalangi_*
+*dynCalls*
+**/.DS_Store
+*_trace.json
