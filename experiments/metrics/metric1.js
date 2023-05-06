@@ -165,7 +165,8 @@ function getInputs() {
     name = process.argv[6];
     var metout = main();
     const json = JSON.stringify(metout, null, 2);
-    filename = process.argv[3].replace(/SCG_/, "Metrics1_");
+    filename = process.argv[3].replace(/SCG/, "Metrics1");
+    console.log(filename);
     fs.writeFileSync(filename, json, "utf8", function (err) {
       if (err) console.log("error", err);
     });

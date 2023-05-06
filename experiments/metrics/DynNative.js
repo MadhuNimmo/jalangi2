@@ -283,6 +283,7 @@
             callerIid =
               callerName + " (Native)" + " [" + getLoc(apcal_loc) + "]";
           } else {
+            if (callerName== "anon"){ callerName = "system"}
             callerIid = callerName + " (Native)";
           }
         }
@@ -327,6 +328,19 @@
       var giid = J$.getGlobalIID(iid);
       if (setterGetter[setterGetter.length - 1] == giid) {
         setterGetter.pop();
+      }
+    },
+    literal: function (iid, val, hasGetterSetter) {
+      if(typeof val== 'function'){
+        funName = val.name? val.name : "anon"
+        var giid = J$.getGlobalIID(iid);
+        var callerIid = getLoc(giid);
+        if (!(callerIid in callerToCallee)) {
+              callerToCallee[callerIid] = [];
+        }
+        if (!callerToCallee[callerIid].includes("Function (Native)")) {
+              callerToCallee[callerIid].push("Function (Native)");
+        }
       }
     },
     /**

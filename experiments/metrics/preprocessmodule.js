@@ -147,11 +147,7 @@ function main() {
                 }
                 statCallGraphEdit = jsonToGraph(statCallGraph2);
        }
-        const jsonSCG = JSON.stringify(statCallGraph, null, 2)
-        var filenameSCG =(SCGFilename).replace(/.json$/,"_EDIT.json");
-        fs.writeFileSync(filenameSCG, jsonSCG, 'utf8',function(err) {
-        if(err) console.log('error', err);
-        });
+       
         relevantfiles.forEach(v => {if(!appFiles.includes(v)){frmFiles.push(v)}});
 }
 
@@ -205,7 +201,7 @@ function formatDCG(input) {
                         filePath=DCG_pattern[2]
                 }
                 var fileLoc = DCG_pattern[3];
-                if(filenames.includes(fileName)){  
+                if(filenames.includes(fileName)){
                         relevantfiles.push(fileName)  
                         if (!fileData[fileName]){              
                                 fileData[fileName] = fs.readFileSync(filePath).toString().split("\n");
@@ -228,6 +224,7 @@ function formatDCG(input) {
         if(!EditMapping[unEditedInput]){
                 EditMapping[unEditedInput]=input
         }
+        //console.log(nimmo)
         return input;
 }
 
