@@ -1,5 +1,5 @@
 var Graph = require("./Graph.js");
-var { processInputs } = require("./preprocess2.js");
+var { processInputs } = require("./preprocess_RNApps.js");
 const path = require("path");
 const fs = require("fs");
 var frmFiles = [];
@@ -50,7 +50,7 @@ function getStaticCallGraphEdges(input_keys) {
   }
   return outGraph;
 }
-function comReach(graph1, graph2) {
+function comReach(graph1, graph2, system_callees) {
   output = new Graph();
   for (key1 of graph1.getKeys()) {
     for (key2 of graph2.getKeys()) {
@@ -97,7 +97,7 @@ function getTypeMetric() {
 
   var DCG_edges = DCG.getAllEdges();
   var SCG_edges = getStaticCallGraphEdges(keys);
-  var COM_edges = comReach(DCG_edges, SCG_edges);
+  var COM_edges = comReach(DCG_edges, SCG_edges, keys);
 
   console.log(DCG_edges.getSize(), SCG_edges.getSize(), COM_edges.getSize());
 
@@ -331,7 +331,7 @@ function getInputs() {
     inputDir = process.argv[4].toString();
     var metout = main();
     const json = JSON.stringify(metout, null, 2);
-    filename = process.argv[3].replace(/SCG_/, "Metrics3_");
+    filename = process.argv[3].replace(/SCG_/, "Metrics3");
     fs.writeFileSync(filename, json, "utf8", function (err) {
       if (err) console.log("error", err);
     });

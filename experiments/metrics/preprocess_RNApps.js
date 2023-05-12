@@ -217,7 +217,7 @@ function formatDCG(input) {
                                 }
                         }
                         catch (e) {
-                                console.log("DCG Formatting issues :" + input)
+                                //console.log("DCG Formatting issues :" + input)
                         }
                 }
 
