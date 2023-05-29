@@ -6,5 +6,4 @@ node_modules
 *_jalangi_*
 *dynCalls*
 **/.DS_Store
-*_trace.json
-*_traceAll.json
+*_trace*.json
