@@ -1,0 +1,70 @@
+[
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp4.js@1:2:3:3"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp4.js@3:5:3:28"
+  },
+  {
+    "typ": "Create",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp4.js@3:29:3:52"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp4.js@1:1:3:53"
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp4.js@1:2:3:3",
+    "to": "0",
+    "comp": "arguments"
+  },
+  {
+    "typ": "Put",
+    "funName": "anon",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp4.js@1:2:3:3",
+    "to": "1",
+    "comp": "arguments"
+  },
+  {
+    "typ": "Get",
+    "funName": "anon",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp4.js@2:9:2:21",
+    "from": "0",
+    "comp": true
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "anon",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp4.js@2:9:2:23"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp4.js@2:9:2:23",
+    "ret": null
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "anon",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp4.js@1:1:3:53",
+    "ret": null
+  }
+]

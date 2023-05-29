@@ -7,3 +7,4 @@ node_modules
 *dynCalls*
 **/.DS_Store
 *_trace.json
+*_traceAll.json

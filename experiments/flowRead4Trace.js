@@ -126,6 +126,7 @@ function findRelevantCopies(trace, input, lex=false) {
                                 console.error("Write",input, readIndex,pathCopies)
                         }*/
                         precVarWrite = writeValues[0]
+                        precVarWrite
                         writeIndex = writeValues[1]
                         if(precVarWrite["typ"] === "Create"){
                                 break;

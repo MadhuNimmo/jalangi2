@@ -503,7 +503,7 @@
                         if(err) console.log('error', err);
                     });
                 }else{
-                    //console.log("output",output)
+                    console.log("output",output)
                     J$.CallTrace= output;
                     return J$.CallTrace;
                 }

@@ -1,0 +1,154 @@
+[
+  {
+    "typ": "Create",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:3:2"
+  },
+  {
+    "typ": "Declare",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5",
+    "to": "Frm3:foo"
+  },
+  {
+    "typ": "Create",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@4:1:6:2"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5",
+    "to": "Frm3:bar"
+  },
+  {
+    "typ": "Create",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@7:1:9:2"
+  },
+  {
+    "typ": "Declare",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5",
+    "to": "Frm3:dave"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5",
+    "from": "Frm3:foo",
+    "curr": "Frm3",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5",
+    "from": "Frm3:dave",
+    "curr": "Frm3",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5",
+    "from": "Frm3:bar",
+    "curr": "Frm3",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@10:9:10:22"
+  },
+  {
+    "typ": "Put",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:3:2",
+    "to": "0",
+    "comp": "arguments"
+  },
+  {
+    "typ": "Put",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:3:2",
+    "to": "1",
+    "comp": "arguments"
+  },
+  {
+    "typ": "Declare",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:3:2",
+    "to": "Frm11:x"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:3:2",
+    "from": "Frm11:x",
+    "curr": "Frm11",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:3:2"
+  },
+  {
+    "typ": "Return",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@2:16:2:17"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@10:9:10:22",
+    "ret": [
+      {
+        "retId": "FunNon:9",
+        "retName": "dave",
+        "retLoc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:3:2"
+      }
+    ]
+  },
+  {
+    "typ": "Write",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@10:9:10:22",
+    "to": "Frm3:y"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5",
+    "from": "Frm3:y",
+    "curr": "Frm3",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@1:1:11:5"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@11:1:11:4"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/node/example6.js@11:1:11:4",
+    "ret": null
+  }
+]

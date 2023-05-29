@@ -1,0 +1,187 @@
+[
+  {
+    "typ": "Create",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:3:2"
+  },
+  {
+    "typ": "Declare",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5",
+    "to": "Frm3:foo"
+  },
+  {
+    "typ": "Create",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@4:1:6:2"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5",
+    "to": "Frm3:bar"
+  },
+  {
+    "typ": "Create",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@7:1:9:2"
+  },
+  {
+    "typ": "Declare",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5",
+    "to": "Frm3:dave"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5",
+    "from": "Frm3:foo",
+    "curr": "Frm3",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5",
+    "from": "Frm3:bar",
+    "curr": "Frm3",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@10:9:10:17"
+  },
+  {
+    "typ": "Put",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:3:2",
+    "to": "0",
+    "comp": "arguments"
+  },
+  {
+    "typ": "Declare",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:3:2",
+    "to": "Frm11:x"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:3:2",
+    "from": "Frm11:x",
+    "curr": "Frm11",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:3:2"
+  },
+  {
+    "typ": "Return",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@2:16:2:17"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "foo",
+    "identity": "FunNon:5",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@10:9:10:17",
+    "ret": [
+      {
+        "retId": "FunNon:7",
+        "retName": "bar",
+        "retLoc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:3:2"
+      }
+    ]
+  },
+  {
+    "typ": "Write",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@10:9:10:17",
+    "to": "Frm3:y"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5",
+    "from": "Frm3:y",
+    "curr": "Frm3",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@11:9:11:12"
+  },
+  {
+    "typ": "LexRead",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js",
+    "from": "Frm3:dave",
+    "curr": "Frm13",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@4:1:6:2"
+  },
+  {
+    "typ": "Return",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@5:16:5:20"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "bar",
+    "identity": "FunNon:7",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@11:9:11:12",
+    "ret": [
+      {
+        "retId": "FunNon:9",
+        "retName": "dave",
+        "retLoc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@4:1:6:2"
+      }
+    ]
+  },
+  {
+    "typ": "Write",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@11:9:11:12",
+    "to": "Frm3:z"
+  },
+  {
+    "typ": "LocRead",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5",
+    "from": "Frm3:z",
+    "curr": "Frm3",
+    "eloc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@1:1:12:5"
+  },
+  {
+    "typ": "InvokeCall",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@12:1:12:4"
+  },
+  {
+    "typ": "InvokeReturn",
+    "funName": "dave",
+    "identity": "FunNon:9",
+    "loc": "/Users/madhurimachakraborty/Documents/GitHub/jalangi2/experiments/trex/ft_exp1.js@12:1:12:4",
+    "ret": null
+  }
+]
