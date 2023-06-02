@@ -85,8 +85,12 @@
                 newObj.curr = others[1];
                 newObj.eloc = others[2]
             }
-            else if (typ=="Write" || typ=="Declare"){
+            else if (typ=="Write") {
                 newObj.to = others;
+            }
+            else if (typ=="Declare"){
+                newObj.to = others[0];
+                newObj.comp = others[1];
             }
             else if (typ=="Put" || typ=="Setter"){
                 newObj.to = others[0];
@@ -220,7 +224,12 @@
                         funName = val.name? val.name : "anon"
                         var funId = getValue(val)
                         if(lst.indexOf(funId) > -1 || J$.ast_info.length == 0 ){
-                            addToTrace("Declare",funName,funId,getLoc("declare",J$.getGlobalIID(iid)),getFrameID(name)+":"+name)
+                            if(isArgument) {
+                                addToTrace("Declare",funName,funId,getLoc("declare",J$.getGlobalIID(iid)),[getFrameID(name)+":"+name,"arguments"])
+                            }
+                            else {
+                                addToTrace("Declare",funName,funId,getLoc("declare",J$.getGlobalIID(iid)),[getFrameID(name)+":"+name,null])
+                            }
                         }
 
                     }
@@ -371,7 +380,7 @@
                     //|| funId.startsWith("FunNat:")
                     if(lst.indexOf(funId) > -1 || funId.indexOf("FunNat:") === 0 || J$.ast_info.length == 0 ){
                         //console.log("caller",getLoc("invkcll",J$.getGlobalIID(iid)),"callee",getLoc("invkfun",functionSid+":"+functionIid))
-                        addToTrace("InvokeCall",funName,funId,getLoc("invkcll",J$.getGlobalIID(iid)))
+                        addToTrace("InvokeCall",funName,funId,getLoc("invkcll",J$.getGlobalIID(iid)),getLoc("invkfun",functionSid+":"+functionIid))
                     }
                 },
                 invokeFun: function (iid, f, base, args, result, isConstructor, isMethod, functionIid, functionSid) {
@@ -503,7 +512,7 @@
                         if(err) console.log('error', err);
                     });
                 }else{
-                    console.log("output",output)
+                    //console.log("output",output)
                     J$.CallTrace= output;
                     return J$.CallTrace;
                 }
