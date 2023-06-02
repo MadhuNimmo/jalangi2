@@ -85,8 +85,12 @@
                 newObj.curr = others[1];
                 newObj.eloc = others[2]
             }
-            else if (typ=="Write" || typ=="Declare"){
+            else if (typ=="Write") {
                 newObj.to = others;
+            }
+            else if (typ=="Declare"){
+                newObj.to = others[0];
+                newObj.comp = others[1];
             }
             else if (typ=="Put" || typ=="Setter"){
                 newObj.to = others[0];
@@ -220,7 +224,12 @@
                         funName = val.name? val.name : "anon"
                         var funId = getValue(val)
                         if(lst.indexOf(funId) > -1 || J$.ast_info.length == 0 ){
-                            addToTrace("Declare",funName,funId,getLoc("declare",J$.getGlobalIID(iid)),getFrameID(name)+":"+name)
+                            if(isArgument) {
+                                addToTrace("Declare",funName,funId,getLoc("declare",J$.getGlobalIID(iid)),[getFrameID(name)+":"+name,"arguments"])
+                            }
+                            else {
+                                addToTrace("Declare",funName,funId,getLoc("declare",J$.getGlobalIID(iid)),[getFrameID(name)+":"+name,null])
+                            }
                         }
 
                     }
