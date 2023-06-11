@@ -67,12 +67,12 @@ module.exports = (async () => {
   const page = await browser.newPage();
 
   await Promise.all([page.coverage.startJSCoverage()]);
-  await page.waitFor(3000);
+  await page.waitForTimeout(3000);
   await Promise.race([
     page.goto("http://localhost:8080", { waitUntil: ["load", "networkidle2"] }),
-    page.waitFor("body"),
+    page.waitForSelector("body"),
   ]);
-  await page.waitFor(5000);
+  await page.waitForTimeout(5000);
   const selector = await waitForAnySelector(page, ["#new-todo", ".new-todo"]);
   if (name.endsWith("mithril/")) {
     //Try typing a todo and then escape
@@ -80,9 +80,9 @@ module.exports = (async () => {
       await page.keyboard.press("Escape");
     });
   }
-  await page.waitFor(1000);
+  await page.waitForTimeout(1000);
   for (var i = 0; i < 5; i++) {
-    await page.waitFor(500);
+    await page.waitForTimeout(500);
     if (i == 4) {
       //try adding blank todo
       await page.type(selector, "    ").then(async () => {
@@ -93,28 +93,28 @@ module.exports = (async () => {
         await page.keyboard.press("Enter");
       });
     }
-    await page.waitFor(500);
+    await page.waitForTimeout(500);
   }
-  await page.waitFor(1000);
+  await page.waitForTimeout(1000);
   const changeText = await waitForAnySelector(page, [
     ".view label",
     ".td-item",
   ]);
   if (name.endsWith("knockback/")) {
     const element = await page.$(changeText);
-    await page.waitFor(1000);
+    await page.waitForTimeout(1000);
     await element.click({ visible: true, clickCount: 2 });
     await page.keyboard.press("Tab");
     await page.keyboard.press("ArrowRight");
     await page.type(changeText, " changed");
     await page.keyboard.press("Enter");
-    await page.waitFor(3000);
+    await page.waitForTimeout(3000);
     await element.click({ visible: true, clickCount: 2 });
     await page.keyboard.press("Tab");
     await page.keyboard.press("ArrowRight");
     await page.type(changeText, " changed");
     await page.keyboard.press("Escape");
-    await page.waitFor(3000);
+    await page.waitForTimeout(3000);
     await element.click({ visible: true, clickCount: 2 });
     await page.keyboard.press("Tab");
     await page.keyboard.down("Control");
@@ -124,7 +124,7 @@ module.exports = (async () => {
       await page.keyboard.down("Backspace");
     }
     await page.keyboard.press("Enter");
-    await page.waitFor(3000);
+    await page.waitForTimeout(3000);
     await page.click(changeText, { visible: true, clickCount: 2 });
     await page.keyboard.press("Tab");
     await page.keyboard.press("ArrowLeft");
@@ -136,13 +136,13 @@ module.exports = (async () => {
     await page.keyboard.press("Enter");
 
     // do again but this time do not save the change
-    await page.waitFor(3000);
+    await page.waitForTimeout(3000);
     await page.click(changeText, { visible: true, clickCount: 2 });
     await page.type(changeText, " changed");
     await page.keyboard.press("Escape");
     
     //Edit a todo and delete its text, then press enter, this removes the todo since it is now blank
-    await page.waitFor(3000);
+    await page.waitForTimeout(3000);
     await page.click(changeText, { visible: true, clickCount: 2 });
     await page.keyboard.down("Control");
     await page.keyboard.press("A");
@@ -151,12 +151,12 @@ module.exports = (async () => {
       await page.keyboard.down("Backspace");
     }
     await page.keyboard.press("Enter");
-    await page.waitFor(3000);
+    await page.waitForTimeout(3000);
     await page.click(changeText, { visible: true, clickCount: 2 });
     await page.type(changeText, " ");
     await page.keyboard.press("Enter");
   }
-  await page.waitFor(3000);
+  await page.waitForTimeout(3000);
   if (root.endsWith("mithril/")) {
     const checkBox = await waitForAnySelector(page, [
       "input.toggle[type=checkbox]",
@@ -170,7 +170,7 @@ module.exports = (async () => {
       console.error(e);
     }
   }
-  await page.waitFor(3000);
+  await page.waitForTimeout(3000);
 
   const toggleAll = await waitForAnySelector(page, [
     "label[for='toggle-all']",
@@ -178,12 +178,12 @@ module.exports = (async () => {
     "input[class='toggle-all']",
   ]);
   await page.click(toggleAll);
-  await page.waitFor(500);
+  await page.waitForTimeout(500);
 
   await page.$$eval(".toggle", (checks) => {
     checks[1].click();
   });
-  await page.waitFor(500);
+  await page.waitForTimeout(500);
   await page.$$eval(".destroy", (destroys) => {
     destroys[2].click();
   });
