@@ -379,8 +379,11 @@
                     }
                     //|| funId.startsWith("FunNat:")
                     if(lst.indexOf(funId) > -1 || funId.indexOf("FunNat:") === 0 || J$.ast_info.length == 0 ){
-                        //console.log("caller",getLoc("invkcll",J$.getGlobalIID(iid)),"callee",getLoc("invkfun",functionSid+":"+functionIid))
-                        addToTrace("InvokeCall",funName,funId,getLoc("invkcll",J$.getGlobalIID(iid)),getLoc("invkfun",functionSid+":"+functionIid))
+                        if(getLoc("invkfun",functionSid+":"+functionIid)=="None"){
+                            addToTrace("InvokeCall",funName,funId,getLoc("invkcll",J$.getGlobalIID(iid)),getLoc("invkfun",getPropSafe(base, SPECIAL_PROP_SID)+":"+getPropSafe(base, SPECIAL_PROP_IID)))
+                        }else{
+                            addToTrace("InvokeCall",funName,funId,getLoc("invkcll",J$.getGlobalIID(iid)),getLoc("invkfun",functionSid+":"+functionIid))
+                        }
                     }
                 },
                 invokeFun: function (iid, f, base, args, result, isConstructor, isMethod, functionIid, functionSid) {

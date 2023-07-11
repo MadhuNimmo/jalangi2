@@ -27,6 +27,7 @@ function main() {
         // Formatting DCG json input
         var DCG = JSON.parse(fs.readFileSync(DCGFilename, 'utf8'));
         var dynCallGraph = {}
+        var filename=(DCGFilename).replace(/.json$/,"_EDIT.json");
         for (var key of Object.keys(DCG)) {
                 new_key = formatDCG(key)
                 if(!(new_key in dynCallGraph)){
@@ -42,7 +43,7 @@ function main() {
         }
 
         const json = JSON.stringify(dynCallGraph, null, 2)
-        var filename=(DCGFilename).replace(/.json$/,"_EDIT.json");
+        
         fs.writeFileSync(filename, json, 'utf8',function(err) {
         if(err) console.log('error', err);
         });
@@ -74,7 +75,6 @@ function main() {
                         }
                 }
                 statCallGraphEdit = jsonToGraph(statCallGraph);
-
         }
         else if (metricType == "Metric2") { //enclosing body -> callee
                  // Converting json to graph
