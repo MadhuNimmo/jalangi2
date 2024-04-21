@@ -148,10 +148,10 @@ function main() {
                 statCallGraphEdit = jsonToGraph(statCallGraph2);
        }
         const jsonSCG = JSON.stringify(statCallGraph, null, 2)
-        var filenameSCG =(SCGFilename).replace(/.json$/,"_EDIT.json");
-        fs.writeFileSync(filenameSCG, jsonSCG, 'utf8',function(err) {
-        if(err) console.log('error', err);
-        });
+        // var filenameSCG =(SCGFilename).replace(/.json$/,"_EDIT.json");
+        // fs.writeFileSync(filenameSCG, jsonSCG, 'utf8',function(err) {
+        // if(err) console.log('error', err);
+        // });
         relevantfiles.forEach(v => {if(!appFiles.includes(v)){frmFiles.push(v)}});
 }
 
