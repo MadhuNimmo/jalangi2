@@ -1,0 +1,1161 @@
+{
+    "system (Native)": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@1:1:250:1",
+        "/tmp/vanillajs/js/helpers_orig_.js@1:1:53:1",
+        "/tmp/vanillajs/js/store_orig_.js@1:1:138:1",
+        "/tmp/vanillajs/js/model_orig_.js@1:1:121:1",
+        "/tmp/vanillajs/js/template_orig_.js@1:1:115:1",
+        "/tmp/vanillajs/js/view_orig_.js@1:1:220:1",
+        "/tmp/vanillajs/js/controller_orig_.js@1:1:271:1",
+        "/tmp/vanillajs/js/app_orig_.js@1:1:26:1",
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@147:16:151:4",
+        "/tmp/vanillajs/js/app_orig_.js@20:2:22:3",
+        "/tmp/vanillajs/js/view_orig_.js@176:33:178:5",
+        "/tmp/vanillajs/js/helpers_orig_.js@21:3:29:4",
+        "/tmp/vanillajs/js/view_orig_.js@186:34:188:5",
+        "/tmp/vanillajs/js/view_orig_.js@181:39:183:5"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@2:2:249:2": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@2:1:249:5": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@2:2:249:2"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@126:2:130:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@132:2:135:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@137:2:152:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@154:2:197:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@8:11:114:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@8:10:114:8": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@8:11:114:3"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@9:16:24:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@56:16:111:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@199:27:225:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@227:36:245:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@247:2:247:12": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@126:2:130:3"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@248:2:248:30": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@137:2:152:3"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@142:13:142:33": [
+        "XMLHttpRequest (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@144:19:144:29": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@132:2:135:3"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@133:14:133:48": [
+        "indexOf (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@134:10:134:39": [
+        "substr (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@144:3:144:43": [
+        "open (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@145:3:145:13": [
+        "send (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@147:16:151:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@2:2:52:2": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@2:1:52:11": [
+        "/tmp/vanillajs/js/helpers_orig_.js@2:2:52:2"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@9:15:11:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@14:15:16:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@20:21:35:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@39:19:47:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@2:2:137:2": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@2:1:137:11": [
+        "/tmp/vanillajs/js/store_orig_.js@2:2:137:2"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@13:2:25:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@40:25:55:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@62:28:65:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@75:25:101:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@109:27:121:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@128:25:132:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@1:2:120:2": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@1:1:120:11": [
+        "/tmp/vanillajs/js/model_orig_.js@1:2:120:2"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@10:2:12:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@20:27:30:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@47:25:60:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@70:27:72:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@80:27:82:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@89:30:91:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@96:29:115:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@2:2:114:2": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@2:1:114:11": [
+        "/tmp/vanillajs/js/template_orig_.js@2:2:114:2"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@32:2:41:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@14:23:16:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@19:27:19:61": [
+        "RegExp (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@21:15:25:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@60:28:83:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@91:35:95:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@103:44:109:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@3:2:219:2": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@3:2:219:10": [
+        "/tmp/vanillajs/js/view_orig_.js@3:2:219:2"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@15:2:28:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@30:31:36:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@38:41:41:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@43:30:46:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@48:36:59:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@61:29:76:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@78:33:93:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@95:26:134:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@136:27:139:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@141:37:159:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@161:39:171:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@173:24:214:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@1:2:270:2": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@1:1:270:11": [
+        "/tmp/vanillajs/js/controller_orig_.js@1:2:270:2"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@11:2:47:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@54:33:58:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@64:33:69:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@74:36:79:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@84:39:89:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@95:33:106:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@111:34:116:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@121:38:132:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@137:40:142:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@151:36:158:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@163:46:172:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@183:40:195:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@201:35:210:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@216:38:228:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@234:33:248:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@253:44:265:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@2:2:25:2": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@2:1:25:5": [
+        "/tmp/vanillajs/js/app_orig_.js@2:2:25:2"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@10:2:16:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@20:2:22:3": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@18:13:18:40": [
+        "/tmp/vanillajs/js/app_orig_.js@10:2:16:3"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@11:18:11:37": [
+        "/tmp/vanillajs/js/store_orig_.js@13:2:25:3"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@14:26:14:40": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@18:8:18:34": [
+        "getItem (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@21:31:21:52": [
+        "stringify (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@21:4:21:53": [
+        "setItem (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@24:34:24:60": [
+        "getItem (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@24:23:24:61": [
+        "parse (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@24:3:24:62": [
+        "call (Native) [/tmp/vanillajs/js/store_orig_.js@24:3:24:62]"
+    ],
+    "call (Native) [/tmp/vanillajs/js/store_orig_.js@24:3:24:62]": [
+        "/tmp/vanillajs/js/store_orig_.js@14:26:14:40"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@12:16:12:43": [
+        "/tmp/vanillajs/js/model_orig_.js@10:2:12:3"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@13:19:13:37": [
+        "/tmp/vanillajs/js/template_orig_.js@32:2:41:3"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@14:15:14:42": [
+        "/tmp/vanillajs/js/view_orig_.js@15:2:28:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@21:20:21:36": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@7:10:7:53": [
+        "querySelector (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@22:27:22:44": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@23:26:23:48": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@24:16:24:27": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@25:18:25:31": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@26:21:26:38": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@27:19:27:34": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@15:21:15:62": [
+        "/tmp/vanillajs/js/controller_orig_.js@11:2:47:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@16:29:18:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@16:3:18:5": [
+        "/tmp/vanillajs/js/view_orig_.js@173:24:214:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@176:33:178:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@176:4:178:6": [
+        "/tmp/vanillajs/js/helpers_orig_.js@14:15:16:3"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@15:3:15:56": [
+        "addEventListener (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@20:30:22:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@20:3:22:5": [
+        "/tmp/vanillajs/js/view_orig_.js@173:24:214:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@191:54:193:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@191:4:193:6": [
+        "/tmp/vanillajs/js/helpers_orig_.js@20:21:35:3"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@21:3:29:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@34:3:34:54": [
+        "/tmp/vanillajs/js/helpers_orig_.js@14:15:16:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@24:34:26:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@24:3:26:5": [
+        "/tmp/vanillajs/js/view_orig_.js@173:24:214:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@209:4:209:35": [
+        "/tmp/vanillajs/js/view_orig_.js@141:37:159:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@143:49:150:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@143:3:150:5": [
+        "/tmp/vanillajs/js/helpers_orig_.js@20:21:35:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@152:53:158:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@152:3:158:5": [
+        "/tmp/vanillajs/js/helpers_orig_.js@20:21:35:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@28:36:30:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@28:3:30:5": [
+        "/tmp/vanillajs/js/view_orig_.js@173:24:214:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@212:4:212:37": [
+        "/tmp/vanillajs/js/view_orig_.js@161:39:171:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@163:50:170:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@163:3:170:5": [
+        "/tmp/vanillajs/js/helpers_orig_.js@20:21:35:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@32:32:34:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@32:3:34:5": [
+        "/tmp/vanillajs/js/view_orig_.js@173:24:214:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@196:51:198:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@196:4:198:6": [
+        "/tmp/vanillajs/js/helpers_orig_.js@20:21:35:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@36:32:38:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@36:3:38:5": [
+        "/tmp/vanillajs/js/view_orig_.js@173:24:214:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@201:50:206:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@201:4:206:6": [
+        "/tmp/vanillajs/js/helpers_orig_.js@20:21:35:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@40:37:42:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@40:3:42:5": [
+        "/tmp/vanillajs/js/view_orig_.js@173:24:214:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@181:39:183:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@181:4:183:6": [
+        "/tmp/vanillajs/js/helpers_orig_.js@14:15:16:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@44:31:46:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@44:3:46:5": [
+        "/tmp/vanillajs/js/view_orig_.js@173:24:214:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@186:34:188:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@186:4:188:6": [
+        "/tmp/vanillajs/js/helpers_orig_.js@14:15:16:3"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@23:2:23:30": [
+        "/tmp/vanillajs/js/helpers_orig_.js@14:15:16:3"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@24:2:24:36": [
+        "/tmp/vanillajs/js/helpers_orig_.js@14:15:16:3"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@149:5:149:31": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@154:2:197:3"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@156:11:156:39": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@154:2:197:3"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@163:17:163:38": [
+        "parse (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@178:21:178:63": [
+        "querySelector (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@179:16:179:58": [
+        "querySelector (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@193:4:193:17": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@199:27:225:3"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@200:15:200:46": [
+        "createElement (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@201:21:201:66": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@56:16:111:4"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@58:15:58:59": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@9:16:24:4"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@61:29:65:15": [
+        "join (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@61:18:65:28": [
+        "RegExp (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@70:26:85:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@70:4:85:6": [
+        "replace (Native)"
+    ],
+    "replace (Native)": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@70:26:85:5"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@71:15:71:40": [
+        "slice (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@72:24:72:73": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@71:15:72:74": [
+        "replace (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@96:14:96:67": [
+        "Function (Native)"
+    ],
+    "evalIndirect:/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@96:14:96:67": [
+        "Function (Native)",
+        "forEach (Native)",
+        "match (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@102:21:102:36": [
+        "evalIndirect:/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@96:14:96:67"
+    ],
+    "forEach (Native)": [
+        "evalIndirect:/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@96:14:96:67",
+        "/tmp/vanillajs/js/model_orig_.js@104:17:112:5",
+        "/tmp/vanillajs/js/view_orig_.js@90:34:92:4",
+        "/tmp/vanillajs/js/controller_orig_.js@204:17:206:5",
+        "/tmp/vanillajs/js/controller_orig_.js@166:17:168:5"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@215:20:215:56": [
+        "querySelectorAll (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@216:44:220:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@216:4:220:6": [
+        "call (Native) [/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@216:4:220:6]"
+    ],
+    "call (Native) [/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@216:4:220:6]": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@216:44:220:5"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@217:9:217:38": [
+        "getAttribute (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@217:9:217:51": [
+        "substr (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@218:36:218:46": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@132:2:135:3"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@218:49:218:78": [
+        "getAttribute (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@218:6:218:79": [
+        "setAttribute (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@223:29:223:76": [
+        "trim (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@224:3:224:66": [
+        "insertAdjacentHTML (Native)"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@196:3:196:25": [
+        "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@227:36:245:3"
+    ],
+    "/tmp/vanillajs/node_modules/todomvc-common/base_orig_.js@228:19:228:62": [
+        "getElementById (Native)"
+    ],
+    "/tmp/vanillajs/js/app_orig_.js@21:3:21:50": [
+        "/tmp/vanillajs/js/controller_orig_.js@54:33:58:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@55:15:55:38": [
+        "split (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@57:3:57:32": [
+        "/tmp/vanillajs/js/controller_orig_.js@253:44:265:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@262:3:262:17": [
+        "/tmp/vanillajs/js/controller_orig_.js@234:33:248:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@235:21:235:48": [
+        "charAt (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@235:21:235:62": [
+        "toUpperCase (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@235:65:235:92": [
+        "substr (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@238:3:238:22": [
+        "/tmp/vanillajs/js/controller_orig_.js@216:38:228:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@218:23:227:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@218:3:227:5": [
+        "/tmp/vanillajs/js/model_orig_.js@96:29:115:3"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@103:24:114:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@103:3:114:5": [
+        "/tmp/vanillajs/js/store_orig_.js@62:28:65:3"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@64:34:64:68": [
+        "getItem (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@64:23:64:69": [
+        "parse (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@64:3:64:70": [
+        "call (Native) [/tmp/vanillajs/js/store_orig_.js@64:3:64:70]"
+    ],
+    "call (Native) [/tmp/vanillajs/js/store_orig_.js@64:3:64:70]": [
+        "/tmp/vanillajs/js/model_orig_.js@103:24:114:4",
+        "/tmp/vanillajs/js/controller_orig_.js@66:19:68:4"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@104:17:112:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@104:4:112:6": [
+        "forEach (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@113:4:113:19": [
+        "/tmp/vanillajs/js/controller_orig_.js@218:23:227:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@219:4:219:56": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@98:17:100:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@101:16:103:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@104:24:106:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@107:26:109:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@110:28:112:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@113:15:115:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@116:15:118:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@119:18:121:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@122:21:124:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@125:14:127:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@128:18:130:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@133:3:133:26": [
+        "/tmp/vanillajs/js/view_orig_.js@104:24:106:5",
+        "/tmp/vanillajs/js/view_orig_.js@107:26:109:5",
+        "/tmp/vanillajs/js/view_orig_.js@113:15:115:5",
+        "/tmp/vanillajs/js/view_orig_.js@110:28:112:5",
+        "/tmp/vanillajs/js/view_orig_.js@98:17:100:5",
+        "/tmp/vanillajs/js/view_orig_.js@116:15:118:5",
+        "/tmp/vanillajs/js/view_orig_.js@119:18:121:5",
+        "/tmp/vanillajs/js/view_orig_.js@125:14:127:5",
+        "/tmp/vanillajs/js/view_orig_.js@128:18:130:5",
+        "/tmp/vanillajs/js/view_orig_.js@101:16:103:5",
+        "/tmp/vanillajs/js/view_orig_.js@122:21:124:5"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@105:39:105:75": [
+        "/tmp/vanillajs/js/template_orig_.js@91:35:95:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@220:4:223:6": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@108:5:108:71": [
+        "/tmp/vanillajs/js/view_orig_.js@38:41:41:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@39:36:39:86": [
+        "/tmp/vanillajs/js/template_orig_.js@103:44:109:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@225:4:225:77": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@226:4:226:74": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@244:4:244:32": [
+        "/tmp/vanillajs/js/controller_orig_.js@64:33:69:3",
+        "/tmp/vanillajs/js/controller_orig_.js@84:39:89:3",
+        "/tmp/vanillajs/js/controller_orig_.js@74:36:79:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@66:19:68:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@66:3:68:5": [
+        "/tmp/vanillajs/js/model_orig_.js@47:25:60:3"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@49:26:49:40": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@53:11:53:41": [
+        "/tmp/vanillajs/js/store_orig_.js@62:28:65:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@67:4:67:41": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@99:32:99:61": [
+        "/tmp/vanillajs/js/template_orig_.js@60:28:83:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@264:3:264:45": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@117:5:117:31": [
+        "/tmp/vanillajs/js/view_orig_.js@43:30:46:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@44:3:44:27": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@45:3:45:48": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@177:5:177:33": [
+        "/tmp/vanillajs/js/controller_orig_.js@16:29:18:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@17:4:17:23": [
+        "/tmp/vanillajs/js/controller_orig_.js@95:33:106:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@98:7:98:19": [
+        "trim (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@102:28:105:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@102:3:105:5": [
+        "/tmp/vanillajs/js/model_orig_.js@20:27:30:3"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@25:11:25:23": [
+        "trim (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@29:3:29:39": [
+        "/tmp/vanillajs/js/store_orig_.js@75:25:101:3"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@76:26:76:60": [
+        "getItem (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@76:15:76:61": [
+        "parse (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@95:20:95:30": [
+        "Date (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@95:20:95:40": [
+        "getTime (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@97:4:97:26": [
+        "push (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@98:39:98:60": [
+        "stringify (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@98:4:98:61": [
+        "setItem (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@99:4:99:37": [
+        "call (Native) [/tmp/vanillajs/js/store_orig_.js@99:4:99:37]"
+    ],
+    "call (Native) [/tmp/vanillajs/js/store_orig_.js@99:4:99:37]": [
+        "/tmp/vanillajs/js/controller_orig_.js@102:28:105:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@103:4:103:36": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@104:4:104:22": [
+        "/tmp/vanillajs/js/controller_orig_.js@234:33:248:3"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@74:15:74:53": [
+        "replace (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@75:45:75:66": [
+        "/tmp/vanillajs/js/template_orig_.js@21:15:25:3"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@22:21:22:52": [
+        "test (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@75:15:75:67": [
+        "replace (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@76:15:76:59": [
+        "replace (Native)"
+    ],
+    "/tmp/vanillajs/js/template_orig_.js@77:15:77:55": [
+        "replace (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@23:28:23:56": [
+        "/tmp/vanillajs/js/helpers_orig_.js@9:15:11:3"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@10:10:10:56": [
+        "querySelectorAll (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@24:19:24:81": [
+        "call (Native) [/tmp/vanillajs/js/helpers_orig_.js@24:19:24:81]"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@27:5:27:39": [
+        "call (Native) [/tmp/vanillajs/js/helpers_orig_.js@27:5:27:39]"
+    ],
+    "call (Native) [/tmp/vanillajs/js/helpers_orig_.js@27:5:27:39]": [
+        "/tmp/vanillajs/js/view_orig_.js@191:54:193:5",
+        "/tmp/vanillajs/js/view_orig_.js@152:53:158:4",
+        "/tmp/vanillajs/js/view_orig_.js@163:50:170:4",
+        "/tmp/vanillajs/js/view_orig_.js@143:49:150:4",
+        "/tmp/vanillajs/js/view_orig_.js@201:50:206:5",
+        "/tmp/vanillajs/js/view_orig_.js@196:51:198:5"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@192:18:192:36": [
+        "/tmp/vanillajs/js/view_orig_.js@136:27:139:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@137:12:137:34": [
+        "/tmp/vanillajs/js/helpers_orig_.js@39:19:47:3"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@43:7:43:47": [
+        "toLowerCase (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@43:52:43:73": [
+        "toLowerCase (Native)"
+    ],
+    "/tmp/vanillajs/js/helpers_orig_.js@46:10:46:53": [
+        "/tmp/vanillajs/js/helpers_orig_.js@39:19:47:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@138:10:138:37": [
+        "parseInt (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@192:5:192:38": [
+        "/tmp/vanillajs/js/controller_orig_.js@20:30:22:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@21:4:21:26": [
+        "/tmp/vanillajs/js/controller_orig_.js@111:34:116:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@113:23:115:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@113:3:115:5": [
+        "/tmp/vanillajs/js/model_orig_.js@47:25:60:3"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@55:12:55:31": [
+        "parseInt (Native)"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@56:4:56:46": [
+        "/tmp/vanillajs/js/store_orig_.js@40:25:55:3"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@45:26:45:60": [
+        "getItem (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@45:15:45:61": [
+        "parse (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@47:36:54:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@47:23:54:5": [
+        "filter (Native)"
+    ],
+    "filter (Native)": [
+        "/tmp/vanillajs/js/store_orig_.js@47:36:54:4"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@47:3:54:6": [
+        "call (Native) [/tmp/vanillajs/js/store_orig_.js@47:3:54:6]"
+    ],
+    "call (Native) [/tmp/vanillajs/js/store_orig_.js@47:3:54:6]": [
+        "/tmp/vanillajs/js/controller_orig_.js@113:23:115:4",
+        "/tmp/vanillajs/js/controller_orig_.js@139:23:141:4",
+        "/tmp/vanillajs/js/controller_orig_.js@203:46:207:4",
+        "/tmp/vanillajs/js/controller_orig_.js@86:40:88:4",
+        "/tmp/vanillajs/js/controller_orig_.js@76:41:78:4",
+        "/tmp/vanillajs/js/controller_orig_.js@165:40:169:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@114:4:114:64": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@126:5:126:50": [
+        "/tmp/vanillajs/js/view_orig_.js@61:29:76:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@62:18:62:46": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@70:15:70:46": [
+        "createElement (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@73:3:73:30": [
+        "appendChild (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@74:3:74:16": [
+        "focus (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@156:5:156:16": [
+        "blur (Native)"
+    ],
+    "blur (Native)": [
+        "/tmp/vanillajs/js/helpers_orig_.js@21:3:29:4"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@146:10:146:28": [
+        "/tmp/vanillajs/js/view_orig_.js@136:27:139:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@145:5:148:7": [
+        "/tmp/vanillajs/js/controller_orig_.js@24:34:26:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@25:4:25:42": [
+        "/tmp/vanillajs/js/controller_orig_.js@121:38:132:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@123:11:123:23": [
+        "trim (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@126:42:128:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@126:4:128:6": [
+        "/tmp/vanillajs/js/model_orig_.js@70:27:72:3"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@71:3:71:40": [
+        "/tmp/vanillajs/js/store_orig_.js@75:25:101:3"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@91:39:91:60": [
+        "stringify (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@91:4:91:61": [
+        "setItem (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@92:4:92:30": [
+        "call (Native) [/tmp/vanillajs/js/store_orig_.js@92:4:92:30]"
+    ],
+    "call (Native) [/tmp/vanillajs/js/store_orig_.js@92:4:92:30]": [
+        "/tmp/vanillajs/js/controller_orig_.js@126:42:128:5",
+        "/tmp/vanillajs/js/controller_orig_.js@185:51:190:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@127:5:127:61": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@129:5:129:54": [
+        "/tmp/vanillajs/js/view_orig_.js@78:33:93:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@79:18:79:46": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@85:15:85:41": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@86:3:86:30": [
+        "removeChild (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@88:24:88:65": [
+        "replace (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@90:3:90:25": [
+        "/tmp/vanillajs/js/helpers_orig_.js@9:15:11:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@90:34:92:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@90:3:92:5": [
+        "forEach (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@166:5:166:16": [
+        "blur (Native)"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@168:18:168:36": [
+        "/tmp/vanillajs/js/view_orig_.js@136:27:139:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@168:5:168:38": [
+        "/tmp/vanillajs/js/controller_orig_.js@28:36:30:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@29:4:29:32": [
+        "/tmp/vanillajs/js/controller_orig_.js@137:40:142:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@139:23:141:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@139:3:141:5": [
+        "/tmp/vanillajs/js/model_orig_.js@47:25:60:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@140:4:140:68": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@130:4:130:23": [
+        "/tmp/vanillajs/js/controller_orig_.js@151:36:158:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@153:25:155:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@153:3:155:5": [
+        "/tmp/vanillajs/js/model_orig_.js@80:27:82:3"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@81:3:81:36": [
+        "/tmp/vanillajs/js/store_orig_.js@109:27:121:3"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@110:26:110:60": [
+        "getItem (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@110:15:110:61": [
+        "parse (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@114:5:114:23": [
+        "splice (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@119:38:119:59": [
+        "stringify (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@119:3:119:60": [
+        "setItem (Native)"
+    ],
+    "/tmp/vanillajs/js/store_orig_.js@120:3:120:29": [
+        "call (Native) [/tmp/vanillajs/js/store_orig_.js@120:3:120:29]"
+    ],
+    "call (Native) [/tmp/vanillajs/js/store_orig_.js@120:3:120:29]": [
+        "/tmp/vanillajs/js/controller_orig_.js@153:25:155:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@154:4:154:38": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@102:5:102:32": [
+        "/tmp/vanillajs/js/view_orig_.js@30:31:36:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@31:14:31:42": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@34:4:34:36": [
+        "removeChild (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@157:3:157:17": [
+        "/tmp/vanillajs/js/controller_orig_.js@234:33:248:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@187:5:187:39": [
+        "/tmp/vanillajs/js/controller_orig_.js@44:31:46:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@45:4:45:36": [
+        "/tmp/vanillajs/js/controller_orig_.js@201:35:210:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@203:46:207:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@203:3:207:5": [
+        "/tmp/vanillajs/js/model_orig_.js@47:25:60:3"
+    ],
+    "/tmp/vanillajs/js/model_orig_.js@58:4:58:38": [
+        "/tmp/vanillajs/js/store_orig_.js@40:25:55:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@204:17:206:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@204:4:206:6": [
+        "forEach (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@205:5:205:50": [
+        "/tmp/vanillajs/js/controller_orig_.js@183:40:195:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@185:51:190:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@185:3:190:5": [
+        "/tmp/vanillajs/js/model_orig_.js@70:27:72:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@186:4:189:6": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@123:5:123:61": [
+        "/tmp/vanillajs/js/view_orig_.js@48:36:59:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@49:18:49:46": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@58:3:58:24": [
+        "/tmp/vanillajs/js/helpers_orig_.js@6:14:8:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@209:3:209:17": [
+        "/tmp/vanillajs/js/controller_orig_.js@234:33:248:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@203:10:203:28": [
+        "/tmp/vanillajs/js/view_orig_.js@136:27:139:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@202:5:205:7": [
+        "/tmp/vanillajs/js/controller_orig_.js@36:32:38:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@37:4:37:48": [
+        "/tmp/vanillajs/js/controller_orig_.js@183:40:195:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@193:4:193:18": [
+        "/tmp/vanillajs/js/controller_orig_.js@234:33:248:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@197:18:197:36": [
+        "/tmp/vanillajs/js/view_orig_.js@136:27:139:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@197:5:197:38": [
+        "/tmp/vanillajs/js/controller_orig_.js@32:32:34:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@33:4:33:28": [
+        "/tmp/vanillajs/js/controller_orig_.js@151:36:158:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@86:40:88:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@86:3:88:5": [
+        "/tmp/vanillajs/js/model_orig_.js@47:25:60:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@87:4:87:41": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@76:41:78:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@76:3:78:5": [
+        "/tmp/vanillajs/js/model_orig_.js@47:25:60:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@77:4:77:41": [
+        "/tmp/vanillajs/js/view_orig_.js@95:26:134:3"
+    ],
+    "/tmp/vanillajs/js/view_orig_.js@182:5:182:14": [
+        "/tmp/vanillajs/js/controller_orig_.js@40:37:42:4"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@41:4:41:31": [
+        "/tmp/vanillajs/js/controller_orig_.js@163:46:172:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@165:40:169:4": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@165:3:169:5": [
+        "/tmp/vanillajs/js/model_orig_.js@47:25:60:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@166:17:168:5": [
+        "Function (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@166:4:168:6": [
+        "forEach (Native)"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@167:5:167:29": [
+        "/tmp/vanillajs/js/controller_orig_.js@151:36:158:3"
+    ],
+    "/tmp/vanillajs/js/controller_orig_.js@171:3:171:17": [
+        "/tmp/vanillajs/js/controller_orig_.js@234:33:248:3"
+    ]
+}

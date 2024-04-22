@@ -1,0 +1,1280 @@
+{
+    "system (Native)": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@1:1:250:1",
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@1:1:1159:84",
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@147:16:151:4",
+        "/tmp/mithril/js/models/todo_orig_.js@1:1:18:3",
+        "/tmp/mithril/js/models/storage_orig_.js@1:1:14:6",
+        "/tmp/mithril/js/controllers/todo_orig_.js@1:1:117:3",
+        "/tmp/mithril/js/views/main-view_orig_.js@1:1:94:6",
+        "/tmp/mithril/js/views/footer-view_orig_.js@1:1:36:3",
+        "/tmp/mithril/js/app_orig_.js@1:1:12:4",
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@625:42:625:74",
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@478:10:486:4",
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@790:2:799:3"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@2:2:249:2": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@2:1:249:5": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@2:2:249:2"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@126:2:130:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@132:2:135:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@137:2:152:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@154:2:197:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@8:11:114:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@8:10:114:8": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@8:11:114:3"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@9:16:24:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@56:16:111:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@199:27:225:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@227:36:245:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@247:2:247:12": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@126:2:130:3"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@248:2:248:30": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@137:2:152:3"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@142:13:142:33": [
+        "XMLHttpRequest (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@144:19:144:29": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@132:2:135:3"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@133:14:133:48": [
+        "indexOf (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@134:10:134:39": [
+        "substr (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@144:3:144:43": [
+        "open (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@145:3:145:13": [
+        "send (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@147:16:151:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@1:10:1156:2": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@1:9:1156:47": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@1:10:1156:2"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@12:2:17:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@74:2:378:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@379:2:379:78": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@380:2:428:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@429:2:439:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@440:2:456:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@457:2:476:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@477:2:487:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@517:2:520:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@528:2:539:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@552:2:564:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@630:2:649:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@750:2:752:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@753:2:789:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@790:2:799:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@800:2:803:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@804:2:825:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@826:2:841:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@845:2:849:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@856:2:863:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@868:2:987:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@1018:2:1018:41": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@1020:2:1089:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@1090:2:1098:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@1099:2:1109:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@6:13:6:26": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@19:2:19:20": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@12:2:17:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@491:16:498:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@499:17:501:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@505:13:516:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@522:12:526:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@541:11:548:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@565:16:567:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@568:23:608:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@610:13:628:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@629:22:629:30": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@541:11:548:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@547:10:547:29": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@528:2:539:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@534:17:536:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@652:23:652:53": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@653:21:656:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@657:28:663:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@665:15:671:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@676:12:744:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@745:18:748:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@851:15:855:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@988:23:990:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@992:11:1017:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@1111:14:1145:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@1148:11:1151:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@149:5:149:31": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@154:2:197:3"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@156:11:156:39": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@154:2:197:3"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@163:17:163:38": [
+        "parse (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@178:21:178:63": [
+        "querySelector (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@179:16:179:58": [
+        "querySelector (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@193:4:193:17": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@199:27:225:3"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@200:15:200:46": [
+        "createElement (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@201:21:201:66": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@56:16:111:4"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@58:15:58:59": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@9:16:24:4"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@61:29:65:15": [
+        "join (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@61:18:65:28": [
+        "RegExp (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@70:26:85:5": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@70:4:85:6": [
+        "replace (Native)"
+    ],
+    "replace (Native)": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@70:26:85:5",
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@780:27:785:6"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@71:15:71:40": [
+        "slice (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@72:24:72:73": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@71:15:72:74": [
+        "replace (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@96:14:96:67": [
+        "Function (Native)"
+    ],
+    "evalIndirect:/tmp/mithril/node_modules/todomvc-common/base_orig_.js@96:14:96:67": [
+        "Function (Native)",
+        "forEach (Native)",
+        "match (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@102:21:102:36": [
+        "evalIndirect:/tmp/mithril/node_modules/todomvc-common/base_orig_.js@96:14:96:67"
+    ],
+    "forEach (Native)": [
+        "evalIndirect:/tmp/mithril/node_modules/todomvc-common/base_orig_.js@96:14:96:67"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@215:20:215:56": [
+        "querySelectorAll (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@216:44:220:5": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@216:4:220:6": [
+        "call (Native) [/tmp/mithril/node_modules/todomvc-common/base_orig_.js@216:4:220:6]"
+    ],
+    "call (Native) [/tmp/mithril/node_modules/todomvc-common/base_orig_.js@216:4:220:6]": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@216:44:220:5"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@217:9:217:38": [
+        "getAttribute (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@217:9:217:51": [
+        "substr (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@218:36:218:46": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@132:2:135:3"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@218:49:218:78": [
+        "getAttribute (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@218:6:218:79": [
+        "setAttribute (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@223:29:223:76": [
+        "trim (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@224:3:224:66": [
+        "insertAdjacentHTML (Native)"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@196:3:196:25": [
+        "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@227:36:245:3"
+    ],
+    "/tmp/mithril/node_modules/todomvc-common/base_orig_.js@228:19:228:62": [
+        "getElementById (Native)"
+    ],
+    "/tmp/mithril/js/models/todo_orig_.js@5:17:10:2": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/models/todo_orig_.js@5:17:10:4": [
+        "/tmp/mithril/js/models/todo_orig_.js@5:17:10:2"
+    ],
+    "/tmp/mithril/js/models/todo_orig_.js@7:9:9:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/models/todo_orig_.js@13:12:18:2": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/models/storage_orig_.js@4:2:14:2": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/models/storage_orig_.js@4:1:14:5": [
+        "/tmp/mithril/js/models/storage_orig_.js@4:2:14:2"
+    ],
+    "/tmp/mithril/js/models/storage_orig_.js@7:8:9:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/models/storage_orig_.js@10:8:12:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@5:18:117:2": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@6:18:17:2": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@19:13:94:2": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@19:12:94:5": [
+        "/tmp/mithril/js/views/main-view_orig_.js@19:13:94:2"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@22:9:93:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@5:14:36:2": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/app_orig_.js@9:9:9:43": [
+        "querySelector (Native)"
+    ],
+    "/tmp/mithril/js/app_orig_.js@9:1:12:3": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@676:12:744:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@680:38:680:61": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@680:38:680:61]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@682:15:690:5": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@692:23:698:5": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@700:4:700:22": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@692:23:698:5"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@695:25:695:45": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@750:2:752:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@751:10:751:49": [
+        "slice (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@696:6:696:20": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@682:15:690:5"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@683:31:683:53": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@750:2:752:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@684:10:684:42": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@753:2:789:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@756:20:756:37": [
+        "indexOf (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@764:14:764:33": [
+        "keys (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@765:15:765:33": [
+        "indexOf (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@777:35:777:75": [
+        "replace (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@777:35:777:108": [
+        "replace (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@777:18:777:118": [
+        "RegExp (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@779:8:779:26": [
+        "test (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@687:6:687:33": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@676:12:744:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@719:12:719:35": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@719:12:719:35]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@723:21:723:46": [
+        "indexOf (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@726:22:726:46": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@804:2:825:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@824:10:824:23": [
+        "join (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@734:29:736:6": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@737:5:737:49": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@682:15:690:5"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@767:4:767:39": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@568:23:608:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@570:15:570:34": [
+        "indexOf (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@574:32:577:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@592:4:592:28": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@593:4:593:24": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@652:23:652:53"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@598:21:598:36": [
+        "/tmp/mithril/js/controllers/todo_orig_.js@5:18:117:2"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@8:14:8:31": [
+        "/tmp/mithril/js/models/storage_orig_.js@7:8:9:4"
+    ],
+    "/tmp/mithril/js/models/storage_orig_.js@8:22:8:54": [
+        "getItem (Native)"
+    ],
+    "/tmp/mithril/js/models/storage_orig_.js@8:11:8:63": [
+        "parse (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@11:28:13:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@11:14:13:4": [
+        "map (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@16:15:16:25": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@541:11:548:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@543:26:543:42": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@543:26:543:42]"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@19:23:19:46": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@745:18:748:3"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@19:16:19:53": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@541:11:548:3"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@21:13:28:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@30:19:39:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@41:18:48:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@50:14:53:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@55:21:66:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@68:23:71:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@73:20:75:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@77:16:80:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@82:24:89:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@91:25:99:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@101:22:108:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@110:21:116:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@605:4:605:25": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@657:28:663:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@658:7:658:26": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@662:8:662:26": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@653:21:656:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@654:21:654:53": [
+        "max (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@655:30:655:40": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@610:13:628:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@624:4:624:12": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@630:2:649:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@632:4:632:26": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@800:2:803:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@802:8:802:29": [
+        "scrollTo (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@638:41:638:81": [
+        "/tmp/mithril/js/views/main-view_orig_.js@22:9:93:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@25:5:25:21": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@36:14:36:38": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@36:14:36:38]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@37:37:37:55": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@37:37:37:55]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@42:7:42:25": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@42:7:42:25]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@43:18:43:38": [
+        "exec (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@53:45:53:58": [
+        "slice (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@54:32:54:54": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@54:32:54:54]"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@26:30:26:49": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@27:7:27:33": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@26:15:27:34": [
+        "/tmp/mithril/js/views/main-view_orig_.js@6:18:17:2"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@7:9:16:3": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@28:13:28:25": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@29:15:29:46": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@665:15:671:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@666:10:670:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@30:14:35:7": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@25:23:36:7": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@46:31:46:53": [
+        "push (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@48:16:48:41": [
+        "exec (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@53:29:53:42": [
+        "slice (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@62:8:62:38": [
+        "hasOwnProperty (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@70:55:70:72": [
+        "join (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@24:4:37:6": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@44:15:44:42": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@45:15:45:34": [
+        "/tmp/mithril/js/controllers/todo_orig_.js@101:22:108:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@43:5:46:7": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@47:5:49:7": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@51:23:51:48": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@51:6:51:49": [
+        "filter (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@51:54:89:7": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@51:6:89:8": [
+        "map (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@50:5:90:7": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@38:4:91:6": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@638:5:638:87": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@505:13:516:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@508:12:508:33": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@517:2:520:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@518:15:518:41": [
+        "indexOf (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@519:22:519:45": [
+        "push (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@512:36:512:58": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@429:2:439:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@514:19:514:115": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@74:2:378:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@101:28:101:43": [
+        "toString (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@103:20:103:37": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@103:20:103:37]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@103:50:103:65": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@103:50:103:65]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@113:13:113:33": [
+        "Array (Native)",
+        "Object (Native)",
+        "String (Native)",
+        "Number (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@121:9:121:27": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@121:9:121:27]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@213:16:213:177": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@74:2:378:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@262:23:262:46": [
+        "keys (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@274:8:274:27": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@274:8:274:27]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@283:43:283:76": [
+        "createElement (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@287:23:287:79": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@380:2:428:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@289:7:289:157": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@74:2:378:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@343:15:343:45": [
+        "createTextNode (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@344:11:344:53": [
+        "match (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@344:55:344:132": [
+        "insertBefore (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@346:14:346:58": [
+        "indexOf (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@346:66:346:92": [
+        "String (Native)",
+        "Number (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@222:27:222:42": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@222:27:222:42]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@230:29:230:69": [
+        "apply (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@230:29:230:69]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@309:5:309:78": [
+        "insertBefore (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@390:47:390:69": [
+        "indexOf (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@391:24:391:50": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@477:2:487:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@478:10:486:4": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@327:20:331:6": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@332:18:332:65": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@327:20:331:6"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@328:13:330:7": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@332:5:332:66": [
+        "push (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@394:59:394:78": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@394:59:394:78]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@415:11:415:48": [
+        "setAttribute (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@122:13:122:40": [
+        "apply (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@122:13:122:40]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@515:55:515:67": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@328:13:330:7"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@329:14:329:52": [
+        "apply (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@329:14:329:52]"
+    ],
+    "apply (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@329:14:329:52]": [
+        "/tmp/mithril/js/views/main-view_orig_.js@30:14:35:7",
+        "/tmp/mithril/js/views/main-view_orig_.js@81:17:85:10",
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@676:12:744:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@32:8:32:23": [
+        "focus (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@643:4:643:27": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@734:29:736:6"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@735:6:735:137": [
+        "replaceState (Native)",
+        "pushState (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@647:24:647:32": [
+        "Date (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@648:3:648:28": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@625:42:625:74": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@625:19:625:89": [
+        "requestAnimationFrame (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@480:4:480:29": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@481:4:481:24": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@652:23:652:53"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@482:16:482:40": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@482:16:482:40]"
+    ],
+    "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@482:16:482:40]": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@666:10:670:4",
+        "/tmp/mithril/js/views/main-view_orig_.js@7:9:16:3",
+        "/tmp/mithril/js/controllers/todo_orig_.js@50:14:53:3",
+        "/tmp/mithril/js/controllers/todo_orig_.js@55:21:66:3",
+        "/tmp/mithril/js/controllers/todo_orig_.js@110:21:116:3",
+        "/tmp/mithril/js/controllers/todo_orig_.js@77:16:80:3",
+        "/tmp/mithril/js/controllers/todo_orig_.js@82:24:89:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@669:4:669:100": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4",
+        "/tmp/mithril/js/views/main-view_orig_.js@77:38:80:10",
+        "bound anon (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@669:4:669:100]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@484:5:484:26": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@657:28:663:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@265:34:265:53": [
+        "sort (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@265:34:265:60": [
+        "join (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@265:64:265:89": [
+        "keys (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@265:64:265:96": [
+        "sort (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@265:64:265:103": [
+        "join (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@265:182:265:201": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@265:283:265:302": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@313:18:313:84": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@380:2:428:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@314:23:314:174": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@74:2:378:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@349:13:349:29": [
+        "valueOf (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@349:34:349:48": [
+        "valueOf (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@8:3:8:28": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@660:4:660:29": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@13:4:13:14": [
+        "bound anon (Native) [/tmp/mithril/js/views/main-view_orig_.js@13:4:13:14]"
+    ],
+    "bound anon (Native) [/tmp/mithril/js/views/main-view_orig_.js@13:4:13:14]": [
+        "/tmp/mithril/js/controllers/todo_orig_.js@73:20:75:3",
+        "/tmp/mithril/js/controllers/todo_orig_.js@68:23:71:3"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@74:3:74:17": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@14:4:14:29": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@10:4:10:13": [
+        "bound anon (Native) [/tmp/mithril/js/views/main-view_orig_.js@10:4:10:13]"
+    ],
+    "bound anon (Native) [/tmp/mithril/js/views/main-view_orig_.js@10:4:10:13]": [
+        "/tmp/mithril/js/controllers/todo_orig_.js@21:13:28:3",
+        "/tmp/mithril/js/controllers/todo_orig_.js@55:21:66:3"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@22:15:22:27": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@22:15:22:34": [
+        "trim (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@24:19:24:47": [
+        "/tmp/mithril/js/models/todo_orig_.js@13:12:18:2"
+    ],
+    "/tmp/mithril/js/models/todo_orig_.js@14:15:14:33": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@541:11:548:3"
+    ],
+    "/tmp/mithril/js/models/todo_orig_.js@15:19:15:50": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@541:11:548:3"
+    ],
+    "/tmp/mithril/js/models/todo_orig_.js@16:17:16:46": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@541:11:548:3"
+    ],
+    "/tmp/mithril/js/models/todo_orig_.js@17:13:17:23": [
+        "/tmp/mithril/js/models/todo_orig_.js@7:9:9:3"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@24:4:24:48": [
+        "push (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@25:4:25:30": [
+        "/tmp/mithril/js/models/storage_orig_.js@10:8:12:4"
+    ],
+    "/tmp/mithril/js/models/storage_orig_.js@11:37:11:58": [
+        "stringify (Native)"
+    ],
+    "stringify (Native)": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@534:17:536:4"
+    ],
+    "/tmp/mithril/js/models/storage_orig_.js@11:4:11:59": [
+        "setItem (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@27:3:27:17": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@11:4:11:29": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@103:9:103:33": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "filter (Native)": [
+        "/tmp/mithril/js/controllers/todo_orig_.js@30:19:39:3"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@31:11:31:24": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "map (Native)": [
+        "/tmp/mithril/js/views/main-view_orig_.js@51:54:89:7",
+        "/tmp/mithril/js/controllers/todo_orig_.js@11:28:13:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@52:32:57:8": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@52:31:57:11": [
+        "/tmp/mithril/js/views/main-view_orig_.js@52:32:57:8"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@54:19:54:35": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@55:19:55:33": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@62:41:62:71": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@62:19:62:72": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@665:15:671:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@63:19:63:35": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@61:9:64:11": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@66:22:66:48": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@67:12:67:24": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@65:9:67:25": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@69:19:69:48": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@68:9:70:11": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@60:8:71:10": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@72:16:72:28": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@74:10:74:50": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@75:10:75:45": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@73:18:76:10": [
+        "/tmp/mithril/js/views/main-view_orig_.js@6:18:17:2"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@77:38:80:10": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@77:18:80:11": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@665:15:671:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@81:17:85:10": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@86:17:86:57": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@71:12:87:10": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@52:14:88:9": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@91:38:91:54": [
+        "/tmp/mithril/js/views/footer-view_orig_.js@5:14:36:2"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@6:24:6:46": [
+        "/tmp/mithril/js/controllers/todo_orig_.js@91:25:99:3"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@94:8:94:32": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@11:4:11:29": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@10:3:12:5": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@17:13:17:26": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@15:5:18:14": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@64:6:64:35": [
+        "push (Native)"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@14:4:19:6": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@23:13:23:26": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@21:5:24:17": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@20:4:25:6": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@29:13:29:26": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@27:5:30:20": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@26:4:31:6": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@13:3:32:5": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@32:7:32:29": [
+        "/tmp/mithril/js/controllers/todo_orig_.js@91:25:99:3"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@9:9:35:4": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@109:12:109:48": [
+        "slice (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@109:50:109:80": [
+        "slice (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@109:6:109:81": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@429:2:439:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@432:10:432:51": [
+        "removeChild (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@434:14:434:31": [
+        "concat (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@435:20:435:37": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@440:2:456:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@235:37:235:56": [
+        "indexOf (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@82:14:82:28": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@710:5:710:59": [
+        "removeEventListener (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@711:5:711:56": [
+        "addEventListener (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@180:33:180:61": [
+        "push (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@181:20:181:45": [
+        "sort (Native)"
+    ],
+    "sort (Native)": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@379:2:379:78"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@182:22:182:46": [
+        "Array (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@183:24:183:44": [
+        "slice (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@191:20:191:50": [
+        "createElement (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@193:8:193:89": [
+        "insertBefore (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@194:8:194:103": [
+        "splice (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@266:30:266:49": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@429:2:439:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@366:8:366:85": [
+        "insertBefore (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@371:14:371:40": [
+        "Number (Native)",
+        "String (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@51:24:51:36": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@52:3:52:21": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@83:11:83:26": [
+        "focus (Native)"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@78:10:78:35": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/views/main-view_orig_.js@79:10:79:27": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@56:8:56:22": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@60:3:60:22": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@61:14:61:26": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@61:14:61:33": [
+        "trim (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@61:3:61:34": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@62:8:62:20": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@65:3:65:29": [
+        "/tmp/mithril/js/models/storage_orig_.js@10:8:12:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@69:3:69:33": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@70:3:70:22": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@63:4:63:30": [
+        "splice (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@187:8:187:63": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@429:2:439:3"
+    ],
+    "removeChild (Native)": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@478:10:486:4"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@451:8:451:34": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@451:8:451:34]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@452:61:452:74": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@440:2:456:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@188:8:188:41": [
+        "splice (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@111:22:111:41": [
+        "/tmp/mithril/js/controllers/todo_orig_.js@101:22:108:3"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@113:4:113:41": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@115:3:115:29": [
+        "/tmp/mithril/js/models/storage_orig_.js@10:8:12:4"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@33:13:33:43": [
+        "bind (Native)"
+    ],
+    "/tmp/mithril/js/views/footer-view_orig_.js@32:43:34:24": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@35:2:73:3"
+    ],
+    "bound anon (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@669:4:669:100]": [
+        "/tmp/mithril/js/controllers/todo_orig_.js@41:18:48:3"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@42:7:42:23": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@43:4:43:25": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@47:3:47:29": [
+        "/tmp/mithril/js/models/storage_orig_.js@10:8:12:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@78:3:78:27": [
+        "splice (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@79:3:79:29": [
+        "/tmp/mithril/js/models/storage_orig_.js@10:8:12:4"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@793:25:793:43": [
+        "preventDefault (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@797:27:797:63": [
+        "toUpperCase (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@798:11:798:72": [
+        "slice (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@798:3:798:79": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@676:12:744:3"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@780:27:785:6": [
+        "Function (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@780:5:785:7": [
+        "replace (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@781:17:781:40": [
+        "match (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@782:19:782:50": [
+        "call (Native) [/tmp/mithril/node_modules/mithril/mithril_orig_.js@782:19:782:50]"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@783:67:783:95": [
+        "replace (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@783:99:783:128": [
+        "decodeURIComponent (Native)"
+    ],
+    "/tmp/mithril/node_modules/mithril/mithril_orig_.js@784:6:784:34": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@568:23:608:3"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@12:10:12:28": [
+        "/tmp/mithril/js/models/todo_orig_.js@13:12:18:2"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@35:12:35:28": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@33:13:33:29": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@84:8:84:32": [
+        "/tmp/mithril/node_modules/mithril/mithril_orig_.js@529:14:532:4"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@85:5:85:27": [
+        "splice (Native)"
+    ],
+    "/tmp/mithril/js/controllers/todo_orig_.js@88:3:88:29": [
+        "/tmp/mithril/js/models/storage_orig_.js@10:8:12:4"
+    ]
+}
