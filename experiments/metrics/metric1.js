@@ -164,11 +164,42 @@ function getInputs() {
     appfrmfiles = JSON.parse(fs.readFileSync(process.argv[5], "utf8"));
     name = process.argv[6];
     var metout = main();
-    const json = JSON.stringify(metout, null, 2);
+    // const json = JSON.stringify(metout, null, 2);
     filename = process.argv[3].replace(/SCG/, "Metrics1");
-    console.log(filename);
-    fs.writeFileSync(filename, json, "utf8", function (err) {
-      if (err) console.log("error", err);
+    // console.log(filename);
+    // fs.writeFileSync(filename, json, "utf8", function (err) {
+    //   if (err) console.log("error", err);
+    // });
+    // Read the existing JSON content from the file
+    fs.readFile(filename, "utf8", function (err, data) {
+      if (err) {
+        console.error("Error reading file:", err);
+        return;
+      }
+
+      let existingJson = {};
+      try {
+        // Parse the existing JSON content
+        existingJson = JSON.parse(data);
+      } catch (parseErr) {
+        console.error("Error parsing existing JSON content:", parseErr);
+        return;
+      }
+
+      // Merge the existing JSON with the new JSON object (metout)
+      const mergedJson = { ...existingJson, ...metout };
+
+      // Convert the merged JSON object to a string with formatting
+      const mergedJsonString = JSON.stringify(mergedJson, null, 2);
+
+      // Write the merged JSON content back to the file
+      fs.writeFile(filename, mergedJsonString, "utf8", function (writeErr) {
+        if (writeErr) {
+          console.error("Error writing merged JSON to file:", writeErr);
+        } else {
+          console.log("Merged JSON written to file:", filename);
+        }
+      });
     });
   } else {
     console.log(

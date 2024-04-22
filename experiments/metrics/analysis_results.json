@@ -1,0 +1,143 @@
+{
+  "angularjs": {
+    "app": [
+      "~/todomvc-master/examples/angularjs/js/app.js",
+      "~/todomvc-master/examples/angularjs/js/controllers/todoCtrl.js",
+      "~/todomvc-master/examples/angularjs/js/directives/todoEscape.js",
+      "~/todomvc-master/examples/angularjs/js/directives/todoFocus.js",
+      "~/todomvc-master/examples/angularjs/js/services/todoStorage.js"
+    ],
+    "frm": [
+      "~/todomvc-master/examples/angularjs/node_modules/angular/angular.js",
+      "~/todomvc-master/examples/angularjs/node_modules/angular-resource/angular-resource.js",
+      "~/todomvc-master/examples/angularjs/node_modules/angular-route/angular-route.js",
+      "~/todomvc-master/examples/angularjs/node_modules/todomvc-common/base.js"
+    ]
+  },
+  "backbone": {
+    "app": [
+      "~/todomvc-master/examples/backbone/js/app.js",
+      "~/todomvc-master/examples/backbone/js/collections/todos.js",
+      "~/todomvc-master/examples/backbone/js/models/todo.js",
+      "~/todomvc-master/examples/backbone/js/routers/router.js",
+      "~/todomvc-master/examples/backbone/js/views/app-view.js",
+      "~/todomvc-master/examples/backbone/js/views/todo-view.js"
+    ],
+    "frm": [
+      "~/todomvc-master/examples/backbone/node_modules/backbone/backbone.js",
+      "~/todomvc-master/examples/backbone/node_modules/backbone.localstorage/backbone.localStorage.js",
+      "~/todomvc-master/examples/backbone/node_modules/jquery/dist/jquery.js",
+      "~/todomvc-master/examples/backbone/node_modules/underscore/underscore.js",
+      "~/todomvc-master/examples/backbone/node_modules/todomvc-common/base.js"
+
+    ]
+  },
+  "canjs": {
+    "app": [
+      "~/todomvc-master/examples/canjs/js/app.js",
+      "~/todomvc-master/examples/canjs/js/components/todo-app.js",
+      "~/todomvc-master/examples/canjs/js/models/todo.js"
+    ],
+    "frm": [
+      "~/todomvc-master/examples/canjs/node_modules/canjs/can.jquery.js",
+      "~/todomvc-master/examples/canjs/node_modules/canjs-localstorage/can.localstorage.js",
+      "~/todomvc-master/examples/canjs/node_modules/jquery/dist/jquery.js",
+      "~/todomvc-master/examples/canjs/node_modules/todomvc-common/base.js"
+    ]
+  },
+  "jquery": {
+    "app": [
+      "~/todomvc-master/examples/jquery/js/app.js"
+    ],
+    "frm": [
+      "~/todomvc-master/examples/jquery/node_modules/director/build/director.js",
+      "~/todomvc-master/examples/jquery/node_modules/handlebars/dist/handlebars.js",
+      "~/todomvc-master/examples/jquery/node_modules/jquery/dist/jquery.js",
+      "~/todomvc-master/examples/jquery/node_modules/todomvc-common/base.js"
+    ]
+  },
+  "knockback": {
+    "app": [
+      "~/todomvc-master/examples/knockback/js/collections/todos.js",
+      "~/todomvc-master/examples/knockback/js/models/todo.js",
+      "~/todomvc-master/examples/knockback/js/viewmodels/app.js",
+      "~/todomvc-master/examples/knockback/js/viewmodels/todo.js"
+    ],
+    "frm": [
+      "~/todomvc-master/examples/knockback/node_modules/backbone/backbone.js",
+      "~/todomvc-master/examples/knockback/node_modules/backbone.localstorage/backbone.localStorage.js",
+      "~/todomvc-master/examples/knockback/node_modules/jquery/dist/jquery.js",
+      "~/todomvc-master/examples/knockback/node_modules/knockback/knockback.js",
+      "~/todomvc-master/examples/knockback/node_modules/knockout/build/output/knockout-latest.debug.js",
+      "~/todomvc-master/examples/knockback/node_modules/underscore/underscore.js",
+      "~/todomvc-master/examples/knockback/node_modules/todomvc-common/base.js"
+    ]
+  },
+  "knockoutjs": {
+    "app": [
+      "~/todomvc-master/examples/knockoutjs/js/app.js"
+    ],
+    "frm": [
+      "~/todomvc-master/examples/knockoutjs/node_modules/director/build/director.js",
+      "~/todomvc-master/examples/knockoutjs/node_modules/knockout/build/output/knockout-latest.js",
+      "~/todomvc-master/examples/knockoutjs/node_modules/todomvc-common/base.js"
+    ]
+  },
+  "mithril": {
+    "app": [
+      "~/todomvc-master/examples/mithril/js/app.js",
+      "~/todomvc-master/examples/mithril/js/controllers/todo.js",
+      "~/todomvc-master/examples/mithril/js/models/storage.js",
+      "~/todomvc-master/examples/mithril/js/models/todo.js",
+      "~/todomvc-master/examples/mithril/js/views/footer-view.js",
+      "~/todomvc-master/examples/mithril/js/views/main-view.js"
+    ],
+    "frm": [
+      "~/todomvc-master/examples/mithril/node_modules/mithril/mithril.js",
+      "~/todomvc-master/examples/mithril/node_modules/todomvc-common/base.js"
+
+    ]
+  },
+  "react": {
+    "app": [
+      "~/todomvc-master/examples/react/js/todoModel.js",
+      "~/todomvc-master/examples/react/js/utils.js",
+      "~/todomvc-master/examples/react/js/app.js",
+      "~/todomvc-master/examples/react/js/todoItem.js",
+      "~/todomvc-master/examples/react/js/footer.js"
+    ],
+    "frm": [
+      "~/todomvc-master/examples/react/node_modules/classnames/index.js",
+      "~/todomvc-master/examples/react/node_modules/director/build/director.js",
+      "~/todomvc-master/examples/react/node_modules/react/dist/JSXTransformer.js",
+      "~/todomvc-master/examples/react/node_modules/react/dist/react-with-addons.js",
+      "~/todomvc-master/examples/react/node_modules/todomvc-common/base.js"
+    ]
+  },
+  "vanillajs": {
+    "app": [
+      "~/todomvc-master/examples/vanillajs/js/app.js",
+      "~/todomvc-master/examples/vanillajs/js/controller.js",
+      "~/todomvc-master/examples/vanillajs/js/helpers.js",
+      "~/todomvc-master/examples/vanillajs/js/model.js",
+      "~/todomvc-master/examples/vanillajs/js/store.js",
+      "~/todomvc-master/examples/vanillajs/js/template.js",
+      "~/todomvc-master/examples/vanillajs/js/view.js"
+    ],
+    "frm": [
+      "~/todomvc-master/examples/vanillajs/node_modules/todomvc-common/base.js"
+    ]
+  },
+  "vue": {
+    "app": [
+      "~/todomvc-master/examples/vue/js/app.js",
+      "~/todomvc-master/examples/vue/js/routes.js",
+      "~/todomvc-master/examples/vue/js/store.js"
+    ],
+    "frm": [
+      "~/todomvc-master/examples/vue/node_modules/director/build/director.js",
+      "~/todomvc-master/examples/vue/node_modules/vue/dist/vue.js",
+      "~/todomvc-master/examples/vue/node_modules/todomvc-common/base.js"
+    ]
+  }
+}
