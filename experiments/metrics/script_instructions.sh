@@ -8,7 +8,7 @@ top_level_directory=/ # Change this to the desired top-level directory
 jalangi_path=$top_level_directory/jalangi2/
 wala_acg_path=$top_level_directory/WALA-ACG/
 todomvc_path=$top_level_directory/todomvc/
-out_path=$top_level_directory/WebData/
+out_path=$top_level_directory/jalangi2/RawWebData/
 
 # Create output directory if it doesn't exist
 mkdir -p $out_path
