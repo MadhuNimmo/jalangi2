@@ -13,34 +13,11 @@ out_path=$top_level_directory/WebData/
 # Create output directory if it doesn't exist
 mkdir -p $out_path
 
-# Generating Dynamic Call Graphs for Web Apps
-cd $jalangi_path
-echo "Generating Dynamic Call Graphs for Web Apps"
-for benchmark in "${benchmarks[@]}"
-do
-    while :
-    do
-        echo "Generating DCG for benchmark $benchmark"
-        output=$(node --max-old-space-size=8192  --unhandled-rejections=strict $jalangi_path/experiments/pupServ.js $todomvc_path/examples/${benchmark}/ $out_path/todo_${benchmark}_DCG.json)
-        echo $output
-        wait
-       # Check if the output ends with "complete"
-        if [[ $output == *"complete"* ]]; then
-                break
-        else
-                echo "Command failed. Rerunning the command..."
-                sleep 10
-        fi
-    done
-    echo "Cooldown for 10 seconds"
-    sleep 10
-done
-
 # Generating Unbounded Static Call Graphs for Web Apps
 cd $wala_acg_path
 for benchmark in "${benchmarks[@]}"
 do
-    echo "Generating SCG for benchmark $benchmark"
+    echo "Generating SCG for benchmark $benchmark Unbounded"
     output=$(./gradlew run --args="$todomvc_path/examples/$benchmark/ $out_path/todo_$benchmark/ OPT")
     exec_time=$(echo "$output" | grep -oE 'call graph extraction took ([0-9]+([.][0-9]+)?) seconds' | awk '{print $5}')
     json="{\"exec time\":${exec_time}}"
@@ -70,7 +47,7 @@ do
         if [[ $f == SCG_BND*.json ]] || [[ $f == SCG_OPT.json ]]
         then
             echo "Running Metrics for benchmark $benchmark -> file $f"
-            node $jalangi_path/experiments/metrics/metric1.js $out_path/todo_${benchmark}_DCG.json $filedir/${f} $todomvc_path/examples/$benchmark/ $jalangi_path/experiments/metrics/analysis_results.json $benchmark
+            node $jalangi_path/experiments/metrics/metric1.js $out_path/todo_$benchmark/todo_${benchmark}_DCG.json $filedir/${f} $todomvc_path/examples/$benchmark/ $out_path/analysis_results.json $benchmark
         fi
     done
 done
