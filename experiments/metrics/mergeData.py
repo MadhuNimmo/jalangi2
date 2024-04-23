@@ -4,13 +4,16 @@ from openpyxl.styles import Alignment
 
 
 # unbounded
-def mf(args, output_file):
+def mf(args, output_file,exec_time_flag):
     headers=[]
     # unbounded
     workbook = openpyxl.load_workbook(args[0])
     sheet = workbook.active
     sheet.insert_rows(1)
-    sheet.merge_cells("A1:F1")
+    if exec_time_flag:
+        sheet.merge_cells("A1:C1")
+    else:
+        sheet.merge_cells("A1:D1")
     sheet["A1"] = "Unbounded"
     cell = sheet["A1"]
     cell.alignment = Alignment(horizontal="center")
@@ -19,7 +22,10 @@ def mf(args, output_file):
     workbook0 = openpyxl.load_workbook(args[1])
     sheet0 = workbook0.active
     sheet0.insert_rows(1)
-    sheet0.merge_cells("A1:F1")
+    if exec_time_flag:
+        sheet0.merge_cells("A1:C1")
+    else:
+        sheet0.merge_cells("A1:D1")
     sheet0["A1"] = "Bound 0"
     cell = sheet0["A1"]
     cell.alignment = Alignment(horizontal="center")
@@ -28,7 +34,10 @@ def mf(args, output_file):
     workbook1 = openpyxl.load_workbook(args[2])
     sheet1 = workbook1.active
     sheet1.insert_rows(1)
-    sheet1.merge_cells("A1:F1")
+    if exec_time_flag:
+        sheet1.merge_cells("A1:C1")
+    else:
+        sheet1.merge_cells("A1:D1")
     sheet1["A1"] = "Bound 1"
     cell = sheet1["A1"]
     cell.alignment = Alignment(horizontal="center")
@@ -37,7 +46,10 @@ def mf(args, output_file):
     workbook2 = openpyxl.load_workbook(args[3])
     sheet2 = workbook2.active
     sheet2.insert_rows(1)
-    sheet2.merge_cells("A1:F1")
+    if exec_time_flag:
+        sheet2.merge_cells("A1:C1")
+    else:
+        sheet2.merge_cells("A1:D1")
     sheet2["A1"] = "Bound 2"
     cell = sheet2["A1"]
     cell.alignment = Alignment(horizontal="center")
@@ -46,7 +58,10 @@ def mf(args, output_file):
     workbook3 = openpyxl.load_workbook(args[4])
     sheet3 = workbook3.active
     sheet3.insert_rows(1)
-    sheet3.merge_cells("A1:F1")
+    if exec_time_flag:
+        sheet3.merge_cells("A1:C1")
+    else:
+        sheet3.merge_cells("A1:D1")
     sheet3["A1"] = "Bound 3"
     cell = sheet3["A1"]
     cell.alignment = Alignment(horizontal="center")
@@ -55,7 +70,10 @@ def mf(args, output_file):
     workbook4 = openpyxl.load_workbook(args[5])
     sheet4 = workbook4.active
     sheet4.insert_rows(1)
-    sheet4.merge_cells("A1:F1")
+    if exec_time_flag:
+        sheet4.merge_cells("A1:C1")
+    else:
+        sheet4.merge_cells("A1:D1")
     sheet4["A1"] = "Bound 4"
     cell = sheet4["A1"]
     cell.alignment = Alignment(horizontal="center")
@@ -64,7 +82,10 @@ def mf(args, output_file):
     workbook5 = openpyxl.load_workbook(args[6])
     sheet5 = workbook5.active
     sheet5.insert_rows(1)
-    sheet5.merge_cells("A1:F1")
+    if exec_time_flag:
+        sheet5.merge_cells("A1:C1")
+    else:
+        sheet5.merge_cells("A1:D1")
     sheet5["A1"] = "Bound 5"
     cell = sheet5["A1"]
     cell.alignment = Alignment(horizontal="center")
@@ -107,7 +128,10 @@ def mf(args, output_file):
             "Bound 4",
             "Bound 5",
         ]
-        col_ranges = ["A1:D1", "E1:H1", "I1:L1", "M1:P1", "Q1:T1", "U1:X1", "Y1:AB1"]
+        if exec_time_flag:
+            col_ranges = ["A1:D1", "E1:H1", "I1:L1", "M1:P1", "Q1:T1", "U1:X1", "Y1:AB1"]
+        else:
+            col_ranges = ["A1:C1", "D1:F1", "G1:I1", "J1:L1", "M1:O1", "P1:R1", "S1:U1"]
 
         for i, header in enumerate(headers):
             sheetcallsite.merge_cells(col_ranges[i])
@@ -116,10 +140,11 @@ def mf(args, output_file):
             cell.alignment = Alignment(horizontal="center")
 
         merged_df = pd.concat(
-            [
-                df.iloc[:, :2].join(df.iloc[:, -2:])
-                for df in [df_unb, df_0, df_1, df_2, df_3, df_4, df_5]
-            ],
-            axis=1,
-        )
+    [
+        df.iloc[:, :2].join(df.iloc[:, -2:], rsuffix="_suffix")
+        for df in [df_unb, df_0, df_1, df_2, df_3, df_4, df_5]
+    ],
+    axis=1,
+    )
+
         print("Final output written to", output_file)

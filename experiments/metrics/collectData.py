@@ -22,6 +22,7 @@ def extract_numeric_value(string):
 
 benchmarks = []
 working_benchmarks = []
+exec_time_flag= False
 
 if len(sys.argv) != 2:
         print("Usage: python script.py <directory_path>")
@@ -40,6 +41,7 @@ def get_working_benchmarks(file_paths):
             content = json.load(file)
             benchmark = ((file_path.split("/")[-2]).split(".json")[0]).split("_")[1]
             if 'exec time' in content:
+                exec_time_flag = True
                 # Extract analysis time
                 analysis_time = content["exec time"]
 
@@ -142,5 +144,5 @@ def main():
         outFile_path.append(output_path)
         print('Data written to '+output_path)
 main()
-mf(outFile_path, directory_path+'/WebData.xlsx')
+mf(outFile_path, directory_path+'/WebData.xlsx',exec_time_flag)
 outFile_path=[]
