@@ -6,7 +6,7 @@ benchmarks=(angularjs backbone canjs jquery knockoutjs knockback mithril react v
 # Define paths
 top_level_directory=/ # Change this to the desired top-level directory
 jalangi_path=$top_level_directory/jalangi2/
-wala_path=$top_level_directory/WALA-ACG/WALA/
+wala_path=$top_level_directory/WALA/
 wala_acg_path=$top_level_directory/WALA-ACG/
 todomvc_path=$top_level_directory/todomvc-master/
 out_path=$jalangi_path/RawWebData/
@@ -14,35 +14,38 @@ out_path=$jalangi_path/RawWebData/
 # Create output directory if it doesn't exist
 mkdir -p $out_path
 
-cd $wala_path
+# Check if the user input is 1
+if [ "$1" == "1" ]; then
+    cd $wala_path
 
-# Run the gradlew script
-./gradlew publishToMavenLocal
+    # Run the gradlew script
+    ./gradlew publishToMavenLocal
 
-# Generating Unbounded Static Call Graphs for Web Apps
-cd $wala_acg_path
-for benchmark in "${benchmarks[@]}"
-do
-    echo "Generating SCG for benchmark $benchmark Unbounded"
-    output=$(./gradlew run --args="$todomvc_path/examples/$benchmark/ $out_path/todo_$benchmark/ OPT")
-    exec_time=$(echo "$output" | grep -oE 'call graph extraction took ([0-9]+([.][0-9]+)?) seconds' | awk '{print $5}')
-    json="{\"exec time\":${exec_time}}"
-    echo "$json" > $out_path/todo_$benchmark/Metrics1_OPT.json
-    wait
-done
-
-# Generating Bounded Static Call Graphs for Web Apps
-for benchmark in "${benchmarks[@]}"
-do
-    for j in {0..5}
+    # Generating Unbounded Static Call Graphs for Web Apps
+    cd $wala_acg_path
+    for benchmark in "${benchmarks[@]}"
     do
-        echo "Generating SCG for benchmark $benchmark for Bound $j"
-        output=$(./gradlew run --args="$todomvc_path/examples/$benchmark/ $out_path/todo_$benchmark/ BND $j")
+        echo "Generating SCG for benchmark $benchmark Unbounded"
+        output=$(./gradlew run --args="$todomvc_path/examples/$benchmark/ $out_path/todo_$benchmark/ OPT")
         exec_time=$(echo "$output" | grep -oE 'call graph extraction took ([0-9]+([.][0-9]+)?) seconds' | awk '{print $5}')
         json="{\"exec time\":${exec_time}}"
-        echo "$json" > $out_path/todo_$benchmark/Metrics1_BND$j.json
+        echo "$json" > $out_path/todo_$benchmark/Metrics1_OPT.json
+        wait
     done
-done
+
+    # Generating Bounded Static Call Graphs for Web Apps
+    for benchmark in "${benchmarks[@]}"
+    do
+        for j in {0..5}
+        do
+            echo "Generating SCG for benchmark $benchmark for Bound $j"
+            output=$(./gradlew run --args="$todomvc_path/examples/$benchmark/ $out_path/todo_$benchmark/ BND $j")
+            exec_time=$(echo "$output" | grep -oE 'call graph extraction took ([0-9]+([.][0-9]+)?) seconds' | awk '{print $5}')
+            json="{\"exec time\":${exec_time}}"
+            echo "$json" > $out_path/todo_$benchmark/Metrics1_BND$j.json
+        done
+    done
+fi
 
 # Running Metrics for Web Apps
 for benchmark in "${benchmarks[@]}"

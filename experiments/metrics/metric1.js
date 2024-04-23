@@ -5,11 +5,15 @@ const fs = require("fs");
 var DCG = new Graph();
 var SCG = new Graph();
 var commonCallSite = new Graph();
+let allFiles= []
 
 function main() {
-  [DCG, SCG] = processInputs(DCGFilename, SCGFilename, inputDir, "Metric1");
-  appFiles = appfrmfiles[name]["app"];
-  frmFiles = appfrmfiles[name]["frm"];
+
+  appFiles = appfrmfiles[benchmark_name]["app"];
+  frmFiles = appfrmfiles[benchmark_name]["frm"];
+
+  allFiles = appFiles.concat(frmFiles);
+  [DCG, SCG] = processInputs(DCGFilename, SCGFilename, allFiles);
 
   //filtering edges with common call site in DCG and SCG
   filter(DCG, SCG);
@@ -52,37 +56,22 @@ function getStaticCallGraphEdges(input_key) {
   return [];
 }
 function callSiteType(callSite) {
-  //Identifying the type of callSite
-  var type = "";
   if (
-    appFiles.some(function (v) {
+    allFiles.some(function (v) {
       return callSite.indexOf(v) >= 0;
     })
   ) {
-    type = "app";
-  } else if (
-    frmFiles.some(function (v) {
-      return callSite.indexOf(v) >= 0;
-    })
-  ) {
-    type = "frm";
+    return true;
   } else {
-    type = "none";
+    return false;
   }
-  return type;
 }
 function getTypeMetric() {
   //Calculating the average precision and recall based on the DCG callSites
   var tot_precision = 0;
   var tot_recall = 0;
-  var app_precision = 0;
-  var app_recall = 0;
-  var frm_precision = 0;
-  var frm_recall = 0;
 
   var key_cnt = 0;
-  var app_cnt = 0;
-  var frm_cnt = 0;
   keys = [...DCG.getKeys()];
   for (var key of keys) {
     if (callSiteType(key) != "none") {
@@ -95,27 +84,11 @@ function getTypeMetric() {
           : [...commonCallSite.getValues(key)].length;
       tot_precision += Comm_values == 0 ? 0 : Comm_values / SCG_values;
       tot_recall += Comm_values == 0 ? 0 : Comm_values / DCG_values;
-
-      if (callSiteType(key) == "app") {
-        app_cnt += 1;
-        app_precision += Comm_values == 0 ? 0 : Comm_values / SCG_values;
-        app_recall += Comm_values == 0 ? 0 : Comm_values / DCG_values;
-      } else if (callSiteType(key) == "frm") {
-        frm_cnt += 1;
-        frm_precision += Comm_values == 0 ? 0 : Comm_values / SCG_values;
-        frm_recall += Comm_values == 0 ? 0 : Comm_values / DCG_values;
-      }
     }
   }
   var tot_avg_precision =
     tot_precision == 0 ? 0 : (tot_precision / key_cnt).toFixed(4);
   var tot_avg_recall = tot_recall == 0 ? 0 : (tot_recall / key_cnt).toFixed(4);
-  var app_avg_precision =
-    app_precision == 0 ? 0 : (app_precision / app_cnt).toFixed(4);
-  var app_avg_recall = app_recall == 0 ? 0 : (app_recall / app_cnt).toFixed(4);
-  var frm_avg_precision =
-    frm_precision == 0 ? 0 : (frm_precision / frm_cnt).toFixed(4);
-  var frm_avg_recall = frm_recall == 0 ? 0 : (frm_recall / frm_cnt).toFixed(4);
 
   console.log("Metric 1:");
   console.log(
@@ -126,32 +99,10 @@ function getTypeMetric() {
     "recall : ",
     tot_avg_recall
   );
-  console.log(
-    "application",
-    " - ",
-    "precision : ",
-    app_avg_precision,
-    "recall : ",
-    app_avg_recall
-  );
-  console.log(
-    "framework",
-    " - ",
-    "precision : ",
-    frm_avg_precision,
-    "recall : ",
-    frm_avg_recall
-  );
   return {
     "total call sites": key_cnt,
-    "application call sites": app_cnt,
-    "framework call sites": frm_cnt,
     "total avg precision": tot_avg_precision,
-    "total avg recall": tot_avg_recall,
-    "application precision": app_avg_precision,
-    "application recall": app_avg_recall,
-    "framework precision": frm_avg_precision,
-    "framework recall": frm_avg_recall,
+    "total avg recall": tot_avg_recall
   };
 }
 
@@ -162,45 +113,47 @@ function getInputs() {
     SCGFilename = process.argv[3];
     inputDir = process.argv[4].toString();
     appfrmfiles = JSON.parse(fs.readFileSync(process.argv[5], "utf8"));
-    name = process.argv[6];
+    benchmark_name = process.argv[6];
     var metout = main();
-    // const json = JSON.stringify(metout, null, 2);
+    const json = JSON.stringify(metout, null, 2);
     filename = process.argv[3].replace(/SCG/, "Metrics1");
-    // console.log(filename);
-    // fs.writeFileSync(filename, json, "utf8", function (err) {
-    //   if (err) console.log("error", err);
-    // });
-    // Read the existing JSON content from the file
-    fs.readFile(filename, "utf8", function (err, data) {
-      if (err) {
-        console.error("Error reading file:", err);
-        return;
-      }
-
-      let existingJson = {};
-      try {
-        // Parse the existing JSON content
-        existingJson = JSON.parse(data);
-      } catch (parseErr) {
-        console.error("Error parsing existing JSON content:", parseErr);
-        return;
-      }
-
-      // Merge the existing JSON with the new JSON object (metout)
-      const mergedJson = { ...existingJson, ...metout };
-
-      // Convert the merged JSON object to a string with formatting
-      const mergedJsonString = JSON.stringify(mergedJson, null, 2);
-
-      // Write the merged JSON content back to the file
-      fs.writeFile(filename, mergedJsonString, "utf8", function (writeErr) {
-        if (writeErr) {
-          console.error("Error writing merged JSON to file:", writeErr);
-        } else {
-          console.log("Merged JSON written to file:", filename);
+    if(!fs.existsSync(filename)){
+            fs.writeFileSync(filename, json, "utf8", function (err) {
+              if (err) console.log("error", err);
+            });
+    }
+    else{
+      fs.readFile(filename, "utf8", function (err, data) {
+        if (err) {
+          console.error("Error reading file:", err);
+          return;
         }
+
+        let existingJson = {};
+        try {
+          // Parse the existing JSON content
+          existingJson = JSON.parse(data);
+        } catch (parseErr) {
+          console.error("Error parsing existing JSON content:", parseErr);
+          return;
+        }
+
+        // Merge the existing JSON with the new JSON object (metout)
+        const mergedJson = { ...existingJson, ...metout };
+
+        // Convert the merged JSON object to a string with formatting
+        const mergedJsonString = JSON.stringify(mergedJson, null, 2);
+
+        // Write the merged JSON content back to the file
+        fs.writeFile(filename, mergedJsonString, "utf8", function (writeErr) {
+          if (writeErr) {
+            console.error("Error writing merged JSON to file:", writeErr);
+          } else {
+            console.log("Merged JSON written to file:", filename);
+          }
+        });
       });
-    });
+    }
   } else {
     console.log(
       "Please enter arguments in the following sequence:\n1:Dynamic Call graph File\n2:Static Call Graph File\n3:Directory of Javascript files\n4:Output Directory"

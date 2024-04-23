@@ -4,26 +4,27 @@ var DCGregex = /(?!\[)((\S+)\@([0-9]+\:[0-9]+\:[0-9]+\:[0-9]+))/gi
 var SCGregex = /(?!\[)((\S+)\@([0-9]+)\:([0-9]+\-[0-9]+))/gi
 
 const fs = require('fs');
-var filenames = [];
+let filenames = [];
 var fileData = {};
-var relevantfiles = [];
+var relevantfiles = new Set();
 var appFiles = []
 var frmFiles= [];
 var dynCallGraphEdit = new Graph();
 var statCallGraphEdit = new Graph();
 var statCallGraph = {}
-var statCallGraph2 = {}
 var fileIdentifier=""
 var fileParentDir=""
 var patternStore={}
 var EditMapping={}
 
-
+function formathPath(pth){
+        const formattedPath = pth.replace(/\/{2,}/g, '/');
+        return(formattedPath);
+}
 function main() {
-        readJSFiles(inputDir);
         // Identyfing the root folder to express the paths
-        fileIdentifier = path.basename(inputDir).split(path.sep).pop()
-        fileParentDir = path.dirname(inputDir)
+        fileIdentifier = formathPath(path.basename(inputDir).split(path.sep).pop())
+        fileParentDir = formathPath(path.dirname(inputDir))
         // Formatting DCG json input
         var DCG = JSON.parse(fs.readFileSync(DCGFilename, 'utf8'));
         var dynCallGraph = {}
@@ -49,109 +50,35 @@ function main() {
         // Converting json to graph
         dynCallGraphEdit = jsonToGraph(dynCallGraph);
         statCallGraph = {}
-        if (metricType == "Metric1" || metricType == "EdgeDiff") { //calling loc -> callee
-                // Converting json to graph
-                var SCG = JSON.parse(fs.readFileSync(SCGFilename, 'utf8'));
-                for (var mkey of Object.keys(SCG)) {
-                        if (typeof SCG[mkey] === 'object') {
-                                for (var ckey in SCG[mkey]) {
-                                        var new_key= formatSCG(ckey)
-                                        if(new_key!==null){
-                                                if (!(new_key in statCallGraph)){
-                                                        statCallGraph[new_key] = []
-                                                }
-                                                values = SCG[mkey][ckey]
-                                                for (var val of values) {
-                                                        var new_val= formatSCG(val)
-                                                        if (new_val!==null){
-                                                                if(!(new_val in statCallGraph[new_key])){
-                                                                        statCallGraph[new_key].push(new_val)
-                                                                }
-                                                        }
-                                                }
-                                        }
-                                }
-                        }
-                }
-                statCallGraphEdit = jsonToGraph(statCallGraph);
 
-        }
-        else if (metricType == "Metric2") { //enclosing body -> callee
-                 // Converting json to graph
-                 var SCG = JSON.parse(fs.readFileSync(SCGFilename, 'utf8'));
-                for (var mkey of Object.keys(SCG)) {
-                        if (typeof SCG[mkey] === 'object' && formatSCG(mkey)!==null) {
-                               var new_key= formatSCG(mkey)
-                               if (!(new_key in statCallGraph)){
-                                statCallGraph[new_key] = []}
-                                for (const ckey in SCG[mkey]) {
-                                        if(formatSCG(ckey)!==null){
-                                                values = SCG[mkey][ckey]
-                                                for (var val of values) {
-                                                        if (formatSCG(val)!==null){
-                                                               var new_val= formatSCG(val)
-                                                               if(!(new_val in statCallGraph[new_key])){
-                                                                        statCallGraph[new_key].push(new_val)
-                                                                }
+        var SCG = JSON.parse(fs.readFileSync(SCGFilename, 'utf8'));
+        for (var mkey of Object.keys(SCG)) {
+                if (typeof SCG[mkey] === 'object') {
+                        for (var ckey in SCG[mkey]) {
+                                var new_key= formatSCG(ckey)
+                                if(new_key!==null){
+                                        if (!(new_key in statCallGraph)){
+                                                statCallGraph[new_key] = []
+                                        }
+                                        values = SCG[mkey][ckey]
+                                        for (var val of values) {
+                                                var new_val= formatSCG(val)
+                                                if (new_val!==null){
+                                                        if(!(new_val in statCallGraph[new_key])){
+                                                                statCallGraph[new_key].push(new_val)
                                                         }
                                                 }
                                         }
                                 }
                         }
                 }
-                 statCallGraphEdit = jsonToGraph(statCallGraph);
         }
-        else if (metricType == "Metric3") { //as it is
-                // Converting json to graph
-                var SCG = JSON.parse(fs.readFileSync(SCGFilename, 'utf8'));
-                for (var mkey of Object.keys(SCG)) {
-                        if (typeof SCG[mkey] === 'object' && formatSCG(mkey)!=null) {
-                               var new_mkey= formatSCG(mkey)
-                               if (!(new_mkey in statCallGraph)){
-                                statCallGraph[new_mkey] = {}}
-                                for (const ckey in SCG[mkey]) {
-                                        if(formatSCG(ckey)!==null){
-                                               var new_ckey= formatSCG(ckey)
-                                               if (!(new_ckey in statCallGraph[new_mkey])){
-                                                       statCallGraph[new_mkey][new_ckey] = []}
-                                                values = SCG[mkey][ckey]
-                                                for (var val of values) {
-                                                        if (formatSCG(val)!==null){
-                                                               var new_val= formatSCG(val)
-                                                               if(!(new_val in statCallGraph[new_mkey][new_ckey])){
-                                                                statCallGraph[new_mkey][new_ckey].push(new_val)}
-                                                                }
-                                                        }
-                                               }
-                                }
-                        }
-                }
-                for (var mkey of Object.keys(SCG)) { //enclosing body -> callee
-                        if (typeof SCG[mkey] === 'object' && formatSCG(mkey)!=null) {
-                               var new_key= formatSCG(mkey)
-                               if (!(new_key in statCallGraph2)){
-                                statCallGraph2[new_key] = []}
-                                for (const ckey in SCG[mkey]) {
-                                        if(formatSCG(ckey)!==null){
-                                                values = SCG[mkey][ckey]
-                                                for (var val of values) {
-                                                        if (formatSCG(val)!==null){
-                                                               var new_val= formatSCG(val)
-                                                               if(!(new_val in statCallGraph2[new_key])){
-                                                                statCallGraph2[new_key].push(new_val)}
-                                                        }
-                                                        }
-                                               }
-                                }
-                        }
-                }
-                statCallGraphEdit = jsonToGraph(statCallGraph2);
-       }
+        statCallGraphEdit = jsonToGraph(statCallGraph);
         const jsonSCG = JSON.stringify(statCallGraph, null, 2)
-        // var filenameSCG =(SCGFilename).replace(/.json$/,"_EDIT.json");
-        // fs.writeFileSync(filenameSCG, jsonSCG, 'utf8',function(err) {
-        // if(err) console.log('error', err);
-        // });
+        var filenameSCG =(SCGFilename).replace(/.json$/,"_EDIT.json");
+        fs.writeFileSync(filenameSCG, jsonSCG, 'utf8',function(err) {
+        if(err) console.log('error', err);
+        });
         relevantfiles.forEach(v => {if(!appFiles.includes(v)){frmFiles.push(v)}});
 }
 
@@ -164,12 +91,12 @@ function formatSCG(input) {
 
                 var fileName = SCG_pattern[2];
                 var charSpaces = SCG_pattern[4];
-                
-                if(relevantfiles.includes(fileName)){
-                        var inpJSFile= fileData[fileName]
-
+                var fullFileName= findItemEndingWith(relevantfiles,fileName)
+                if(fullFileName!==null){
+                        
+                        var inpJSFile= fileData[fullFileName]
                         try {   
-                                input = input.replace(SCG_pattern[1],fileName+"@"+lineSpaces(charSpaces,inpJSFile)+":"+charSpaces)
+                                input = input.replace(SCG_pattern[1],fullFileName+"@"+lineSpaces(charSpaces,inpJSFile)+":"+charSpaces)
                         }
                         catch (e) {
                                 console.log("SCG Formatting issues :" + input)
@@ -179,6 +106,16 @@ function formatSCG(input) {
 
         return input;
 }
+
+function findItemEndingWith(set, suffix) {
+        for (let item of set) {
+            if (item.endsWith(suffix)) {
+                return item;
+            }
+        }
+        return null; // Return null if no item ends with the specified suffix
+}
+
 function formatDCG(input) {
         var unEditedInput=input
         // Removing unnecessary information 
@@ -206,7 +143,7 @@ function formatDCG(input) {
                 }
                 var fileLoc = DCG_pattern[3];
                 if(filenames.includes(fileName)){  
-                        relevantfiles.push(fileName)  
+                        relevantfiles.add(fileName)  
                         if (!fileData[fileName]){              
                                 fileData[fileName] = fs.readFileSync(filePath).toString().split("\n");
                         }
@@ -274,43 +211,19 @@ function jsonToGraph(input) {
         }
         return output
 }
-function readJSFiles(dir) {
-        // Reading the javascript files to format the dynamic callgraph
 
-        fs.readdirSync(dir).forEach( f => {
-                let dirPath = path.join(dir, f);
-                let isDirectory = fs.statSync(dirPath).isDirectory();
-                if (isDirectory){ 
-                        readJSFiles(dirPath)
-                }
-              else{
-                  if(f.endsWith('.js')){
-                  var filePath = path.join(dir, f);
-                  filenames.push(filePath);
-                  }
-                }
-              });
-}
-
-function processInputs(DCG,SCG,JSfiles,metric) {
+function processInputs(DCG,SCG,JSfiles) {
         // Getting the inputs from console
                 DCGFilename = DCG
                 SCGFilename = SCG
-                inputDir = JSfiles
-                metricType = metric;
+                filenames = JSfiles
                 main();
-                if(metricType=="Metric3"){
-                        return [dynCallGraphEdit,statCallGraphEdit,statCallGraph];
-               
-                }else{
-                        //optimize this later 
-                        for(var key of Object.keys(patternStore)){
-                                patternStore[key.replace(".js","_orig_.js")] = patternStore[key]
-                                delete patternStore[key]
-                        }
-                        return [dynCallGraphEdit,statCallGraphEdit,patternStore,EditMapping];
-
+                //optimize this later 
+                for(var key of Object.keys(patternStore)){
+                        patternStore[key.replace(".js","_orig_.js")] = patternStore[key]
+                        delete patternStore[key]
                 }
+                return [dynCallGraphEdit,statCallGraphEdit,patternStore,EditMapping];
 }
 module.exports={
         processInputs
