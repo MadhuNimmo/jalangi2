@@ -53,7 +53,7 @@ do
     filedir="$out_path/todo_${benchmark}"
     for f in `ls $filedir`
     do
-        if [[ $f == SCG_BND*.json ]] || [[ $f == SCG_OPT.json ]]
+        if [[ $f =~ ^SCG_BND[0-9]+\.json$ ]] || [[ $f == SCG_OPT.json ]]
         then
             echo "Running Metrics for benchmark $benchmark -> file $f"
             node $jalangi_path/experiments/metrics/metric1.js $out_path/todo_$benchmark/todo_${benchmark}_DCG.json $filedir/${f} $todomvc_path/examples/$benchmark/ $out_path/analysis_results.json $benchmark
