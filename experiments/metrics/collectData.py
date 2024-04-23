@@ -65,11 +65,11 @@ def get_working_benchmarks(file_paths):
                 result = word.split("-")
                 if (df['Benchmark'][i].lower() == result[0].lower()) and (len(result) > 0):
                         df.iloc[[i, i+1]] = df.iloc[[i+1, i]]
-        output_path=directory_path+'/web{}.xlsx'.format("unbounded")
-        # Check if the file already exists
-        if os.path.exists(output_path):
-                # Remove the file if it exists
-                os.remove(output_path)
+    output_path=directory_path+'/web{}.xlsx'.format("unbounded")
+    # Check if the file already exists
+    if os.path.exists(output_path):
+            # Remove the file if it exists
+            os.remove(output_path)
     # Write the DataFrame to an Excel file
     df.to_excel(output_path, index=False)
     outFile_path.append(output_path)
@@ -120,11 +120,11 @@ def main():
                         result = word.split("-")
                         if (df['Benchmark'][i].lower() == result[0].lower()) and (len(result) > 0):
                                 df.iloc[[i, i+1]] = df.iloc[[i+1, i]]
-                output_path= directory_path+'/web_BND{}.xlsx'.format(x)
-                # Check if the file already exists
-                if os.path.exists(output_path):
-                        # Remove the file if it exists
-                        os.remove(output_path)
+        output_path= directory_path+'/web_BND{}.xlsx'.format(x)
+        # Check if the file already exists
+        if os.path.exists(output_path):
+                # Remove the file if it exists
+                os.remove(output_path)
         # Write the DataFrame to an Excel file
         df.to_excel(output_path, index=False)
         outFile_path.append(output_path)

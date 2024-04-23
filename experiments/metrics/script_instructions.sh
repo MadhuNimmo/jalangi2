@@ -6,12 +6,18 @@ benchmarks=(angularjs backbone canjs jquery knockoutjs knockback mithril react v
 # Define paths
 top_level_directory=/ # Change this to the desired top-level directory
 jalangi_path=$top_level_directory/jalangi2/
+wala_path=$top_level_directory/WALA/
 wala_acg_path=$top_level_directory/WALA-ACG/
 todomvc_path=$top_level_directory/todomvc/
 out_path=$top_level_directory/jalangi2/RawWebData/
 
 # Create output directory if it doesn't exist
 mkdir -p $out_path
+
+cd $wala_path
+
+# Run the gradlew script
+./gradlew publishToMavenLocal
 
 # Generating Unbounded Static Call Graphs for Web Apps
 cd $wala_acg_path
