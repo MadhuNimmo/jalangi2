@@ -6,10 +6,10 @@ benchmarks=(angularjs backbone canjs jquery knockoutjs knockback mithril react v
 # Define paths
 top_level_directory=/ # Change this to the desired top-level directory
 jalangi_path=$top_level_directory/jalangi2/
-wala_path=$top_level_directory/WALA/
+wala_path=$top_level_directory/WALA-ACG/WALA/
 wala_acg_path=$top_level_directory/WALA-ACG/
-todomvc_path=$top_level_directory/todomvc/
-out_path=$top_level_directory/jalangi2/RawWebData/
+todomvc_path=$top_level_directory/todomvc-master/
+out_path=$jalangi_path/RawWebData/
 
 # Create output directory if it doesn't exist
 mkdir -p $out_path
