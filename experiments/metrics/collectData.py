@@ -39,11 +39,11 @@ def get_working_benchmarks(file_paths):
         with open(file_path, 'r') as file:
             content = json.load(file)
             benchmark = ((file_path.split("/")[-2]).split(".json")[0]).split("_")[1]
-            try:
+            if 'exec time' in content:
                 # Extract analysis time
                 analysis_time = content["exec time"]
 
-                # Extract precision, recall, and max rounds
+                # Extract precision, recall
                 call_site_precision = content["total avg precision"]
                 call_site_recall = content["total avg recall"]
                 data.append({
@@ -52,9 +52,15 @@ def get_working_benchmarks(file_paths):
                         'Precision (%)': call_site_precision,
                         'Recall (%)': call_site_recall
                 })
-            except:
-                cnt+=1
-                print("Exception: ",file_path)
+            else:
+                # Extract precision, recall
+                call_site_precision = content["total avg precision"]
+                call_site_recall = content["total avg recall"]
+                data.append({
+                        'Benchmark' : benchmark,
+                        'Precision (%)': call_site_precision,
+                        'Recall (%)': call_site_recall
+                })
     print("Total no of Exceptions: ",cnt)
     df = pd.DataFrame(data)
     df = df.sort_values('Benchmark', key=lambda x: x.str.lower())
@@ -85,11 +91,11 @@ def get_data(file_paths,benchmarks):
          with open(file_path, 'r') as file:
             content = json.load(file)
             benchmark = ((file_path.split("/")[-2]).split(".json")[0]).split("_")[1]
-            try:
+            if 'exec time' in content:
                 # Extract analysis time
                 analysis_time = content["exec time"]
 
-                # Extract precision, recall, and max rounds
+                # Extract precision, recall
                 call_site_precision = content["total avg precision"]
                 call_site_recall = content["total avg recall"]
                 data.append({
@@ -98,9 +104,15 @@ def get_data(file_paths,benchmarks):
                         'Precision (%)': call_site_precision,
                         'Recall (%)': call_site_recall
                 })
-            except:
-                cnt+=1
-                print("Exception: ",file_path)
+            else:
+                # Extract precision, recall
+                call_site_precision = content["total avg precision"]
+                call_site_recall = content["total avg recall"]
+                data.append({
+                        'Benchmark' : benchmark,
+                        'Precision (%)': call_site_precision,
+                        'Recall (%)': call_site_recall
+                })
     print("Total no of Exceptions: ",cnt)
     return data
 def main():
