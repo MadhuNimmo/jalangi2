@@ -31,11 +31,15 @@ function filter(DCG_items, SCG_items) {
   for (var DCG_key of DCG_keys) {
     var DCG_values = DCG_items.getValues(DCG_key);
     for (DCG_value of DCG_values) {
-      for (SCG_key of item_keys) {
-        if (DCG_key === SCG_key || SCG_key.includes(DCG_key)) {
-          for (SCG_value of SCG_items.getValues(SCG_key)) {
-            if (DCG_value === SCG_value || SCG_value.includes(DCG_value)) {
-              commonCallSite.addEdge(DCG_key, DCG_value);
+      if (DCG_value=="Function (Native)"){
+        commonCallSite.addEdge(DCG_key, DCG_value);
+      }else{
+        for (SCG_key of item_keys) {
+          if (DCG_key === SCG_key || SCG_key.includes(DCG_key)) {
+            for (SCG_value of SCG_items.getValues(SCG_key)) {
+              if (DCG_value === SCG_value || SCG_value.includes(DCG_value)) {
+                commonCallSite.addEdge(DCG_key, DCG_value);
+              }
             }
           }
         }
@@ -74,7 +78,7 @@ function getTypeMetric() {
   var key_cnt = 0;
   keys = [...DCG.getKeys()];
   for (var key of keys) {
-    if (callSiteType(key) != "none") {
+    if (callSiteType(key)) {
       key_cnt += 1;
       var DCG_values = [...DCG.getValues(key)].length;
       var SCG_values = getStaticCallGraphEdges(key).length;
@@ -82,9 +86,9 @@ function getTypeMetric() {
         commonCallSite.getValues(key) == undefined
           ? 0
           : [...commonCallSite.getValues(key)].length;
-      tot_precision += Comm_values == 0 ? 0 : Comm_values / SCG_values;
-      tot_recall += Comm_values == 0 ? 0 : Comm_values / DCG_values;
-    }
+          tot_precision += Comm_values == 0 ? 0 : SCG_values==0? 1 : Comm_values / SCG_values;
+          tot_recall += Comm_values == 0 || DCG_values == 0 ? 0 : Comm_values / DCG_values;
+        }
   }
   var tot_avg_precision =
     tot_precision == 0 ? 0 : (tot_precision / key_cnt).toFixed(4);
